@@ -1,0 +1,58 @@
+@import '../../sass/_variables';
+@import '../../sass/_mixins';
+
+.container {
+  display: flex;
+  align-items: center;
+  //   background-image: url('../../images/BigYellowJ.png') no-repeat;
+  height: 90vh;
+}
+/* Title */
+.title-wrapper {
+  padding-left: 12%;
+}
+.greeting {
+  @include home-title;
+}
+.brand {
+  color: $brand-main;
+}
+.J {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: $title;
+  font-weight: 600;
+}
+.row {
+  display: flex;
+  margin: auto;
+}
+.space {
+  padding-right: $sm;
+}
+
+.subheading {
+  color: #8d8d8d;
+  font-size: $sm;
+  font-weight: 400;
+  letter-spacing: 3px;
+}
+
+.button {
+  background: transparent;
+  border: $btn-border;
+  border-radius: 3px;
+  color: $brand-main;
+  font-size: $sm;
+
+  letter-spacing: 4px;
+  margin-top: 25px;
+  padding: 10px 12px;
+  text-transform: uppercase;
+  width: 150px;
+
+  &:hover {
+    background: $brand-main;
+    color: $color-tags;
+    font-weight: 600;
+  }
+}

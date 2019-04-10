@@ -1,0 +1,20 @@
+@mixin tags {
+  font-family: 'La Belle Aurore', cursive;
+  color: #515152;
+  font-size: 18px;
+}
+
+@mixin home-title {
+  color: $color-white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif,
+    Helvetica, sans-serif;
+  font-size: $title;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 58px;
+  margin: 0;
+
+  &:hover {
+    color: $brand-main;
+  }
+}
