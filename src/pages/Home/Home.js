@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { Typography, withStyles } from '@material-ui/core';
 import './index.scss';
 import smallj from '../../images/smallj.png';
+import BgWrapper from '../../components/BgWrapper';
 import TitleWrapper from '../../components/TitleWrapper';
 
 class Home extends Component {
@@ -13,40 +14,42 @@ class Home extends Component {
   render() {
     return (
       <div className="home-container">
-        <section className="title-wrapper">
-          <h1 className="greeting">
-            Hello<span className="brand">!</span>
-          </h1>
-          <div className="row">
-            <h1 className="greeting space">
-              <span className="greeting">I'm </span>
-              <span className="greeting">Jennifer</span>
-              <span className="greeting">,</span>
-            </h1>
-          </div>
-
-          <div clasName="row">
+        <BgWrapper>
+          <section className="title-wrapper">
             <h1 className="greeting">
-              <span className="greeting">full-</span>
-              <span className="greeting">stack </span>
-              <span className="greeting">developer</span>
-              <span className="greeting">.</span>
+              Hello<span className="brand">!</span>
             </h1>
-          </div>
+            <div className="row">
+              <h1 className="greeting space">
+                <span className="greeting">I'm </span>
+                <span className="greeting">Jennifer</span>
+                <span className="greeting">,</span>
+              </h1>
+            </div>
 
-          <h2 className="subheading">
-            Creative / Open-Minded / Problem Solver
-          </h2>
+            <div clasName="row">
+              <h1 className="greeting">
+                <span className="greeting">full-</span>
+                <span className="greeting">stack </span>
+                <span className="greeting">developer</span>
+                <span className="greeting">.</span>
+              </h1>
+            </div>
 
-          <button
-            className="button"
-            onClick={() => {
-              console.log('clicked!');
-            }}
-          >
-            Contact Me
-          </button>
-        </section>
+            <h2 className="subheading">
+              Creative / Open-Minded / Problem Solver
+            </h2>
+
+            <button
+              className="button"
+              onClick={() => {
+                console.log('clicked!');
+              }}
+            >
+              Contact Me
+            </button>
+          </section>
+        </BgWrapper>
       </div>
     );
   }

@@ -10,21 +10,20 @@
   background-size: 50%;
 
   height: 92vh;
-  margin-top: 10;
 
   @include tablet {
     background-image: url('../../images/smallj.png');
-    background-size: contain;
+    background-size: 40%;
   }
 
   @include desktop {
+    background-size: contain;
   }
 }
 
 /* Title */
 .title-wrapper {
-  padding-left: 12%;
-  width: 80%;
+  //   height: 100%;
 }
 .greeting {
   @include home-title;

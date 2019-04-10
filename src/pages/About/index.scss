@@ -2,14 +2,13 @@
 @import '../../sass/_mixins';
 
 .container {
-  height: 92vh;
-  padding: 0 10%;
-
-  @include tablet {
-    padding-left: 12%;
-  }
+  //   margin: 20px 0;
 }
 
 .title {
   color: $brand-main;
+  margin: 0;
+}
+.text {
+  color: $color-white;
 }

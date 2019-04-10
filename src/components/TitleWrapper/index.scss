@@ -1,5 +1,9 @@
 @import '../../sass/_variables';
+@import '../../sass/mixins';
 
 .tags {
   font-family: $font-cursive;
+  font-size: $fs-tags;
+  color: $color-tags;
+  margin: 0;
 }

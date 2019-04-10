@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Typography, withStyles } from '@material-ui/core';
 import './index.scss';
+import BgWrapper from '../../components/BgWrapper';
 import TitleWrapper from '../../components/TitleWrapper';
 
 class About extends Component {
@@ -12,11 +13,15 @@ class About extends Component {
   render() {
     return (
       <div className="container">
-        <h1 className="title">About me</h1>
-        <p className="text">
-          I remember writing my first code at 6-years-old. My brother showed me
-          how to play music.
-        </p>
+        <BgWrapper>
+          <TitleWrapper>
+            <h1 className="title">About me</h1>
+          </TitleWrapper>
+          <p className="text">
+            I remember writing my first code at 6-years-old. My brother showed
+            me how to play music.
+          </p>
+        </BgWrapper>
       </div>
     );
   }

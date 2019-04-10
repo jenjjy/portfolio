@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Sacramento');
+@import '../../sass/_variables';
+@import '../../sass/mixins';
+
+.flex {
+  height: 88vh;
+  padding-top: 20px;
+  padding-left: $xs;
+}
+.toptag {
+  top: 0;
+}
+.bodytags {
+  padding-left: 4%;
+
+  @include tablet {
+    padding-left: 5%;
+  }
+
+  @include desktop {
+    padding-left: 8%;
+  }
+}
+
+.children {
+  padding: 5% 5%;
+  padding-right: 0;
+
+  @include tablet {
+    padding: 5% 8%;
+  }
+}

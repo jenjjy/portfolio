@@ -33,9 +33,14 @@
   }
 
   @include tablet {
-    font-size: $title-desktop;
+    font-size: $title-tablet;
     font-weight: 500;
     letter-spacing: 2px;
+    line-height: 50px;
+  }
+
+  @include desktop {
+    font-size: $title-desktop;
     line-height: 58px;
   }
 }
