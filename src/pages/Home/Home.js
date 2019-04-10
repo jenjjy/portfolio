@@ -12,7 +12,7 @@ class Home extends Component {
 
   render() {
     return (
-      <div className="container">
+      <div className="home-container">
         <section className="title-wrapper">
           <h1 className="greeting">
             Hello<span className="brand">!</span>

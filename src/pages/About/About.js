@@ -11,8 +11,12 @@ class About extends Component {
 
   render() {
     return (
-      <div className="wrapper">
-        <h1 className={{ color: 'white' }}>About</h1>
+      <div className="container">
+        <h1 className="title">About me</h1>
+        <p className="text">
+          I remember writing my first code at 6-years-old. My brother showed me
+          how to play music.
+        </p>
       </div>
     );
   }

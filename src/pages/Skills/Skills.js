@@ -12,7 +12,7 @@ class Skills extends Component {
   render() {
     return (
       <div className="container">
-        <h1 className={{ color: 'white' }}>Skills</h1>
+        <h1 className="title">Technical Skills</h1>
       </div>
     );
   }

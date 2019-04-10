@@ -12,7 +12,7 @@ class Projects extends Component {
   render() {
     return (
       <div className="container">
-        <h1 className={{ color: 'white' }}>Projects</h1>
+        <h1 className="title">Projects</h1>
       </div>
     );
   }

@@ -1,2 +1,15 @@
 @import '../../sass/_variables';
 @import '../../sass/_mixins';
+
+.container {
+  height: 92vh;
+  padding: 0 10%;
+
+  @include tablet {
+    padding-left: 12%;
+  }
+}
+
+.title {
+  color: $brand-main;
+}
