@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { Typography, withStyles } from '@material-ui/core';
+import { withStyles } from '@material-ui/core';
 import './index.scss';
+import BgWrapper from '../../components/BgWrapper';
 import TitleWrapper from '../../components/TitleWrapper';
 
 class Contact extends Component {
@@ -12,7 +13,11 @@ class Contact extends Component {
   render() {
     return (
       <div className="container">
-        <h1 className="title">Contact</h1>
+        <BgWrapper>
+          <TitleWrapper>
+            <h1 className="title">Contact</h1>
+          </TitleWrapper>
+        </BgWrapper>
       </div>
     );
   }

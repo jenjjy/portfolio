@@ -1,4 +1,4 @@
-.container {
+.home-container {
   display: flex;
   align-items: center;
   background-image: url('../../images/smallerj.png');
@@ -7,7 +7,7 @@
   background-size: 50%;
 
   height: 92vh;
-  margin-top: 10;
+  padding-left: $xs;
 
   @include tablet {
     background-image: url('../../images/smallj.png');

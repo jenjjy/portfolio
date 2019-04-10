@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@material-ui/core": "^3.9.3",
+    "@material-ui/icons": "^3.0.2",
     "final-form": "^4.12.0",
     "node-sass": "^4.11.0",
     "react": "^16.8.6",
@@ -12,6 +13,7 @@
     "react-router-dom": "^5.0.0",
     "react-scripts": "2.1.8",
     "react-spring": "^8.0.19",
+    "recharts": "^1.5.0",
     "typeface-roboto": "^0.0.54"
   },
   "scripts": {

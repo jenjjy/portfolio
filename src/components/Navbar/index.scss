@@ -1,12 +1,6 @@
 @import '../../sass/_variables';
 @import '../../sass/_mixins';
 
-// .container {
-//   background: $color-black;
-//   height: 60px;
-//   width: 100%;
-// }
-
 .navbar {
   background: $color-black;
   display: flex;
@@ -28,8 +22,9 @@
   text-decoration: none;
   text-transform: uppercase;
   display: flex;
-  justify-content: space-between;
+  @include flex($justify: space-between);
   letter-spacing: 1px;
+  height: 40px;
 
   &:hover {
     color: $brand-main;

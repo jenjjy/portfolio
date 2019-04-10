@@ -1,27 +1,41 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import { NavLink } from 'react-router-dom';
+import { NavLink, withRouter } from 'react-router-dom';
+import { IconButton, withStyles } from '@material-ui/core';
+import {
+  Dashboard,
+  Extension,
+  Fingerprint,
+  Home,
+  Mail,
+  DonutLarge
+} from '@material-ui/icons';
 import './index.scss';
-import { Typography, withStyles } from '@material-ui/core';
 
 const Navbar = () => (
   <div className="navbar">
-    <NavLink to="/" exact className="links" activeClassName="active">
-      Home
-    </NavLink>
+    <div>
+      <NavLink to="/" exact className="links" activeClassName="active">
+        <Home />
+        Home
+      </NavLink>
+    </div>
     <NavLink to="/about" className="links" activeClassName="active">
+      <Fingerprint />
       About
     </NavLink>
     <NavLink to="/skills" className="links" activeClassName="active">
+      <DonutLarge />
       skills
     </NavLink>
     <NavLink to="/projects" className="links" activeClassName="active">
+      <Extension />
       projects
     </NavLink>
     <NavLink to="/contact" className="links" activeClassName="active">
+      <Mail />
       contact
     </NavLink>
   </div>
 );
 
-export default Navbar;
+export default withRouter(Navbar);

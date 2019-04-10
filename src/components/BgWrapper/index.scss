@@ -3,9 +3,11 @@
 @import '../../sass/mixins';
 
 .flex {
+  display: flex;
+  @include flex(column, space-between, null);
   height: 88vh;
   padding-top: 20px;
-  padding-left: $xs;
+  width: 100vw;
 }
 .toptag {
   top: 0;
@@ -18,15 +20,15 @@
   }
 
   @include desktop {
-    padding-left: 8%;
+    padding-left: 10%;
   }
 }
 
 .children {
-  padding: 5% 5%;
-  padding-right: 0;
-
-  @include tablet {
-    padding: 5% 8%;
-  }
+  padding: 2% 0;
+}
+.children-home {
+  display: flex;
+  @include flex(column, center, null);
+  height: 110%;
 }
