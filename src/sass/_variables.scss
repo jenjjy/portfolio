@@ -1,4 +1,10 @@
+// Screen Sizes
+$desktop-width: 1080px;
+$tablet-width: 600px;
+
 // Colors
+$bg-color: #282c34;
+
 $brand-main: #ffc732; //yellow
 $brand-sec: #fc0852; //pink
 $color-tags: #515152;
@@ -20,4 +26,6 @@ $sm: 11px;
 $md: 18px;
 $lg: 25px;
 
-$title: 53px;
+$title-mobile: 38px;
+$title-tablet: 53px;
+$title-desktop: 53px;

@@ -10,29 +10,27 @@ import Skills from './pages/Skills';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 import Layout from './routes/Layout';
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
 
 class App extends Component {
   render() {
     return (
-      // <MuiThemeProvider theme={theme}>
-      //   <CssBaseline />
+      <MuiThemeProvider theme={theme}>
+        <CssBaseline />
 
-      <Router>
-        <div>
-          <Navbar />
-          <Switch>
-            <Route exact path="/" component={Home} />
-            <Route path="/about" component={About} />
-            <Route path="/skills" component={Skills} />
-            <Route path="/projects" component={Projects} />
-            <Route path="/contact" component={Contact} />
-          </Switch>
-        </div>
-      </Router>
-
-      // </MuiThemeProvider>
+        <Router>
+          <div className="background">
+            <Navbar />
+            <Switch>
+              <Route exact path="/" component={Home} />
+              <Route path="/about" component={About} />
+              <Route path="/skills" component={Skills} />
+              <Route path="/projects" component={Projects} />
+              <Route path="/contact" component={Contact} />
+            </Switch>
+          </div>
+        </Router>
+      </MuiThemeProvider>
     );
   }
 }

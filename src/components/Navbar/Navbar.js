@@ -24,8 +24,4 @@ const Navbar = () => (
   </div>
 );
 
-Navbar.propTypes = {
-  classes: PropTypes.object.isRequired
-};
-
 export default Navbar;

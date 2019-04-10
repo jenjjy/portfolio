@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Typography, withStyles } from '@material-ui/core';
 import './index.scss';
-import jj from '../../images/jj.png';
+import smallj from '../../images/smallj.png';
 import TitleWrapper from '../../components/TitleWrapper';
 
 class Home extends Component {
@@ -20,7 +20,6 @@ class Home extends Component {
           <div className="row">
             <h1 className="greeting space">
               <span className="greeting">I'm </span>
-              {/* <img src={jj} width="30" /> */}
               <span className="greeting">Jennifer</span>
               <span className="greeting">,</span>
             </h1>

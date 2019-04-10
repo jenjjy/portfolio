@@ -1,3 +1,24 @@
 @import 'variables';
 @import 'mixins';
 @import 'fonts';
+@import 'home';
+
+.container {
+  display: flex;
+  align-items: center;
+  background-image: url('../../images/smallerj.png');
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: 50%;
+
+  height: 92vh;
+  margin-top: 10;
+
+  @include tablet {
+    background-image: url('../../images/smallj.png');
+    background-size: contain;
+  }
+
+  @include desktop {
+  }
+}

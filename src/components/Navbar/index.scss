@@ -1,5 +1,5 @@
 @import '../../sass/_variables';
-@import '../../sass/mixins';
+@import '../../sass/_mixins';
 
 // .container {
 //   background: $color-black;
@@ -13,9 +13,13 @@
   justify-content: space-around;
   align-items: center;
   margin: auto;
-  padding: 0 12%;
+  padding: 0 5%;
   height: 60px;
   // width: 50%;
+
+  @include tablet {
+    padding: 0 12%;
+  }
 }
 
 .links {
@@ -25,10 +29,14 @@
   text-transform: uppercase;
   display: flex;
   justify-content: space-between;
-  letter-spacing: 3px;
+  letter-spacing: 1px;
 
   &:hover {
     color: $brand-main;
+  }
+
+  @include tablet {
+    letter-spacing: 3px;
   }
 }
 
