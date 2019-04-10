@@ -3,7 +3,7 @@ import { withStyles } from '@material-ui/core';
 import './index.scss';
 import BgWrapper from '../../components/BgWrapper';
 import TitleWrapper from '../../components/TitleWrapper';
-import PieGraph from '../../components/PieGraph';
+import PieGraph from '../../components/Graphs/PieGraph';
 
 class Skills extends Component {
   render() {
@@ -13,7 +13,7 @@ class Skills extends Component {
           <TitleWrapper>
             <h1 className="title">Technical Skills</h1>
           </TitleWrapper>
-          <div className="graphWrapper">
+          <div className="pieWrapper">
             <PieGraph />
           </div>
         </BgWrapper>
