@@ -6,8 +6,12 @@
   display: flex;
   @include flex(column, space-between, null);
   height: 88vh;
-  padding-top: 20px;
+  padding-top: 5px;
   width: 100vw;
+
+  @include tablet {
+    padding-top: 20px;
+  }
 }
 .toptag {
   top: 0;
@@ -25,7 +29,10 @@
 }
 
 .children {
-  padding: 2% 0;
+  padding: 1% 0;
+  @include tablet {
+    padding: 2% 0;
+  }
 }
 .children-home {
   display: flex;

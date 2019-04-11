@@ -18,8 +18,9 @@ class About extends Component {
             <h1 className="title">About me</h1>
           </TitleWrapper>
           <p className="text">
-            I remember writing my first code at 6-years-old. My brother showed
-            me how to play music.
+            I remember when my brother first showed me how to play a simple song
+            on the computer by writing simple code. I was facinated by how a
+            simple combinations of characters can create a familiar sound.
           </p>
         </BgWrapper>
       </div>

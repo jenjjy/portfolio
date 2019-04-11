@@ -3,7 +3,11 @@
 
 .tags {
   font-family: $font-cursive;
-  font-size: $fs-tags;
+  font-size: $tags-mobile;
   color: $color-tags;
   margin: 0;
+
+  @include tablet {
+    font-size: $tags-tablet;
+  }
 }

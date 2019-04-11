@@ -39,7 +39,7 @@ const renderCustomizedLabel = ({
     <text
       x={x}
       y={y}
-      fill="white"
+      fill="#8d8d8d"
       textAnchor={x > cx ? 'start' : 'end'}
       dominantBaseline="central"
     >
@@ -54,11 +54,11 @@ class PieGraph extends PureComponent {
 
   render() {
     return (
-      <PieChart width={500} height={425} className="pichart">
+      <PieChart width={480} height={400} className="pichart">
         <Pie
           data={skills}
-          cx={200}
-          cy={200}
+          cx={210}
+          cy={180}
           labelLine={true}
           label={renderCustomizedLabel}
           outerRadius={150}
