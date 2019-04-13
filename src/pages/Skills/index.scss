@@ -3,17 +3,23 @@
 
 .content-wrapper {
   display: flex;
-  @include flex();
+  @include flex(column, center, flex-start);
   padding-right: 5%;
 }
 
 .PieGraph {
   display: none;
   @include tablet {
-    display: block;
+    display: flex;
+    @include flex();
+    width: 100%;
   }
 }
-.SmlPieGraph {
+.skills-mobile {
+  display: flex;
+  @include flex(column, center, flex-start);
+  width: 100%;
+
   @include tablet {
     display: none;
   }

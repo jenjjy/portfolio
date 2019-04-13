@@ -4,6 +4,13 @@
 @import '../../sass/_container';
 
 /* Title */
+.title-wrapper {
+  max-width: 270px;
+  @include tablet {
+    max-width: 100%;
+  }
+}
+
 .brand {
   color: $brand-main;
 }

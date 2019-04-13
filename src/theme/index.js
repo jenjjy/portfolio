@@ -16,5 +16,9 @@ export default createMuiTheme({
     bg: {
       main: '#000'
     }
+  },
+
+  typography: {
+    useNextVariants: true
   }
 });

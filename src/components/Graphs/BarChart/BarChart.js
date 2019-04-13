@@ -1,6 +1,8 @@
 import React, { PureComponent } from 'react';
 import {
-  BarChart,
+  ComposedChart,
+  Line,
+  Area,
   Bar,
   XAxis,
   YAxis,
@@ -8,77 +10,83 @@ import {
   Tooltip,
   Legend
 } from 'recharts';
-// import { skills } from '../Data';
+import skills from '../Data';
 
-const skills = [
+const data = [
   {
     name: 'Page A',
-    uv: 4000,
-    pv: 2400,
-    amt: 2400
+    uv: 590,
+    value: 500,
+    amt: 1400
   },
   {
     name: 'Page B',
-    uv: 3000,
-    pv: 1398,
-    amt: 2210
+    uv: 868,
+    value: 400,
+    amt: 1506
   },
   {
     name: 'Page C',
-    uv: 2000,
-    pv: 9800,
-    amt: 2290
+    uv: 1397,
+    value: 400,
+    amt: 989
   },
   {
-    name: 'Page D',
-    uv: 2780,
-    pv: 3908,
-    amt: 2000
+    name: ' D',
+    uv: 1480,
+    value: 500,
+    amt: 1228
   },
   {
     name: 'Page E',
-    uv: 1890,
-    pv: 4800,
-    amt: 2181
+    uv: 1520,
+    value: 400,
+    amt: 1100
   },
   {
     name: 'Page F',
-    uv: 2390,
-    pv: 3800,
-    amt: 2500
-  },
-  {
-    name: 'Page G',
-    uv: 3490,
-    pv: 4300,
-    amt: 2100
+    uv: 1400,
+    value: 300,
+    amt: 1700
   }
 ];
+const colors = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042']; // '#7728ff' purple
 
 export default class Example extends PureComponent {
-  static jsfiddleUrl = 'https://jsfiddle.net/alidingling/30763kr7/';
+  static jsfiddleUrl = 'https://jsfiddle.net/alidingling/shjsn5su/';
 
   render() {
     return (
-      <BarChart
-        width={500}
-        height={300}
-        data={skills}
+      <ComposedChart
+        layout="vertical"
+        width={400}
+        height={400}
+        data={data}
         margin={{
-          top: 5,
-          right: 30,
-          left: 20,
-          bottom: 5
+          top: 20,
+          right: 20,
+          bottom: 20
+          // left: 20
         }}
       >
-        <CartesianGrid strokeDasharray="3 3" />
-        <XAxis dataKey="name" />
-        <YAxis />
+        <CartesianGrid stroke="#f5f5f5" />
+        <XAxis type="number" />
+        <YAxis dataKey="name" type="category" />
         <Tooltip />
         <Legend />
-        <Bar dataKey="pv" fill="#8884d8" />
-        <Bar dataKey="uv" fill="#82ca9d" />
-      </BarChart>
+        {/* <Area dataKey="amt" fill="#8884d8" stroke="#8884d8" /> */}
+        {data.map((entry, index) => {
+          return (
+            <Bar
+              key={index}
+              dataKey="value"
+              barSize={12}
+              fill={colors[index % colors.length]}
+            />
+          );
+        })}
+        {/* <Line dataKey="uv" stroke="#ff7300" /> */}
+      </ComposedChart>
     );
   }
 }

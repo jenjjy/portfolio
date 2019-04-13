@@ -9,7 +9,7 @@ const styles = {
   }
 };
 
-function LinearIndeterminate(props) {
+function Loading(props) {
   const { classes } = props;
   return (
     <div className={classes.root}>
@@ -19,8 +19,8 @@ function LinearIndeterminate(props) {
   );
 }
 
-LinearIndeterminate.propTypes = {
+Loading.propTypes = {
   classes: PropTypes.object.isRequired
 };
 
-export default withStyles(styles)(LinearIndeterminate);
+export default withStyles(styles)(Loading);

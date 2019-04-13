@@ -2,10 +2,15 @@
 
 .bg-wrapper {
   display: flex;
-  @include flex(column, space-around, null);
-  height: 80vh;
-  margin-left: 1rem;
+  @include flex(column, space-between, null);
+  margin-left: 0.5rem;
+  height: 100%;
   width: 100vw;
+
+  @include tablet {
+    margin-left: 1rem;
+    height: 85vh;
+  }
 }
 
 .tags {
@@ -29,7 +34,10 @@
 }
 
 .children {
-  margin-left: 5%;
+  // margin-left: 0.5rem;
+  @include tablet {
+    margin-left: 1rem;
+  }
 
   @include desktop {
     margin-top: -5%;

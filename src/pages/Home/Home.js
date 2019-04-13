@@ -27,29 +27,30 @@ class Home extends Component {
     return (
       <div className="home-container">
         <BgWrapper>
-          <section className="title-wrapper">
-            <p className="tags">&lt;h1&gt;</p>
-            <h1 className="home-title">
-              Hello<span className="brand">!</span>
-            </h1>
-            <div className="row">
-              <h1 className="home-title space">
-                <span className="home-title">I'm </span>
-                <span className="home-title">Jennifer</span>
-                <span className="home-title">,</span>
-              </h1>
-            </div>
-
-            <div className="row">
+          <section>
+            <div className="title-wrapper">
+              <p className="tags">&lt;h1&gt;</p>
               <h1 className="home-title">
-                <span className="home-title">full-</span>
-                <span className="home-title">stack </span>
-                <span className="home-title">developer</span>
-                <span className="home-title">.</span>
+                Hello<span className="brand">!</span>
               </h1>
-              <p className="tags">&#9;&lt;&#47;h1&gt;</p>
-            </div>
+              <div className="row">
+                <h1 className="home-title space">
+                  <span className="home-title">I'm </span>
+                  <span className="home-title">Jennifer</span>
+                  <span className="home-title">,</span>
+                </h1>
+              </div>
 
+              <div className="row">
+                <h1 className="home-title">
+                  <span className="home-title">full-</span>
+                  <span className="home-title">stack </span>
+                  <span className="home-title">developer</span>
+                  <span className="home-title">.</span>
+                </h1>
+                <p className="tags">&#9;&lt;&#47;h1&gt;</p>
+              </div>
+            </div>
             <h2 className="subheading">
               Creative / Open-Minded / Problem Solver
             </h2>

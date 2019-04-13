@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react';
-import { PieChart, Pie, Sector, Cell } from 'recharts';
+import { PieChart, Pie, Cell } from 'recharts';
 import { skills } from '../Data';
 
 const colors = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042']; // '#7728ff' purple
@@ -11,7 +11,6 @@ const renderCustomizedLabel = ({
   midAngle,
   innerRadius,
   outerRadius,
-  percent,
   index
 }) => {
   const radius = innerRadius + (outerRadius - innerRadius) * 1.17;
@@ -22,13 +21,12 @@ const renderCustomizedLabel = ({
     <text
       x={x}
       y={y}
-      fill="#8d8d8d"
+      fill="#fff"
       textAnchor={x > cx ? 'start' : 'end'}
       dominantBaseline="central"
       className="labels"
     >
       {skills.map(skill => (skill.id === index ? skill.name : null))}
-      {/* {`${(percent * 100).toFixed(0)}%`} */}
     </text>
   );
 };
@@ -38,11 +36,11 @@ class SmlPieGraph extends PureComponent {
 
   render() {
     return (
-      <PieChart width={400} height={350} className="pichart">
+      <PieChart width={320} height={350} className="pichart">
         <Pie
           data={skills}
-          cx={180}
-          cy={150}
+          cx={150}
+          cy={160}
           labelLine={true}
           label={renderCustomizedLabel}
           outerRadius={110}
