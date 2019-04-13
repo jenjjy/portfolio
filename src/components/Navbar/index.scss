@@ -5,18 +5,26 @@
   background: $color-black;
   display: flex;
   @include flex(row, flex-end, center);
-  height: 60px;
+  height: 50px;
   width: 100%;
 
   @include tablet {
     @include flex(row, space-around, center);
-    // padding: 0 12%;
+    height: 60px;
   }
 }
 .navlinks {
   display: flex;
   @include flex(row, space-around, center);
+  margin: auto;
+  height: 50px;
   width: 80%;
+  @include tablet {
+    height: 60px;
+  }
+}
+.bar-wrapper {
+  background: $color-black;
 }
 
 .links {
@@ -45,20 +53,22 @@
   text-decoration: none;
 }
 
-.menu-wrapper {
-  color: $color-white;
+.menu-btn {
+  // color: $color-white;
   display: flex;
   justify-content: flex-end;
-  &:hover {
-    color: $brand-main;
-  }
 
   @include tablet {
     display: none;
   }
 
   .menu {
-    font-size: 40px;
+    color: $color-white;
+    font-size: 50px;
     padding-right: 15px;
+
+    &:hover {
+      color: $brand-main;
+    }
   }
 }

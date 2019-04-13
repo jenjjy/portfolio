@@ -38,7 +38,7 @@ class PieGraph extends PureComponent {
 
   render() {
     return (
-      <PieChart width={485} height={440}>
+      <PieChart width={500} height={440}>
         <Pie
           data={skills}
           cx={220}

@@ -20,8 +20,9 @@ class About extends Component {
           <p className="text">
             I love learning about how something works and functions. My
             curiosity drives me to continuously learn and grow - whether it’s
-            learning how to drive a manual car, solve a Rubik’s cube, understand
-            blockchain, or backpack in Europe and Southeast Asia.
+            learning how to drive a manual car, solve a Rubik’s cube, became a
+            certified scuba diver, understand blockchain, or backpack in Europe
+            and Southeast Asia.
           </p>
           <p className="text">
             My first exposure to code was at 6 years old. My brother showed me

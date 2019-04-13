@@ -3,9 +3,7 @@ import { Redirect } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { Button, IconButton, withStyles } from '@material-ui/core';
 import './index.scss';
-import smallj from '../../images/smallj.png';
 import BgWrapper from '../../components/BgWrapper';
-import TitleWrapper from '../../components/TitleWrapper';
 import styles from './index.scss';
 
 class Home extends Component {
@@ -30,7 +28,7 @@ class Home extends Component {
       <div className="home-container">
         <BgWrapper>
           <section className="title-wrapper">
-            {/* <TitleWrapper> */}
+            <p className="tags">&lt;h1&gt;</p>
             <h1 className="home-title">
               Hello<span className="brand">!</span>
             </h1>
@@ -49,8 +47,8 @@ class Home extends Component {
                 <span className="home-title">developer</span>
                 <span className="home-title">.</span>
               </h1>
+              <p className="tags">&#9;&lt;&#47;h1&gt;</p>
             </div>
-            {/* </TitleWrapper> */}
 
             <h2 className="subheading">
               Creative / Open-Minded / Problem Solver

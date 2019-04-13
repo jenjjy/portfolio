@@ -31,7 +31,7 @@
 .children {
   margin-left: 5%;
 
-  @include tablet {
+  @include desktop {
     margin-top: -5%;
   }
 }
