@@ -1,0 +1,35 @@
+.home-container {
+  display: flex;
+  @include flex(row, space-around, center);
+  background-image: url('../../images/smallerj.png');
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: 60%;
+
+  height: 90vh;
+
+  @include tablet {
+    background-image: url('../../images/smallj.png');
+    background-position: center right;
+    background-size: 40%;
+  }
+
+  @include desktop {
+    background-size: contain;
+  }
+}
+
+.container {
+  margin-top: 1rem;
+
+  @include tablet {
+    margin-top: 2rem;
+  }
+}
+
+.project-container {
+  display: flex;
+  @include flex(column, space-around, null);
+  height: 80vh;
+  width: 100vw;
+}

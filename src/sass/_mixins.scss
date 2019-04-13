@@ -15,29 +15,3 @@
   justify-content: $justify;
   align-items: $align;
 }
-
-// Home
-@mixin home-title {
-  color: $color-white;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif,
-    Helvetica, sans-serif;
-  font-size: $title-mobile;
-  font-weight: 500;
-  letter-spacing: 1px;
-  line-height: 42px;
-  margin: 0;
-  &:hover {
-    color: $brand-main;
-  }
-
-  @include tablet {
-    font-size: $title-tablet;
-    font-weight: 500;
-    letter-spacing: 2px;
-    line-height: 50px;
-  }
-  @include desktop {
-    font-size: $title-desktop;
-    line-height: 58px;
-  }
-}

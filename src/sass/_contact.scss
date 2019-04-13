@@ -1,0 +1,38 @@
+.form-container {
+}
+
+.form {
+  display: flex;
+  @include flex(column, null, null);
+  max-width: 80%;
+
+  .btn-wrapper {
+    align-self: flex-end;
+    margin-top: 2rem;
+  }
+}
+
+.name-email {
+  display: flex;
+  flex-wrap: wrap;
+
+  .width {
+    width: 50%;
+  }
+}
+
+.full-width {
+  // width: 100vw;
+}
+
+.textField {
+  color: $brand-main;
+  background: $brand-main;
+}
+
+.send-btn {
+  //   display: flex;
+  @include flex(row, space-between, center);
+  margin-top: 3rem;
+  width: 105px;
+}

@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Sacramento');
+
+.bg-wrapper {
+  display: flex;
+  @include flex(column, space-around, null);
+  height: 80vh;
+  margin-left: 1rem;
+  width: 100vw;
+}
+
+.tags {
+  color: $color-tags;
+  font-family: $font-cursive;
+  font-size: $tags-mobile;
+  font-style: italic;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin: 0;
+
+  @include tablet {
+    // font-size: $tags-tablet;
+  }
+}
+.bodytags {
+  display: flex;
+  @include flex(column, space-between, null);
+  height: 100%;
+  margin-left: 1rem;
+}
+
+.children {
+  margin-left: 5%;
+
+  @include tablet {
+    margin-top: -5%;
+  }
+}
+.children-home {
+  display: flex;
+  @include flex(column, center, null);
+  height: 110%;
+}

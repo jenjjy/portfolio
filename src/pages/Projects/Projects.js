@@ -13,17 +13,13 @@ class Projects extends Component {
 
   render() {
     return (
-      <div className="container">
-        <h1 className="title">Mobile Apps</h1>
-
+      <div className="project-container">
         <img
+          className="msb"
           src={msb}
           alt="A GIF of Main Street Brewing's rewards program app."
           height="200"
         />
-        <h1 className="title">Web Apps</h1>
-
-        <h1 className="title">Websites</h1>
       </div>
     );
   }

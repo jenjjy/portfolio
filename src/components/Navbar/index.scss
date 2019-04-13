@@ -4,38 +4,61 @@
 .navbar {
   background: $color-black;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin: auto;
-  padding: 0 5%;
+  @include flex(row, flex-end, center);
   height: 60px;
-  // width: 50%;
+  width: 100%;
 
   @include tablet {
-    padding: 0 12%;
+    @include flex(row, space-around, center);
+    // padding: 0 12%;
   }
+}
+.navlinks {
+  display: flex;
+  @include flex(row, space-around, center);
+  width: 80%;
 }
 
 .links {
   color: $color-white;
-  font-size: $xs;
+  font-size: $xxs;
   text-decoration: none;
   text-transform: uppercase;
   display: flex;
   @include flex($justify: space-between);
   letter-spacing: 1px;
-  height: 40px;
+  height: 38px;
 
   &:hover {
     color: $brand-main;
   }
 
   @include tablet {
+    font-size: $xs;
     letter-spacing: 3px;
+    height: 40px;
   }
 }
 
 .active {
   color: $brand-main;
   text-decoration: none;
+}
+
+.menu-wrapper {
+  color: $color-white;
+  display: flex;
+  justify-content: flex-end;
+  &:hover {
+    color: $brand-main;
+  }
+
+  @include tablet {
+    display: none;
+  }
+
+  .menu {
+    font-size: 40px;
+    padding-right: 15px;
+  }
 }

@@ -1,15 +1,14 @@
 @import '../../sass/_variables';
 @import '../../sass/_mixins';
+@import '../../sass/container';
 
-.container {
-  //   margin: 20px 0;
-}
-
-.title {
-  color: $brand-main;
-  margin: 0;
-}
 .text {
   color: $color-white;
+  font-family: $font-main;
   font-size: $fs-text;
+  width: 90%;
+
+  @include tablet {
+    width: 80%;
+  }
 }

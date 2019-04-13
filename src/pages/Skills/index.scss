@@ -3,13 +3,8 @@
 
 .content-wrapper {
   display: flex;
-  @include flex(column-reverse);
-
-  @include desktop {
-    display: flex;
-    @include flex(row, space-between);
-    margin-right: 5%;
-  }
+  @include flex();
+  padding-right: 5%;
 }
 
 .PieGraph {
@@ -36,5 +31,12 @@
     padding-right: 3%;
     padding-left: 0;
     max-width: 350px;
+  }
+}
+
+.desktop-wrapper {
+  @include desktop {
+    display: flex;
+    @include flex(row, flex-start, center);
   }
 }

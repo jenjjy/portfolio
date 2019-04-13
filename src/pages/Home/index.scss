@@ -1,32 +1,11 @@
 @import '../../sass/_variables';
 @import '../../sass/_mixins';
-
-.home-container {
-  display: flex;
-  align-items: center;
-  background-image: url('../../images/smallerj.png');
-  background-position: top right;
-  background-repeat: no-repeat;
-  background-size: 50%;
-
-  height: 92vh;
-
-  @include tablet {
-    background-image: url('../../images/smallj.png');
-    background-size: 40%;
-  }
-
-  @include desktop {
-    background-size: contain;
-  }
-}
+@import '../../sass/_title';
+@import '../../sass/_container';
 
 /* Title */
 .title-wrapper {
-  margin-top: 5rem;
-}
-.greeting {
-  @include home-title;
+  // margin-top: 5rem;
 }
 .brand {
   color: $brand-main;
@@ -44,34 +23,12 @@
   padding-right: $sm;
 }
 
-.subheading {
-  color: #8d8d8d;
-  font-size: $xs;
-  font-weight: 400;
-  letter-spacing: 1px;
-
-  @include tablet {
-    font-size: $sm;
-    letter-spacing: 3px;
-  }
+/** Button */
+.btn-wrapper {
+  margin-top: 3rem;
 }
-
-.button {
-  background: transparent;
-  border: $btn-border;
-  border-radius: 3px;
-  color: $brand-main;
+.contact-btn {
   font-size: $sm;
-
-  letter-spacing: 4px;
-  margin-top: 25px;
-  padding: 10px 12px;
-  text-transform: uppercase;
-  width: 150px;
-
-  &:hover {
-    background: $brand-main;
-    color: $color-tags;
-    font-weight: 600;
-  }
+  font-weight: 300;
+  letter-spacing: 1px;
 }

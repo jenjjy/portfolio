@@ -2,12 +2,12 @@
 $desktop-width: 950px;
 $tablet-width: 600px;
 
-// Colors
-$bg-color: #282c34;
+// colors
+$bg-color: #252627; // #282c34;
 
 $brand-main: #ffc732; //yellow
 $brand-sec: #fc0852; //pink
-$color-tags: #515152;
+$color-tags: #515152; //#cbc7bf;
 
 $color-black: #000;
 $color-grey: #8d8d8d;
@@ -16,17 +16,18 @@ $color-white: #fff;
 $btn-border: 1px solid $brand-main;
 
 // Fonts
-$font-main: 'OpenSans-Bold', sans-serif;
-$font-bold: 'OpenSans-ExtraBold', sans-serif;
+$font-main: 'OpenSans-Light', sans-serif;
+$font-bold: 'OpenSans-Bold', sans-serif;
 $font-cursive: 'Sacramento', cursive;
 
 // Sizes
+$xxs: 8px;
 $xs: 9px;
 $sm: 11px;
 $md: 18px;
 $lg: 25px;
-$tags-mobile: 16px;
-$tags-tablet: 22px;
+$tags-mobile: 18px;
+$tags-tablet: 20px;
 $fs-text: 14px;
 
 $title-mobile: 38px;

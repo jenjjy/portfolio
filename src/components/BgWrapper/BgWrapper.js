@@ -4,17 +4,16 @@ import './index.scss';
 
 const BgWrapper = ({ props, children }) => {
   return (
-    <div className="flex">
-      <div className="bodytags toptag">
+    <div className="bg-wrapper">
+      <div className="bodytags">
         <p className="tags">&lt;body&gt;</p>
         <div className="children" {...props}>
           {children}
         </div>
+
+        <p className="tags">&lt;&#47;body&gt;</p>
       </div>
-      <div>
-        <p className="tags bodytags">&lt;&#47;body&gt;</p>
-        <p className="tags">&lt;&#47;html&gt;</p>
-      </div>
+      <p className="tags">&lt;&#47;html&gt;</p>
     </div>
   );
 };
