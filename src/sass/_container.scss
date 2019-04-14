@@ -30,7 +30,6 @@
 .project-container {
   display: flex;
   @include flex(column, space-around, null);
-  height: 80vh;
   width: 100vw;
 }
 

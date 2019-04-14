@@ -1,74 +1,91 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
-import GridList from '@material-ui/core/GridList';
-import GridListTile from '@material-ui/core/GridListTile';
-import GridListTileBar from '@material-ui/core/GridListTileBar';
-import ListSubheader from '@material-ui/core/ListSubheader';
-import IconButton from '@material-ui/core/IconButton';
+import styles from './index.scss';
+import {
+  GridList,
+  GridListTile,
+  GridListTileBar,
+  IconButton,
+  ListSubheader
+} from '@material-ui/core';
 import InfoIcon from '@material-ui/icons/Info';
-import tileData from './tileData';
+// import tileData from './tileData';
+import github from '../../images/icons/github.png';
+import gh from '../../images/gh.svg';
+
+/** Project Imports  */
+import calm from '../../images/projects/calm.png';
 import msb from '../../images/projects/mainstbrewing.gif';
-import GitHub from '../../images/icons/github';
-
-const styles = theme => ({
-  root: {
-    display: 'flex',
-    flexWrap: 'wrap',
-    justifyContent: 'space-around',
-    overflow: 'hidden',
-    backgroundColor: theme.palette.background.paper
-  },
-  gridList: {
-    width: 500,
-    height: 450
-  },
-  icon: {
-    color: 'rgba(255, 255, 255, 0.54)'
-  }
-});
-
-/**
- * The example data is structured as follows:
- *
- * import image from 'path/to/image.jpg';
- * [etc...]
- *
- * const tileData = [
- *   {
- *     img: image,
- *     title: 'Image',
- *     author: 'author',
- *   },
- *   {
- *     [etc...]
- *   },
- * ];
- */
+import fbGroup from '../../images/projects/FBGroupGiphy.gif';
+import fbOnboard from '../../images/projects/FBOnboardGiphy.gif';
+import R10schedule from '../../images/projects/R10schedule.png';
+import R10session from '../../images/projects/R10session.png';
 
 const tileData = [
-  { img: { msb }, title: 'Main Street Brewing Co.', tech: 'React Native,' }
+  {
+    img: msb,
+    title: 'Main Street Brewing Co.',
+    tech: 'React Native, GraphCool',
+    featured: true
+  },
+  {
+    img: [R10schedule, R10session],
+    title: 'R10',
+    tech: 'React-Native, JavaScript'
+  },
+  {
+    img: fbOnboard,
+    title: 'Food Buddy',
+    tech: 'Meteor, MongoDB, React, Material UI, Goole Maps API'
+  },
+  {
+    img: fbGroup,
+    title: 'BoomCity',
+    tech: 'React, Redux, GraphQL, Apollo-Client,Material UI'
+  },
+  {
+    img: calm,
+    title: 'calmversation',
+    tech: 'JavaScript, jQuery, PHP, WordPress',
+    link: 'https://calmversation.org/'
+  },
+  {
+    img: fbOnboard,
+    title: 'Inhabitent',
+    tech: 'JavaScript, jQuery, PHP, SASS, WordPress'
+  },
+  { img: fbOnboard, title: 'Tennis Pong', tech: 'Object-Oriented Programming' }
 ];
-function TitlebarGridList(props) {
-  const { classes } = props;
-
+function TitlebarGridList() {
   return (
-    <div className={classes.root}>
-      <GridList cellHeight={180} className={classes.gridList}>
-        <GridListTile key="Subheader" cols={2} style={{ height: 'auto' }}>
-          <ListSubheader component="div">December</ListSubheader>
-        </GridListTile>
+    <div className="project-root">
+      <GridList cellHeight={260} spacing={5} className="grid-list">
         {tileData.map(tile => (
-          <GridListTile key={tile.img}>
+          <GridListTile
+            key={tile.img}
+            cols={tile.featured ? 2 : 1}
+            rows={tile.featured ? 2 : 1}
+          >
             <img src={tile.img} alt={tile.title} />
             <GridListTileBar
               title={tile.title}
-              subtitle={<span className="techList">{tile.tech}</span>}
+              // titlePosition="top"
+              subtitle={
+                <span className="subtitle">Tech Used: {tile.tech}</span>
+              }
               actionIcon={
-                <IconButton className={classes.icon}>
-                  <Img src={GitHub} alt="See the code on Github" />
+                <IconButton className="icon">
+                  <img
+                    src={gh}
+                    alt="See the code on Github"
+                    width="40"
+                    color="white"
+                  />
                 </IconButton>
               }
+              // actionPosition="left"
+              className="titlebar"
             />
           </GridListTile>
         ))}
@@ -77,8 +94,6 @@ function TitlebarGridList(props) {
   );
 }
 
-TitlebarGridList.propTypes = {
-  classes: PropTypes.object.isRequired
-};
+TitlebarGridList.propTypes = {};
 
 export default withStyles(styles)(TitlebarGridList);

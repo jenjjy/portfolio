@@ -1,0 +1,31 @@
+@import '../../sass/_variables';
+@import '../../sass/mixins';
+
+.project-root {
+  display: flex;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  overflow: hidden;
+
+  @include desktop {
+    margin: auto;
+    width: 85%;
+  }
+  // backgroundColor: theme.palette.background.paper
+}
+
+.grid-list {
+  flex-grow: 1;
+  margin: 1rem 0;
+  width: 100%;
+  height: 750px;
+}
+
+.icon {
+  color: '#fff';
+}
+
+.titlebar {
+}

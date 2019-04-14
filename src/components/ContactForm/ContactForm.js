@@ -5,7 +5,7 @@ import { Button, TextField } from '@material-ui/core';
 import { Send } from '@material-ui/icons';
 import styles from './index.scss';
 
-class OutlinedTextFields extends React.Component {
+class ContactForm extends React.Component {
   state = {};
 
   handleChange = name => event => {
@@ -82,8 +82,6 @@ class OutlinedTextFields extends React.Component {
   }
 }
 
-OutlinedTextFields.propTypes = {
-  classes: PropTypes.object.isRequired
-};
+ContactForm.propTypes = {};
 
-export default withStyles(styles)(OutlinedTextFields);
+export default withStyles(styles)(ContactForm);
