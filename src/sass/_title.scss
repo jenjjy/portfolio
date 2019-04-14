@@ -1,11 +1,10 @@
 .home-title {
   color: $color-white;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif,
-    Helvetica, sans-serif;
+  font-family: $font-heading;
   font-size: 47px;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 1px;
-  line-height: 42px;
+  line-height: 1;
   margin: 0;
   &:hover {
     color: $brand-main;
@@ -13,9 +12,9 @@
 
   @include tablet {
     font-size: $title-tablet;
-    font-weight: 500;
+    // font-weight: 500;
     letter-spacing: 2px;
-    line-height: 50px;
+    line-height: 1;
   }
   @include desktop {
     font-size: $title-desktop;
@@ -25,14 +24,19 @@
 
 .title {
   color: $brand-main;
+  font-family: $font-heading;
   font-size: 47px;
+  font-weight: 600;
+  letter-spacing: 1px;
   margin: 0;
 
   @include tablet {
     font-size: $title-tablet;
+    font-weight: 600;
   }
   @include desktop {
-    width: 330px;
+    line-height: 1.1;
+    width: 300px;
   }
 }
 

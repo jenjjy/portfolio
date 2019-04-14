@@ -15,7 +15,7 @@ class About extends Component {
       <div className="container">
         <BgWrapper>
           <TitleWrapper>
-            <h1 className="title">About me</h1>
+            <h1 className="title">About Me</h1>
           </TitleWrapper>
           <p className="text">
             I love learning about how something works and functions. My
@@ -36,8 +36,8 @@ class About extends Component {
           <p className="text">
             As I dive deeper into the world of development and technology, my
             passion for it grows stronger. It’s challenging, evolving, and it’s
-            the future. They world is dynamic and I want to continue to build
-            something with a team.
+            the future. The tech world ever-changing and I want to work in a
+            team to create something amazing together.
           </p>
           <p className="text">
             If you love discussing new ideas or are in tech, let’s connect! I’d

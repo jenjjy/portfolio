@@ -60,6 +60,7 @@ class OutlinedTextFields extends React.Component {
             multiline
             rows="5"
             className="textField full-width"
+            inputMultiline="white"
             margin="normal"
             variant="outlined"
             color="primary"

@@ -16,7 +16,7 @@ class Contact extends Component {
       <div className="container">
         <BgWrapper>
           <TitleWrapper>
-            <h1 className="title">Contact</h1>
+            <h1 className="title">Contact Me</h1>
           </TitleWrapper>
           <ContactForm />
         </BgWrapper>

@@ -1,10 +1,13 @@
-.form-container {
-}
-
 .form {
   display: flex;
   @include flex(column, null, null);
-  max-width: 80%;
+  max-width: 85%;
+
+  input {
+    background: $textfield-bg;
+    border-radius: 5px;
+    color: $color-grey;
+  }
 
   .btn-wrapper {
     align-self: flex-end;
@@ -21,13 +24,9 @@
   }
 }
 
-.full-width {
-  // width: 100vw;
-}
-
 .textField {
   color: $brand-main;
-  background: $brand-main;
+  // background: $brand-main;
 }
 
 .send-btn {
