@@ -1,29 +1,13 @@
 import React, { Component } from 'react';
-import {
-  Dialog,
-  DialogContent,
-  DialogContentText,
-  DialogTitle,
-  withStyles
-} from '@material-ui/core';
+import { withStyles } from '@material-ui/core';
 import './index.scss';
 import BgWrapper from '../../components/BgWrapper';
 import TitleWrapper from '../../components/TitleWrapper';
 import PieGraph from '../../components/Graphs/PieGraph';
 import SmlPieGraph from '../../components/Graphs/SmlPieGraph';
-import BarChart from '../../components/Graphs/BarChart';
-// import BarGraph from '../../components/Graphs/BarGraph';
 import styles from './index.scss';
 
 class Skills extends Component {
-  constructor(props) {
-    super(props);
-    this.state = { scroll: 'paper' };
-  }
-  handleClickOpen = scroll => () => {
-    this.setState({ scroll });
-  };
-
   render() {
     return (
       <section className="container" id="skills">

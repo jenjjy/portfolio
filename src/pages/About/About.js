@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core';
 import './index.scss';
 import BgWrapper from '../../components/BgWrapper';
@@ -7,10 +6,6 @@ import TitleWrapper from '../../components/TitleWrapper';
 import profile from '../../images/profile.png';
 
 class About extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <div className="container">
@@ -19,12 +14,7 @@ class About extends Component {
             <h1 className="title">About Me</h1>
           </TitleWrapper>
           <section className="about-content-wrapper">
-            <img
-              src={profile}
-              className="dp"
-              height="200"
-              alt="Image of Jennifer Yiu"
-            />
+            <img src={profile} className="dp" height="200" alt="Jennifer Yiu" />
 
             <div className="text-wrapper">
               <p className="text">
@@ -61,7 +51,5 @@ class About extends Component {
     );
   }
 }
-
-About.propTypes = {};
 
 export default About;

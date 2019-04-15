@@ -13,6 +13,7 @@
     "react-animated-text": "^0.1.4",
     "react-dom": "^16.8.6",
     "react-final-form": "^4.1.0",
+    "react-image-gallery": "^0.8.16",
     "react-router-dom": "^5.0.0",
     "react-scripts": "2.1.8",
     "react-spring": "^8.0.19",
