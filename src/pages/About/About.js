@@ -3,7 +3,8 @@ import { withStyles } from '@material-ui/core';
 import './index.scss';
 import BgWrapper from '../../components/BgWrapper';
 import TitleWrapper from '../../components/TitleWrapper';
-import profile from '../../images/profile.png';
+import profile from '../../images/redbg-small.jpeg';
+import profileMobile from '../../images/redbg-mobile.png';
 
 class About extends Component {
   render() {
@@ -14,7 +15,18 @@ class About extends Component {
             <h1 className="title">About Me</h1>
           </TitleWrapper>
           <section className="about-content-wrapper">
-            <img src={profile} className="dp" height="200" alt="Jennifer Yiu" />
+            <img
+              src={profile}
+              className="profile"
+              width="300"
+              alt="Jennifer Yiu"
+            />
+            <img
+              src={profileMobile}
+              className="profile-mobile"
+              width="300"
+              alt="Jennifer Yiu"
+            />
 
             <div className="text-wrapper">
               <p className="text">

@@ -4,27 +4,42 @@
 
 .about-content-wrapper {
   display: flex;
-  @include flex();
+  @include flex(column-reverse);
+  padding-right: 2rem;
 
   @include tablet {
-    @include flex(row, space-evenly);
+    @include flex(row, space-between, center);
   }
 }
 
-.dp {
+.profile {
+  display: none;
+  @include tablet {
+    display: block;
+    padding-right: 1rem;
+  }
+}
+.profile-mobile {
+  padding: 2rem 0;
+
+  @include tablet {
+    display: none;
+  }
 }
 
 .text-wrapper {
-  align-self: flex-end;
-  width: 100%;
+  @include tablet {
+    padding-left: 1rem;
+  }
 }
 
 .text {
   color: $color-white;
   font-family: $font-main;
-  font-size: $fs-text;
-  width: 90%;
+  font-size: $text-mob;
+  line-height: 1.5;
 
   @include tablet {
+    font-size: $text-tab;
   }
 }

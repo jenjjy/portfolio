@@ -13,8 +13,8 @@ export default createMuiTheme({
       light: '#fff'
     },
 
-    bg: {
-      main: '#000'
+    background: {
+      main: '#252627'
     }
   },
 

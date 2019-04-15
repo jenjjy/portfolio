@@ -47,7 +47,6 @@ function TitlebarGridList() {
         ))}
       </GridList>
       <p className="copyright">&copy; Jennifer Yiu 2019</p>
-      <p className="" />
     </div>
   );
 }
