@@ -1,27 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "aa1dc5e78312d4c48fd9",
-    "url": "/portfolio/static/css/main.85cd4502.chunk.css"
+    "revision": "2d651aff7403cdc27775",
+    "url": "/portfolio/static/css/main.c4bb74fa.chunk.css"
   },
   {
-    "revision": "aa1dc5e78312d4c48fd9",
-    "url": "/portfolio/static/js/main.14154769.chunk.js"
+    "revision": "2d651aff7403cdc27775",
+    "url": "/portfolio/static/js/main.078215fc.chunk.js"
   },
   {
     "revision": "53ebc025fca807d4dbea",
     "url": "/portfolio/static/js/runtime~main.f308c8e6.js"
   },
   {
-    "revision": "4f938e24edde22a3ee19",
-    "url": "/portfolio/static/js/2.95c94ab4.chunk.js"
-  },
-  {
-    "revision": "e768df189c2d57ce5963d1143190c59c",
-    "url": "/portfolio/static/media/smallerj.e768df18.png"
-  },
-  {
-    "revision": "292bd428d5409f312301274e1e31dfcf",
-    "url": "/portfolio/static/media/smallj.292bd428.png"
+    "revision": "b26170c804658030a353",
+    "url": "/portfolio/static/js/2.a3358914.chunk.js"
   },
   {
     "revision": "26b690e5feb7abb101ef535515730618",
@@ -30,14 +22,6 @@ self.__precacheManifest = [
   {
     "revision": "f119b528de3b5bf88b89953a3d9065da",
     "url": "/portfolio/static/media/BoomShare.f119b528.png"
-  },
-  {
-    "revision": "1c4e1e493edb73b44ce79b6d3eec3a23",
-    "url": "/portfolio/static/media/redbg-small.1c4e1e49.jpeg"
-  },
-  {
-    "revision": "4baebcea8da4490d74d9423b0a77d9d7",
-    "url": "/portfolio/static/media/redbg-mobile.4baebcea.png"
   },
   {
     "revision": "e3b108bb14cff42ffdda13d821267caf",
@@ -68,7 +52,15 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/gh.87da8261.svg"
   },
   {
-    "revision": "4ca7d6c86aaa8702b30ecd90cf8a0289",
+    "revision": "1c4e1e493edb73b44ce79b6d3eec3a23",
+    "url": "/portfolio/static/media/redbg-small.1c4e1e49.jpeg"
+  },
+  {
+    "revision": "4baebcea8da4490d74d9423b0a77d9d7",
+    "url": "/portfolio/static/media/redbg-mobile.4baebcea.png"
+  },
+  {
+    "revision": "c24b358b2e198443a3cd280d099d8581",
     "url": "/portfolio/index.html"
   }
 ];
