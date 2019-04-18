@@ -1,20 +1,21 @@
 // Screen Sizes
+$super-width: 1400px;
 $desktop-width: 950px;
 $tablet-width: 600px;
 
 // colors
 $bg-color: #252627; // #282c34;
 
-$brand-main: #ffc732;
+$color-brand: #ffc732;
 $brand-sec: #fc0852;
-$color-tags: #515152; //#cbc7bf;
-$textfield-bg: #37393b;
+$color-tags: #37393b; //#515152;
+$textfield-bg: #515152;
 
 $color-black: #000;
 $color-grey: #8d8d8d;
 $color-white: #fff;
 
-$btn-border: 1px solid $brand-main;
+$btn-border: 1px solid $color-brand;
 
 // Fonts
 $font-main: 'OpenSans-Light', Helvetica, sans-serif;
@@ -25,15 +26,15 @@ $font-heading: 'Titillium Web', Helvetica, sans-serif;
 
 // Sizes
 $xxs: 8px;
-$xs: 9px;
-$sm: 11px;
-$md: 18px;
-$lg: 25px;
-$tags-mobile: 18px;
-$tags-tablet: 20px;
+$xs: 10px;
+$sm: 12px;
+$md: 16px;
+$lg: 18px;
+$xl: 20px;
+
 $text-mob: 15px;
 $text-tab: 16px;
 
 $title-mobile: 38px;
 $title-tablet: 48px;
-$title-desktop: 53px;
+$title-desktop: 55px;

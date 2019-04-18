@@ -1,0 +1,34 @@
+@import '../../sass/_variables';
+@import '../../sass/_mixins';
+
+.list-container {
+  padding-right: 5%;
+}
+
+.item-container {
+  display: flex;
+  @include flex(row, space-between);
+}
+
+.info-wrapper {
+  // background: rgba(0, 0, 0, 0.5);
+  color: $color-white;
+  padding: 1rem 0;
+  width: 50%;
+}
+
+.description {
+}
+
+.tech {
+}
+.tech-stack {
+  color: $color-brand;
+}
+
+.img-wrapper {
+  align-self: flex-start;
+}
+.project-img {
+  height: 300px;
+}

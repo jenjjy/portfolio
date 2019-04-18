@@ -1,6 +1,5 @@
 import React, { PureComponent } from 'react';
-import { withRouter } from 'react-router-dom';
-import { PieChart, Pie, Sector, Cell } from 'recharts';
+import { PieChart, Pie, Cell } from 'recharts';
 import { skills } from '../Data';
 
 const colors = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042']; // '#7728ff' purple
@@ -58,4 +57,4 @@ class PieGraph extends PureComponent {
   }
 }
 
-export default withRouter(PieGraph);
+export default PieGraph;

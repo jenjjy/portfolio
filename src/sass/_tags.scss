@@ -3,8 +3,7 @@
 .tags {
   color: $color-tags;
   font-family: $font-cursive;
-  font-size: $tags-mobile;
-  font-style: italic;
+  font-size: $xl;
   font-weight: 600;
   letter-spacing: 1px;
   margin: 0;
@@ -18,17 +17,16 @@
   @include flex(column, space-between, null);
   padding-left: 0.5rem;
   height: 100%;
-  width: 100vw;
+  // width: 100vw;
 
   @include tablet {
     padding-left: 1rem;
-    height: 85vh;
   }
 }
 .bodytags {
   display: flex;
   @include flex(column, space-between, null);
-  height: 100%;
+  // height: 100%;
   padding-left: 1rem;
 }
 
@@ -39,7 +37,7 @@
   }
 
   @include desktop {
-    margin-top: -5%;
+    // padding: 1rem 0;
   }
 }
 .children-home {

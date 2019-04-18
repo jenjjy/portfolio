@@ -1,38 +1,54 @@
 .home-container {
   display: flex;
-  @include flex(row, space-around, center);
-  background-image: url('../../images/smallerj.png');
+  @include flex(row, flex-start, center);
+  // background-image: url('../../images/smallerj.png');
   background-position: top right;
   background-repeat: no-repeat;
   background-size: 60%;
-
-  height: 90vh;
+  padding: 0 10%;
+  height: 100vh;
 
   @include tablet {
-    background-image: url('../../images/smallj.png');
-    background-position: center right;
-    background-size: 40%;
+    background-size: contain;
+    // margin: auto;
+    // width: 80vw;
+    // background-image: url('../../images/smallj.png');
+    // background-position: center right;
+    // background-size: 40%;
   }
 
   @include desktop {
-    background-size: contain;
   }
 }
 
 .container {
-  margin-top: 1rem;
+  padding-right: 5%;
+  min-height: 100vh;
+  // min-height: 100%;
 
   @include tablet {
-    margin-top: 2rem;
+    // min-height: 700px;
   }
+}
+.about {
+  // height: 100vh;
+}
+.skills {
+  // height: 100vh;
 }
 
 .project-container {
   display: flex;
   @include flex(column, space-around, null);
-  width: 100vw;
+  padding-bottom: 10%;
 }
 
+.contact {
+  display: flex;
+  @include flex(column, center, flex-start);
+  // height: 100vh;
+}
 .form-container {
   width: 100%;
+  // height: 100vh;
 }

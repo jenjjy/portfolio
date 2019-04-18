@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
 import Button from '@material-ui/core/Button';
@@ -13,7 +12,7 @@ import {
   Mail,
   Menu
 } from '@material-ui/icons';
-import { NavLink, withRouter } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 class Navbar extends Component {
   state = {
@@ -43,7 +42,7 @@ class Navbar extends Component {
 
     const menubar = (
       <div className="navlinks">
-        <NavLink to="/" exact className="links" activeClassName="active">
+        <NavLink to="/about" className="links" activeClassName="active">
           <Home />
           Home
         </NavLink>
@@ -68,13 +67,16 @@ class Navbar extends Component {
 
     return (
       <div className="navbar">
+        {/* <NavLink to="/" exact className="logo" activeClassName="active">
+          <p className="jy">jy</p>
+        </NavLink> */}
         {width < 600 ? (
           <Button className="menu-btn" onClick={this.toggleDrawer('top', true)}>
             <Menu className="menu" />
           </Button>
         ) : (
           <div className="navlinks">
-            <NavLink to="/" exact className="links" activeClassName="active">
+            <NavLink to="/about" className="links" activeClassName="active">
               <Home />
               Home
             </NavLink>
@@ -112,6 +114,7 @@ class Navbar extends Component {
             {menubar}
           </div>
         </Drawer>
+        {/* <p className="end" /> */}
       </div>
     );
   }

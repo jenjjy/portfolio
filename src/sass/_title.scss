@@ -6,8 +6,9 @@
   letter-spacing: 1px;
   line-height: 1;
   margin: 0;
+
   &:hover {
-    color: $brand-main;
+    color: $color-brand;
   }
 
   @include tablet {
@@ -21,13 +22,25 @@
     line-height: 58px;
   }
 }
+.subheading {
+  color: $color-grey;
+  font-family: $font-main;
+  font-size: $sm;
+  font-weight: 400;
+  letter-spacing: 2px;
+
+  @include tablet {
+    font-size: $md;
+  }
+}
 
 .title {
-  color: $brand-main;
+  color: $color-brand;
   font-family: $font-heading;
   font-size: 42px;
   font-weight: 600;
   letter-spacing: 1px;
+  line-height: 1;
   margin: 0;
 
   @include tablet {
@@ -36,15 +49,8 @@
   }
   @include desktop {
     line-height: 1.1;
-    width: 300px;
   }
 }
-
-.subheading {
-  color: $color-grey;
-  font-family: $font-main;
-  font-size: $sm;
-  font-weight: 400;
-  letter-spacing: 3px;
-  animation: myanim2 1s 1.8s backwards;
+.titlewrapper {
+  padding: 1rem 0;
 }

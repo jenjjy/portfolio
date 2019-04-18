@@ -1,13 +1,18 @@
 import React, { Component } from 'react';
 import './index.scss';
 import GridList from '../../components/GridList';
+import ProjectList from '../../components/ProjectList';
+import TitleWrapper from '../../components/TitleWrapper';
 
 class Projects extends Component {
   render() {
     return (
-      <div className="project-container">
-        <GridList />
-      </div>
+      <section className="project-container" id="projects">
+        <TitleWrapper>
+          <h1 className="title">Projects</h1>
+        </TitleWrapper>
+        <ProjectList />
+      </section>
     );
   }
 }

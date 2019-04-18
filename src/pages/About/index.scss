@@ -5,31 +5,47 @@
 .about-content-wrapper {
   display: flex;
   @include flex(column-reverse);
-  padding-right: 2rem;
 
   @include tablet {
-    @include flex(row, space-between, center);
+    @include flex();
+  }
+
+  @include desktop {
+    @include flex(row, center, center);
   }
 }
 
 .profile {
   display: none;
   @include tablet {
-    display: block;
     padding-right: 1rem;
+  }
+  @include desktop {
+    display: block;
+    max-width: 35%;
   }
 }
 .profile-mobile {
   padding: 2rem 0;
 
   @include tablet {
+    padding: 0;
+  }
+
+  @include desktop {
     display: none;
   }
 }
 
 .text-wrapper {
   @include tablet {
-    padding-left: 1rem;
+    padding: 5%;
+  }
+  @include desktop {
+    // max-width: 60%;
+    // padding-right: 2rem;
+  }
+  @include super {
   }
 }
 
@@ -41,5 +57,9 @@
 
   @include tablet {
     font-size: $text-tab;
+    line-height: 1.6;
+  }
+  @include desktop {
+    // line-height: 1.8;
   }
 }

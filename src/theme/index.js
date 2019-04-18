@@ -6,8 +6,12 @@ export default createMuiTheme({
       main: '#ffc732' //yellow
     },
     secondary: {
-      main: '#fc0852' //pink
+      main: '#8d8d8d'
     },
+    error: {
+      main: '#FF9494'
+    },
+
     text: {
       main: '#515152',
       light: '#fff'

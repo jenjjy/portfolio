@@ -2,25 +2,27 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core';
 import './index.scss';
-import BgWrapper from '../../components/BgWrapper';
 import TitleWrapper from '../../components/TitleWrapper';
 import ContactForm from '../../components/ContactForm';
 
 class Contact extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
-      <div className="container">
-        <BgWrapper>
-          <TitleWrapper>
-            <h1 className="title">Contact Me</h1>
-          </TitleWrapper>
+      <section className="container contact" id="contact">
+        <TitleWrapper>
+          <h1 className="title">Contact Me</h1>
+        </TitleWrapper>
+        <div className="text-wrapper">
+          <p>
+            Looking for someone enthusiastic, has great energy, and a thirst to
+            learn? Then I'm the right candidate for you! Don't see it? Let's
+            arrange to meet in person.
+          </p>
+        </div>
+        <div className="contact-form">
           <ContactForm />
-        </BgWrapper>
-      </div>
+        </div>
+      </section>
     );
   }
 }

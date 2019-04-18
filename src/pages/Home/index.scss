@@ -4,15 +4,13 @@
 @import '../../sass/_container';
 
 /* Title */
-.title-wrapper {
-  max-width: 300px;
-  @include tablet {
-    max-width: 100%;
-  }
-}
 
-.brand {
-  color: $brand-main;
+.reverse {
+  color: $color-brand;
+
+  &:hover {
+    color: $color-white;
+  }
 }
 .J {
   font-family: Arial, Helvetica, sans-serif;
@@ -24,16 +22,16 @@
   align-items: flex-end;
   margin: auto;
 }
-.space {
-  padding-right: $sm;
-}
 
 /** Button */
 .btn-wrapper {
   margin-top: 3rem;
+  font-family: $font-main;
 }
 .contact-btn {
+  font-family: $font-main;
   font-size: $sm;
   font-weight: 300;
   letter-spacing: 1px;
+  text-transform: capitalise;
 }

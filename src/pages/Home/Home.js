@@ -2,9 +2,8 @@ import React, { Component } from 'react';
 import { Redirect } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { Button, IconButton, withStyles } from '@material-ui/core';
-import './index.scss';
-import BgWrapper from '../../components/BgWrapper';
 import styles from './index.scss';
+import { Headshake, Reveal, Slide } from 'react-reveal';
 
 class Home extends Component {
   constructor(props) {
@@ -25,48 +24,38 @@ class Home extends Component {
 
   render() {
     return (
-      <div className="home-container">
-        <BgWrapper>
-          <section>
+      <div className="home-container" id="home">
+        <section>
+          <Slide right cascade>
             <div className="title-wrapper">
-              <p className="tags">&lt;h1&gt;</p>
               <h1 className="home-title">
-                Hello<span className="brand">!</span>
+                Hello<span className="reverse">!</span> I'm
               </h1>
-              <div className="row">
-                <h1 className="home-title space">
-                  <span className="home-title">I'm </span>
-                  <span className="home-title">Jennifer</span>
-                  <span className="home-title">,</span>
-                </h1>
-              </div>
 
               <div className="row">
                 <h1 className="home-title">
-                  <span className="home-title">full-</span>
-                  <span className="home-title">stack </span>
-                  <span className="home-title">developer</span>
-                  <span className="home-title">.</span>
+                  Jennifer <span className="reverse">Yiu</span>,
                 </h1>
-                <p className="tags">&#9;&lt;&#47;h1&gt;</p>
               </div>
-            </div>
-            <h2 className="subheading">
-              Creative / Open-Minded / Problem Solver
-            </h2>
 
-            <div className="btn-wrapper">
-              <Button
-                className="contact-btn"
-                color="primary"
-                href="/contact"
-                variant="outlined"
-              >
-                Contact Me
-              </Button>
+              <h1 className="home-title">unicorn developer.</h1>
             </div>
-          </section>
-        </BgWrapper>
+          </Slide>
+          <h2 className="subheading">
+            Creative / Open-Minded / Problem Solver
+          </h2>
+
+          <div className="btn-wrapper">
+            <Button
+              className="contact-btn"
+              color="primary"
+              variant="outlined"
+              href="#projects"
+            >
+              View my work
+            </Button>
+          </div>
+        </section>
       </div>
     );
   }
