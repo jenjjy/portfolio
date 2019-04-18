@@ -9,7 +9,7 @@ import profileMobile from '../../images/redbg-mobile.png';
 class About extends Component {
   render() {
     return (
-      <div className="container" id="about">
+      <div className="container about" id="about">
         {/* <BgWrapper> */}
         <TitleWrapper>
           <h1 className="title">About Me</h1>

@@ -83,18 +83,17 @@ class Menubar extends Component {
 
     return (
       <div className="menubar">
-        <Button
-          className="menu-btn"
-          onClick={this.toggleDrawer('top', true)}
-          color="primary"
-        >
-          <Slide top>
-            <img
-              className="menu"
-              src="https://img.icons8.com/color/96/000000/jake.png"
-            />
-          </Slide>
-        </Button>
+        <div className="menu-wrapper">
+          <a className="menu-btn" onClick={this.toggleDrawer('top', true)}>
+            <Slide top>
+              <img
+                className="menu-icon"
+                src="https://img.icons8.com/color/96/000000/jake.png"
+              />
+              <p className="menu-text">Menu</p>
+            </Slide>
+          </a>
+        </div>
 
         <Drawer
           anchor="top"

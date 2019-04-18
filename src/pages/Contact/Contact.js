@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { withStyles } from '@material-ui/core';
-import './index.scss';
+import { Button, withStyles } from '@material-ui/core';
+import { Mail, Phone } from '@material-ui/icons';
+import styles from './index.scss';
 import TitleWrapper from '../../components/TitleWrapper';
 import ContactForm from '../../components/ContactForm';
 
@@ -13,14 +14,29 @@ class Contact extends Component {
           <h1 className="title">Contact Me</h1>
         </TitleWrapper>
         <div className="text-wrapper">
-          <p>
-            Looking for someone enthusiastic, has great energy, and a thirst to
-            learn? Then I'm the right candidate for you! Don't see it? Let's
-            arrange to meet in person.
+          <p className="text">
+            Looking for someone with enthusiasm, positive energy, and a can-do
+            attitude? Then I'm the right candidate for you! Don't see it? Why
+            don't we meet in person?
+          </p>
+          <Phone />
+          <Mail />
+          <p className="text">
+            Alternatively, feel free to e-mail me in the contact form below:
           </p>
         </div>
         <div className="contact-form">
           <ContactForm />
+          <div className="btn">
+            <Button
+              className="send-btn"
+              color="primary"
+              href="/contact"
+              variant="outlined"
+            >
+              Send
+            </Button>
+          </div>
         </div>
       </section>
     );
@@ -29,4 +45,4 @@ class Contact extends Component {
 
 Contact.propTypes = {};
 
-export default Contact;
+export default withStyles(styles)(Contact);

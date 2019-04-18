@@ -20,7 +20,7 @@ const styles = theme => ({
   },
 
   cssLabel: {
-    color: theme.palette.secondary.main
+    color: '#37393b'
   },
 
   cssOutlinedInput: {
@@ -35,7 +35,12 @@ const styles = theme => ({
     borderWidth: '1px',
     borderColor: `${theme.palette.secondary.main} !important`
   },
-  input: { color: '#fff' }
+  input: { color: '#fff' },
+
+  btn: {
+    alignSelf: 'flex-end',
+    marginTop: 15
+  }
 });
 
 class ContactForm extends React.Component {
@@ -105,6 +110,7 @@ class ContactForm extends React.Component {
         </div>
 
         <TextField
+          fullWidth={true}
           id="outlined-subject"
           label="Subject"
           className={classes.textField}
@@ -155,18 +161,6 @@ class ContactForm extends React.Component {
             inputMode: 'numeric'
           }}
         />
-
-        <div className="btn-wrapper">
-          <Button
-            className="send-btn"
-            color="primary"
-            href="/contact"
-            variant="outlined"
-          >
-            {/* <Send /> */}
-            Send
-          </Button>
-        </div>
       </form>
     );
   }

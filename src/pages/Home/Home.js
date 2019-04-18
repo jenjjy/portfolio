@@ -1,27 +1,9 @@
 import React, { Component } from 'react';
-import { Redirect } from 'react-router-dom';
-import PropTypes from 'prop-types';
 import { Button, IconButton, withStyles } from '@material-ui/core';
 import styles from './index.scss';
-import { Headshake, Reveal, Slide } from 'react-reveal';
+import { Slide } from 'react-reveal';
 
 class Home extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      redirect: false
-    };
-  }
-
-  setRedirect = () => {
-    this.setState({ redirect: true });
-  };
-  renderRedirect = () => {
-    if (this.state.redirect) {
-      return <Redirect to="/contact" />;
-    }
-  };
-
   render() {
     return (
       <div className="home-container" id="home">
@@ -42,7 +24,7 @@ class Home extends Component {
             </div>
           </Slide>
           <h2 className="subheading">
-            Creative / Open-Minded / Problem Solver
+            Resourceful / Problem Solver / Creative
           </h2>
 
           <div className="btn-wrapper">
