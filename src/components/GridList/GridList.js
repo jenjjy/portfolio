@@ -1,17 +1,13 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import styles from './index.scss';
 import {
   GridList,
   GridListTile,
   GridListTileBar,
-  IconButton,
-  ListSubheader
+  IconButton
 } from '@material-ui/core';
-import InfoIcon from '@material-ui/icons/Info';
 import tileData from './tileData';
-import github from '../../images/icons/github.png';
 import gh from '../../images/gh.svg';
 
 function TitlebarGridList() {
@@ -49,7 +45,5 @@ function TitlebarGridList() {
     </div>
   );
 }
-
-TitlebarGridList.propTypes = {};
 
 export default withStyles(styles)(TitlebarGridList);

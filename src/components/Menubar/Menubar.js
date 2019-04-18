@@ -1,18 +1,16 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import { withStyles } from '@material-ui/core/styles';
-import { Drawer } from '@material-ui/core';
-import Button from '@material-ui/core/Button';
+import { Button, Drawer } from '@material-ui/core';
 import styles from './index.scss';
 import { Slide } from 'react-reveal';
-import {
-  DonutLarge,
-  Extension,
-  Fingerprint,
-  Home,
-  Mail,
-  Menu
-} from '@material-ui/icons';
+// import {
+//   DonutLarge,
+//   Extension,
+//   Fingerprint,
+//   Home,
+//   Mail,
+//   Menu
+// } from '@material-ui/icons';
 
 class Menubar extends Component {
   state = {
@@ -38,26 +36,28 @@ class Menubar extends Component {
   };
 
   render() {
-    const { width } = this.state;
-
     const navbar = (
       <div className="navlinks">
-        <a href="#about" className="links" activeClassName="active">
+        <a href="#home" className="links" activeClassName="active">
           <img
+            alt=""
             clasName="navicons"
             src="https://img.icons8.com/color/96/000000/finn.png"
           />
           Home
         </a>
-        <a href="#about" className="links" activeClassName="active">
+        <a href="#about" className="links about-link" activeClassName="active">
           <img
+            alt=""
             clasName="navicons"
             src="https://img.icons8.com/color/96/000000/marceline.png"
+            height="60"
           />
           About
         </a>
         <a href="#skills" className="links" activeClassName="active">
           <img
+            alt=""
             clasName="navicons"
             src="https://img.icons8.com/color/96/000000/princess-bubblegum.png"
           />
@@ -66,6 +66,7 @@ class Menubar extends Component {
         <a href="#projects" className="links" activeClassName="active">
           {/* <Extension /> */}
           <img
+            alt=""
             clasName="navicons"
             src="https://img.icons8.com/color/96/000000/lumpy-space-princess.png"
           />
@@ -73,6 +74,7 @@ class Menubar extends Component {
         </a>
         <a href="#contact" className="links" activeClassName="active">
           <img
+            alt=""
             clasName="navicons"
             src="https://img.icons8.com/color/96/000000/ice-king.png"
           />
@@ -84,15 +86,18 @@ class Menubar extends Component {
     return (
       <div className="menubar">
         <div className="menu-wrapper">
-          <a className="menu-btn" onClick={this.toggleDrawer('top', true)}>
+          <Button onClick={this.toggleDrawer('top', true)}>
             <Slide top>
-              <img
-                className="menu-icon"
-                src="https://img.icons8.com/color/96/000000/jake.png"
-              />
-              <p className="menu-text">Menu</p>
+              <div className="menu-btn">
+                <img
+                  alt=""
+                  className="menu-icon"
+                  src="https://img.icons8.com/color/96/000000/jake.png"
+                />
+                <p className="menu-text">Menu</p>
+              </div>
             </Slide>
-          </a>
+          </Button>
         </div>
 
         <Drawer

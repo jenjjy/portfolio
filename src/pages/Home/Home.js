@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button, IconButton, withStyles } from '@material-ui/core';
+import { Button, withStyles } from '@material-ui/core';
 import styles from './index.scss';
 import { Slide } from 'react-reveal';
 

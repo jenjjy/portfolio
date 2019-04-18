@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import './index.scss';
 
 const BgWrapper = ({ props, children }) => {
@@ -16,10 +15,6 @@ const BgWrapper = ({ props, children }) => {
       <p className="tags">&lt;&#47;html&gt;</p>
     </div>
   );
-};
-
-BgWrapper.propTypes = {
-  // classes: PropTypes.object.isRequired
 };
 
 export default BgWrapper;

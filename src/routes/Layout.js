@@ -6,7 +6,7 @@ import {
   Redirect
 } from 'react-router-dom';
 import Navbar from '../components/Navbar';
-import Loading from '../components/Loading';
+// import Loading from '../components/Loading';
 import Home from '../pages/Home';
 import About from '../pages/About';
 import Skills from '../pages/Skills';

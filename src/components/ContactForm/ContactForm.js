@@ -1,10 +1,7 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
-import { Button, TextField } from '@material-ui/core';
-import { Send } from '@material-ui/icons';
-// import styles from './index.scss';
-import classNames from 'classnames';
+import { TextField } from '@material-ui/core';
+// import classNames from 'classnames';
 
 const styles = theme => ({
   container: {
@@ -165,7 +162,5 @@ class ContactForm extends React.Component {
     );
   }
 }
-
-ContactForm.propTypes = {};
 
 export default withStyles(styles)(ContactForm);

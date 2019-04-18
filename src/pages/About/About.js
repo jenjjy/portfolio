@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { withStyles } from '@material-ui/core';
-import './index.scss';
-import BgWrapper from '../../components/BgWrapper';
+import styles from './index.scss';
 import TitleWrapper from '../../components/TitleWrapper';
 import profile from '../../images/redbg-small.jpeg';
 import profileMobile from '../../images/redbg-mobile.png';
@@ -10,7 +9,6 @@ class About extends Component {
   render() {
     return (
       <div className="container about" id="about">
-        {/* <BgWrapper> */}
         <TitleWrapper>
           <h1 className="title">About Me</h1>
         </TitleWrapper>
@@ -58,10 +56,9 @@ class About extends Component {
             </p>
           </div>
         </section>
-        {/* </BgWrapper> */}
       </div>
     );
   }
 }
 
-export default About;
+export default withStyles(styles)(About);

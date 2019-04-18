@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { withStyles } from '@material-ui/core';
 import './index.scss';
-import BgWrapper from '../../components/BgWrapper';
 import TitleWrapper from '../../components/TitleWrapper';
 import PieGraph from '../../components/Graphs/PieGraph';
 import SmlPieGraph from '../../components/Graphs/SmlPieGraph';

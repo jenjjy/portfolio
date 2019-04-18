@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 import { Button, withStyles } from '@material-ui/core';
 import { Mail, Phone } from '@material-ui/icons';
 import styles from './index.scss';
@@ -42,7 +41,5 @@ class Contact extends Component {
     );
   }
 }
-
-Contact.propTypes = {};
 
 export default withStyles(styles)(Contact);

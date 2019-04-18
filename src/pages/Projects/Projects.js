@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './index.scss';
-import GridList from '../../components/GridList';
 import ProjectList from '../../components/ProjectList';
 import TitleWrapper from '../../components/TitleWrapper';
 
