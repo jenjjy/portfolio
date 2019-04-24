@@ -12,6 +12,8 @@ import { Slide } from 'react-reveal';
 //   Menu
 // } from '@material-ui/icons';
 
+import { Link, Events, animateScroll as scroll, scroller } from 'react-scroll';
+
 class Menubar extends Component {
   state = {
     top: false,
@@ -22,6 +24,7 @@ class Menubar extends Component {
     this.updateWindowDimensions();
     window.addEventListener('resize', this.updateWindowDimensions);
   }
+
   componentWillUnmount() {
     window.removeEventListener('resize', this.updateWindowDimensions);
   }
@@ -38,15 +41,29 @@ class Menubar extends Component {
   render() {
     const navbar = (
       <div className="navlinks">
-        <a href="#home" className="links" activeClassName="active">
+        <Link
+          activeClass="active"
+          className="links"
+          to="home"
+          spy={true}
+          smooth={true}
+          duration={500}
+        >
           <img
             alt=""
             clasName="navicons"
             src="https://img.icons8.com/color/96/000000/finn.png"
           />
           Home
-        </a>
-        <a href="#about" className="links about-link" activeClassName="active">
+        </Link>
+        <Link
+          to="about"
+          className="links about-link"
+          activeClass="active"
+          spy={true}
+          smooth={true}
+          duration={500}
+        >
           <img
             alt=""
             clasName="navicons"
@@ -54,16 +71,30 @@ class Menubar extends Component {
             height="60"
           />
           About
-        </a>
-        <a href="#skills" className="links" activeClassName="active">
+        </Link>
+        <Link
+          to="skills"
+          className="links"
+          activeClass="active"
+          spy={true}
+          smooth={true}
+          duration={500}
+        >
           <img
             alt=""
             clasName="navicons"
             src="https://img.icons8.com/color/96/000000/princess-bubblegum.png"
           />
           skills
-        </a>
-        <a href="#projects" className="links" activeClassName="active">
+        </Link>
+        <Link
+          to="projects"
+          className="links"
+          activeClass="active"
+          spy={true}
+          smooth={true}
+          duration={500}
+        >
           {/* <Extension /> */}
           <img
             alt=""
@@ -71,22 +102,32 @@ class Menubar extends Component {
             src="https://img.icons8.com/color/96/000000/lumpy-space-princess.png"
           />
           projects
-        </a>
-        <a href="#contact" className="links" activeClassName="active">
+        </Link>
+        <Link
+          to="contact"
+          className="links"
+          activeClass="active"
+          spy={true}
+          smooth={true}
+          duration={500}
+        >
           <img
             alt=""
             clasName="navicons"
             src="https://img.icons8.com/color/96/000000/ice-king.png"
           />
           contact
-        </a>
+        </Link>
       </div>
     );
 
     return (
       <div className="menubar">
         <div className="menu-wrapper">
-          <Button onClick={this.toggleDrawer('top', true)}>
+          <Button
+            className="button-menu"
+            onClick={this.toggleDrawer('top', true)}
+          >
             <Slide top>
               <div className="menu-btn">
                 <img
