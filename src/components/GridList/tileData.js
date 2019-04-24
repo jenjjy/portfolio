@@ -34,16 +34,6 @@ export const tileData = [
     title: 'calmversation',
     tech: 'JavaScript, jQuery, PHP, WordPress',
     link: 'https://calmversation.org/'
-  },
-  {
-    img: [BoomItems],
-    title: 'Inhabitent',
-    tech: 'JavaScript, jQuery, PHP, SASS, WordPress'
-  },
-  {
-    img: [BoomShare],
-    title: 'Tennis Pong',
-    tech: 'Object-Oriented Programming'
   }
 ];
 

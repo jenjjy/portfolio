@@ -2,7 +2,7 @@ import React, { PureComponent } from 'react';
 import { PieChart, Pie, Cell } from 'recharts';
 import { skills } from '../Data';
 
-const colors = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042']; // '#7728ff' purple
+const colors = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', '#866ec7'];
 const RADIAN = Math.PI / 180;
 
 const renderCustomizedLabel = ({
@@ -35,24 +35,68 @@ const renderCustomizedLabel = ({
 class PieGraph extends PureComponent {
   static jsfiddleUrl = 'https://jsfiddle.net/alidingling/c9pL8k61/';
 
+  constructor(props) {
+    super(props);
+    this.state = { width: 0 };
+  }
+
+  componentDidMount() {
+    this.updateWindowDimensions();
+    window.addEventListener('resize', this.updateWindowDimensions);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.updateWindowDimensions);
+  }
+  updateWindowDimensions = () => {
+    this.setState({ width: window.innerWidth });
+  };
+
   render() {
     return (
-      <PieChart width={500} height={440}>
-        <Pie
-          data={skills}
-          cx={220}
-          cy={230}
-          labelLine={true}
-          label={renderCustomizedLabel}
-          outerRadius={160}
-          fill="#fff"
-          dataKey="value"
-        >
-          {skills.map((entry, index) => (
-            <Cell key={`cell-${index}`} fill={colors[index % colors.length]} />
-          ))}
-        </Pie>
-      </PieChart>
+      <div>
+        {this.state.width > 500 ? (
+          <PieChart width={600} height={600}>
+            <Pie
+              data={skills}
+              cx={280}
+              cy={280}
+              labelLine={true}
+              label={renderCustomizedLabel}
+              outerRadius={200}
+              fill="#fff"
+              dataKey="value"
+            >
+              {skills.map((entry, index) => (
+                <Cell
+                  key={`cell-${index}`}
+                  fill={colors[index % colors.length]}
+                />
+              ))}
+            </Pie>
+          </PieChart>
+        ) : (
+          <PieChart width={360} height={360} className="pichart">
+            <Pie
+              data={skills}
+              cx={170}
+              cy={200}
+              labelLine={true}
+              label={renderCustomizedLabel}
+              outerRadius={125}
+              fill="#8884d8"
+              dataKey="value"
+            >
+              {skills.map((entry, index) => (
+                <Cell
+                  key={`cell-${index}`}
+                  fill={colors[index % colors.length]}
+                />
+              ))}
+            </Pie>
+          </PieChart>
+        )}
+      </div>
     );
   }
 }

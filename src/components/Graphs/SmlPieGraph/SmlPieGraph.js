@@ -2,7 +2,7 @@ import React, { PureComponent } from 'react';
 import { PieChart, Pie, Cell } from 'recharts';
 import { skills } from '../Data';
 
-const colors = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042']; // '#7728ff' purple
+const colors = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', '#7728ff']; // '#7728ff' purple
 const RADIAN = Math.PI / 180;
 
 const renderCustomizedLabel = ({
@@ -36,14 +36,14 @@ class SmlPieGraph extends PureComponent {
 
   render() {
     return (
-      <PieChart width={320} height={350} className="pichart">
+      <PieChart width={360} height={360} className="pichart">
         <Pie
           data={skills}
-          cx={150}
-          cy={160}
+          cx={170}
+          cy={200}
           labelLine={true}
           label={renderCustomizedLabel}
-          outerRadius={110}
+          outerRadius={125}
           fill="#8884d8"
           dataKey="value"
         >

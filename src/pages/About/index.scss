@@ -51,6 +51,7 @@
 
   @include tablet {
     font-size: $text-tab;
+    font-weight: 500;
     line-height: 1.6;
   }
   @include desktop {

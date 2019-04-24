@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
+import styles from './index.scss';
 import { withStyles } from '@material-ui/core';
-import './index.scss';
 import TitleWrapper from '../../components/TitleWrapper';
 import PieGraph from '../../components/Graphs/PieGraph';
-import SmlPieGraph from '../../components/Graphs/SmlPieGraph';
-import styles from './index.scss';
 
 class Skills extends Component {
   render() {
@@ -15,10 +13,8 @@ class Skills extends Component {
         </TitleWrapper>
         <article className="content-wrapper">
           <div className="PieGraph">
-            <PieGraph />
+            <PieGraph />`
           </div>
-
-          <div className="skills-mobile">{/* <SmlPieGraph /> */}</div>
         </article>
       </section>
     );

@@ -128,7 +128,7 @@ class Menubar extends Component {
             className="button-menu"
             onClick={this.toggleDrawer('top', true)}
           >
-            <Slide top>
+            <Slide left>
               <div className="menu-btn">
                 <img
                   alt=""

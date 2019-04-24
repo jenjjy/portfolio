@@ -7,14 +7,28 @@
 
 .item-container {
   display: flex;
-  @include flex(row, space-between);
+  @include flex();
+  padding-bottom: 5%;
+
+  @include desktop {
+    @include flex(row, space-between, flex-start);
+  }
 }
 
 .info-wrapper {
   // background: rgba(0, 0, 0, 0.5);
   color: $color-white;
-  padding: 1rem 0;
-  width: 50%;
+  padding-bottom: 1rem;
+  @include desktop {
+    width: 50%;
+  }
+}
+
+.project-title {
+  margin: 0;
+
+  @include desktop {
+  }
 }
 
 .description {
@@ -30,5 +44,9 @@
   align-self: flex-start;
 }
 .project-img {
-  height: 300px;
+  height: auto;
+  width: 400px;
+}
+.imgArr {
+  display: flex;
 }

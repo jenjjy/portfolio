@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-scroll';
 import { Button, withStyles } from '@material-ui/core';
 import styles from './index.scss';
 import { Slide } from 'react-reveal';
@@ -9,33 +10,52 @@ class Home extends Component {
       <div className="home-container" id="home">
         <section>
           <Slide right cascade>
-            <div className="title-wrapper">
-              <h1 className="home-title">
-                Hello<span className="reverse">!</span> I'm
-              </h1>
-
-              <div className="row">
+            <Link
+              to="about"
+              // className="links"
+              activeClass="active"
+              spy={true}
+              smooth={true}
+              duration={500}
+            >
+              <div className="title-wrapper">
                 <h1 className="home-title">
-                  Jennifer <span className="reverse">Yiu</span>,
+                  Hello<span className="reverse">!</span> I'm
                 </h1>
-              </div>
 
-              <h1 className="home-title">unicorn developer.</h1>
-            </div>
+                <div className="row">
+                  <h1 className="home-title">
+                    Jennifer <span className="reverse">Yiu</span>,
+                  </h1>
+                </div>
+
+                <h1 className="home-title">unicorn developer.</h1>
+              </div>
+            </Link>
           </Slide>
           <h2 className="subheading">
-            Resourceful / Problem Solver / Creative
+            Dynamic / Talented / Passionate
+            {/* Resourceful / Problem Solver / Creative */}
           </h2>
 
           <div className="btn-wrapper">
-            <Button
+            {/* <Button
               className="contact-btn"
               color="primary"
               variant="outlined"
               href="#projects"
+            > */}
+            <Link
+              to="projects"
+              className="contact-btn"
+              activeClass="active"
+              spy={true}
+              smooth={true}
+              duration={500}
             >
               View my work
-            </Button>
+            </Link>
+            {/* </Button> */}
           </div>
         </section>
       </div>

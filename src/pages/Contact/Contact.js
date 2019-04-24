@@ -18,8 +18,14 @@ class Contact extends Component {
             attitude? Then I'm the right candidate for you! Don't see it? Why
             don't we meet in person?
           </p>
-          <Phone />
-          <Mail />
+          <div className="icon-container">
+            <div className="icon">
+              <Phone className="icon" /> 604-780-6231
+            </div>
+            <a className="icon" href={'mailto:' + 'jen.yiu.90@gmail.com'}>
+              <Mail className="icon" /> jen.yiu.90@gmail.com
+            </a>
+          </div>
           <p className="text">
             Alternatively, feel free to e-mail me in the contact form below:
           </p>

@@ -11,7 +11,7 @@ function TitlebarGridList() {
       {tileData.map(tile => (
         <div key={tile.title} className="item-container">
           <div className="info-wrapper">
-            <h2>{tile.title}</h2>
+            <h2 className="project-title">{tile.title}</h2>
             <p className="description">{tile.description}</p>
             <p className="tech">
               <span clasName="tech-stack">Tech Stack: </span>
@@ -19,7 +19,20 @@ function TitlebarGridList() {
             </p>
           </div>
           <div clasName="img-wrapper">
-            <img src={tile.img[0]} alt={tile.title} className="project-img" />
+            {tile.img.length === 1 ? (
+              <img src={tile.img[0]} alt={tile.title} className="project-img" />
+            ) : (
+              tile.img.map(t => (
+                <div className="imgArr">
+                  <img
+                    key={t.img}
+                    src={t.img}
+                    alt={tile.title}
+                    className="project-img"
+                  />
+                </div>
+              ))
+            )}
           </div>
         </div>
       ))}

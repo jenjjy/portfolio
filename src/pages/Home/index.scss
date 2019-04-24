@@ -25,13 +25,32 @@
 
 /** Button */
 .btn-wrapper {
-  margin-top: 3rem;
+  margin-top: 4rem;
   font-family: $font-main;
+
+  @include tablet {
+    margin-top: 5rem;
+  }
 }
 .contact-btn {
+  border: $btn-border;
+  border-radius: 3px;
+  color: $color-brand;
   font-family: $font-main;
-  font-size: $sm;
-  font-weight: 300;
+  font-size: $xs;
+  font-weight: 550;
+  padding: 8px 12px;
   letter-spacing: 1px;
-  text-transform: capitalise;
+  text-transform: uppercase;
+
+  &:hover {
+    background: $color-brand;
+    color: $color-tags;
+    // font-weight: 600;
+  }
+
+  @include tablet {
+    font-size: $sm;
+    font-weight: 600;
+  }
 }

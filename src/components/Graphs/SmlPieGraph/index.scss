@@ -1,11 +1,2 @@
 @import '../../sass/_variables';
 @import '../../sass/mixins';
-
-.piechart {
-  display: flex;
-  @include flex();
-}
-
-.labels {
-  font-size: $sm;
-}
