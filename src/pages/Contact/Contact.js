@@ -4,6 +4,9 @@ import { Mail, Phone } from '@material-ui/icons';
 import styles from './index.scss';
 import TitleWrapper from '../../components/TitleWrapper';
 import ContactForm from '../../components/ContactForm';
+import vietnam from '../../images/vietnam-motorbike.jpg';
+import mural from '../../images/bangkok-mural.jpg';
+import fluff from '../../images/nicomos-lick.jpg';
 
 class Contact extends Component {
   render() {
@@ -12,25 +15,46 @@ class Contact extends Component {
         <TitleWrapper>
           <h1 className="title">Contact Me</h1>
         </TitleWrapper>
-        <div className="text-wrapper">
-          <p className="text">
-            Looking for someone with enthusiasm, positive energy, and a can-do
-            attitude? Then I'm the right candidate for you! Don't see it? Why
-            don't we meet in person?
-          </p>
-          <div className="icon-container">
-            <div className="icon">
-              <Phone className="icon" /> 604-780-6231
+        <div className="info-wrapper">
+          <div className="text-wrapper">
+            <p className="text">
+              Looking for someone with enthusiasm, positive energy, and a can-do
+              attitude? Then I'm the right candidate for you! Don't see it? Why
+              don't we meet in person?
+            </p>
+            <div className="icon-container">
+              <div className="icon">
+                <Phone className="icon" /> 604-780-6231
+              </div>
+              <a className="icon" href={'mailto:' + 'jen.yiu.90@gmail.com'}>
+                <Mail className="icon" /> jen.yiu.90@gmail.com
+              </a>
             </div>
-            <a className="icon" href={'mailto:' + 'jen.yiu.90@gmail.com'}>
-              <Mail className="icon" /> jen.yiu.90@gmail.com
-            </a>
           </div>
-          <p className="text">
+
+          <div classNmae="contact-images">
+            <img
+              src={mural}
+              className="contact-img"
+              alt="Jennifer painting a mural in Bangkok"
+            />
+
+            <img
+              src={fluff}
+              className="contact-img"
+              alt="Jennifer loves dogs"
+            />
+
+            <img
+              src={vietnam}
+              className="contact-img"
+              alt="Jennifer on her motorbike trip around Northern Vietnam"
+            />
+          </div>
+          {/* <p className="text">
             Alternatively, feel free to e-mail me in the contact form below:
-          </p>
-        </div>
-        <div className="contact-form">
+          </p> */}
+          {/* <div className="contact-form">
           <ContactForm />
           <div className="btn">
             <Button
@@ -42,6 +66,7 @@ class Contact extends Component {
               Send
             </Button>
           </div>
+        </div> */}
         </div>
       </section>
     );

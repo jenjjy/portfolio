@@ -140,7 +140,7 @@ class ContactForm extends React.Component {
           className={classes.textField}
           value={this.state.name}
           onChange={this.handleChange('message')}
-          inputMultiline="white"
+          // inputMultiline="white"
           margin="normal"
           variant="outlined"
           InputLabelProps={{

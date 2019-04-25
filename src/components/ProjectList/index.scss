@@ -25,6 +25,7 @@
 }
 
 .project-title {
+  color: $color-brand;
   margin: 0;
 
   @include desktop {
@@ -35,9 +36,10 @@
 }
 
 .tech {
+  color: $color-grey;
 }
 .tech-stack {
-  color: $color-brand;
+  // color: $color-brand;
 }
 
 .img-wrapper {

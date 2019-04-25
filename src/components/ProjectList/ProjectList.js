@@ -1,11 +1,15 @@
 import React from 'react';
-import { withStyles } from '@material-ui/core/styles';
+import { GridList, GridListTile, withStyles } from '@material-ui/core/styles';
 import styles from './index.scss';
 import { IconButton } from '@material-ui/core';
 import tileData from './tileData';
 import gh from '../../images/gh.svg';
 
 function TitlebarGridList() {
+  for (let i = 0; i < tileData.length; i++) {
+    tileData.map(tile => tile.img[i]);
+  }
+
   return (
     <div className="list-container">
       {tileData.map(tile => (
@@ -14,25 +18,20 @@ function TitlebarGridList() {
             <h2 className="project-title">{tile.title}</h2>
             <p className="description">{tile.description}</p>
             <p className="tech">
-              <span clasName="tech-stack">Tech Stack: </span>
+              {/* <span className="tech-stack">Tech Stack: </span> */}
               {tile.tech}
             </p>
           </div>
-          <div clasName="img-wrapper">
-            {tile.img.length === 1 ? (
-              <img src={tile.img[0]} alt={tile.title} className="project-img" />
-            ) : (
-              tile.img.map(t => (
-                <div className="imgArr">
-                  <img
-                    key={t.img}
-                    src={t.img}
-                    alt={tile.title}
-                    className="project-img"
-                  />
-                </div>
-              ))
-            )}
+
+          <div className="img-wrapper">
+            {/* <img
+              src={tile.img.map(i => (
+                <img src={i} alt="" />
+              ))}
+              alt={tile.title}
+              className="project-img"
+            /> */}
+            <img src={tile.img[0]} alt={tile.title} className="project-img" />
           </div>
         </div>
       ))}

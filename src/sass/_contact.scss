@@ -2,9 +2,13 @@
   display: flex;
   @include flex(column, center, flex-start);
 
+  .info-wrapper {
+    @include flex();
+  }
   .text-wrapper {
     padding: 0;
-    width: 80%;
+    padding-bottom: 5%;
+    max-width: 85%;
   }
 }
 
@@ -72,4 +76,15 @@
 
   width: 105px;
   align-self: flex-end;
+}
+
+.contact-images {
+  display: flex;
+  @include flex(row, space-between, center);
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.contact-img {
+  max-height: 200px;
 }
