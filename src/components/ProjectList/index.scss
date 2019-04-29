@@ -9,6 +9,10 @@
     margin: 2rem;
     font-size: 16px;
   }
+
+  @include desktop {
+    margin: 0;
+  }
 }
 
 .item-container {
@@ -26,8 +30,7 @@
     display: flex;
     @include flex();
 
-    padding: 1rem;
-    padding-bottom: 0;
+    padding: 0 1rem;
 
     @include desktop {
       @include flex(column, center, flex-start);
@@ -35,7 +38,6 @@
       padding-right: 3rem;
 
       width: 50%;
-      // max-width: 400px;
     }
   }
 
@@ -59,7 +61,8 @@
  * Images 
  */
 .img-wrapper {
-  align-self: center;
+  display: flex;
+  @include flex();
   width: 100%;
 
   @include desktop {
@@ -67,11 +70,15 @@
   }
 }
 .project-img {
-  margin: 5% 0;
   height: auto;
   width: 100vw;
 
   @include tablet {
+    width: 90vw;
+  }
+
+  @include desktop {
+    margin: 1.5rem 0 1rem;
     width: 400px;
   }
 }

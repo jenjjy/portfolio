@@ -21,7 +21,7 @@
   // min-height: 100%;
 
   @include tablet {
-    // min-height: 700px;
+    padding: 0 2rem;
   }
 }
 .about {
@@ -35,7 +35,6 @@
 .project-container {
   display: flex;
   @include flex(column, space-around, null);
-  // padding-bottom: 10%;
 }
 
 .form-container {

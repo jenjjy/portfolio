@@ -1,5 +1,5 @@
 import React from 'react';
-import { GridList, GridListTile, withStyles } from '@material-ui/core/styles';
+import { withStyles } from '@material-ui/core/styles';
 import styles from '../index.scss';
 import tileData from '../tileData';
 

@@ -4,13 +4,14 @@
 
   .info-wrapper {
     @include flex();
-    margin: 0 1.5rem;
+    margin: 1.5rem 0;
 
     @include desktop {
-      margin: 0 2rem;
+      margin: 2rem 0;
     }
   }
   .text-wrapper {
+    color: $color-white;
     padding: 0;
     padding-bottom: 5%;
     max-width: 85%;

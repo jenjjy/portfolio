@@ -3,10 +3,26 @@
 @import '../../sass/_container';
 
 .project-container {
+  @include desktop {
+    padding: 0 2rem;
+  }
+
+  .title {
+    padding: 0 5%;
+
+    @include tablet {
+      padding: 0 2rem;
+    }
+
+    @include desktop {
+      padding: 0;
+    }
+  }
+
   .btn-container {
     display: flex;
     @include flex();
-    margin: 2rem;
+    margin: 2rem 0;
     width: 100%;
   }
   .icon {
@@ -14,11 +30,15 @@
     @include flex(row, space-evenly, center);
     // background: $color-brand;
     // border-radius: 3px;
-    // color: $color-black;
+    color: $color-tags;
     font-size: $sm;
     // font-weight: 500;
-    // padding: 5px $xs;
+    padding: 0 10px;
     // width: 200px;
+
+    &:hover {
+      color: $color-white;
+    }
 
     @include tablet {
       font-size: inherit;
@@ -28,7 +48,7 @@
 
     .github-icon {
       width: 35px;
-      padding-right: 1rem;
+      padding-right: $xxs;
 
       @include tablet {
         width: 40px;

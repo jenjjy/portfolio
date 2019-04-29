@@ -30,12 +30,16 @@ class Projects extends Component {
 
         {this.state.width > 950 ? <ProjectListRows /> : <ProjectListColumns />}
         <div className="btn-container">
-          <Button className="icon" color="primary" variant="outlined">
+          <Button
+            className="icon"
+            href="https://github.com/jenjjy"
+            color="primary"
+            variant="contained"
+          >
             <img
               className="github-icon"
               src={gh}
               alt="See the code on Github"
-              // width="40"
             />
             <p>View Code on GitHub</p>
           </Button>

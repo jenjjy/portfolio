@@ -5,15 +5,38 @@
 .about-content-wrapper {
   display: flex;
   @include flex(column-reverse);
-  margin: 0 1.5rem;
 
   @include tablet {
     @include flex();
+    margin-top: 1.5rem;
   }
 
   @include desktop {
     @include flex(row, center, center);
-    margin: 0 2rem;
+    margin-top: 0;
+  }
+
+  .text-wrapper {
+    @include desktop {
+      width: 60%;
+      margin: auto;
+    }
+  }
+
+  .text {
+    color: $color-white;
+    font-family: $font-main;
+    font-size: $text-mob;
+    line-height: 1.5;
+
+    @include tablet {
+      font-size: $text-tab;
+      font-weight: 500;
+      line-height: 1.6;
+    }
+    @include desktop {
+      // line-height: 1.8;
+    }
   }
 }
 
@@ -36,28 +59,5 @@
 
   @include desktop {
     display: none;
-  }
-}
-
-.text-wrapper {
-  @include tablet {
-    width: 60%;
-    margin: auto;
-  }
-}
-
-.text {
-  color: $color-white;
-  font-family: $font-main;
-  font-size: $text-mob;
-  line-height: 1.5;
-
-  @include tablet {
-    font-size: $text-tab;
-    font-weight: 500;
-    line-height: 1.6;
-  }
-  @include desktop {
-    // line-height: 1.8;
   }
 }
