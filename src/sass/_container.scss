@@ -34,13 +34,14 @@
   // height: 100vh;
 }
 .skills {
-  height: 80vh;
+  display: flex;
+  @include flex(column, center, flex-start);
 }
 
 .project-container {
   display: flex;
   @include flex(column, space-around, null);
-  padding-bottom: 10%;
+  // padding-bottom: 10%;
 }
 
 .form-container {

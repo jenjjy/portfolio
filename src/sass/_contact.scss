@@ -4,6 +4,11 @@
 
   .info-wrapper {
     @include flex();
+    margin: 0 1.5rem;
+
+    @include desktop {
+      margin: 0 2rem;
+    }
   }
   .text-wrapper {
     padding: 0;
@@ -37,14 +42,15 @@
   @include tablet {
     @include flex(row, space-evenly, center);
   }
-}
-.icon {
-  display: flex;
-  @include flex(row, space-evenly, center);
-  color: $color-white;
-  letter-spacing: 1px;
-  padding-right: 1rem;
-  text-decoration: none;
+
+  .icon {
+    display: flex;
+    @include flex(row, space-evenly, center);
+    color: $color-white;
+    letter-spacing: 1px;
+    padding-right: 1rem;
+    text-decoration: none;
+  }
 }
 
 .name-email {

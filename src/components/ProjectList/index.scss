@@ -2,53 +2,99 @@
 @import '../../sass/_mixins';
 
 .list-container {
-  padding-right: 5%;
-}
+  font-size: 14px;
+  line-height: 1.5;
 
-.item-container {
-  display: flex;
-  @include flex();
-  padding-bottom: 5%;
-
-  @include desktop {
-    @include flex(row, space-between, flex-start);
+  @include tablet {
+    margin: 2rem;
+    font-size: 16px;
   }
 }
 
-.info-wrapper {
-  // background: rgba(0, 0, 0, 0.5);
-  color: $color-white;
-  padding-bottom: 1rem;
+.item-container {
+  padding: 5% 0;
+  display: flex;
+  @include flex();
+
   @include desktop {
-    width: 50%;
+    max-height: 50vh;
+  }
+
+  .info-wrapper {
+    // background: rgba(0, 0, 0, 0.5);
+    color: $color-white;
+    display: flex;
+    @include flex();
+
+    padding: 1rem;
+    padding-bottom: 0;
+
+    @include desktop {
+      @include flex(column, center, flex-start);
+      padding-left: 1rem;
+      padding-right: 3rem;
+
+      width: 50%;
+      // max-width: 400px;
+    }
+  }
+
+  .info-rev {
+    @include desktop {
+      padding: 0;
+    }
   }
 }
 
 .project-title {
-  color: $color-brand;
-  margin: 0;
-
-  @include desktop {
-  }
+  color: $color-brand-dark;
+  font-size: 1.7rem;
 }
 
-.description {
+// .description {
+//   color: $color-white;
+// }
+
+/* 
+ * Images 
+ */
+.img-wrapper {
+  align-self: center;
+  width: 100%;
+
+  @include desktop {
+    width: 50%;
+  }
+}
+.project-img {
+  margin: 5% 0;
+  height: auto;
+  width: 100vw;
+
+  @include tablet {
+    width: 400px;
+  }
+}
+.r10-img {
+  height: 50vh;
+}
+
+/* 
+ * ProjectListRows 
+ */
+.direction {
+  @include desktop {
+    display: flex;
+    @include flex(row, flex-start, center);
+  }
+}
+.direction-rev {
+  @include desktop {
+    display: flex;
+    @include flex(row-reverse, flex-start, center);
+  }
 }
 
 .tech {
   color: $color-grey;
-}
-.tech-stack {
-  // color: $color-brand;
-}
-
-.img-wrapper {
-  align-self: flex-start;
-}
-.project-img {
-  height: auto;
-  width: 400px;
-}
-.imgArr {
-  display: flex;
 }

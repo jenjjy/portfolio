@@ -46,23 +46,23 @@ class App extends Component {
         <Element name="home" className="">
           <Home />
         </Element>
-        <BgWrapper>
-          <Element name="about" className="">
-            <About />
-          </Element>
+        {/* <BgWrapper> */}
+        <Element name="about" className="">
+          <About />
+        </Element>
 
-          <Element name="skills" className="">
-            <Skills />
-          </Element>
+        <Element name="skills" className="">
+          <Skills />
+        </Element>
 
-          <Element name="projects" className="">
-            <Projects />
-          </Element>
+        <Element name="projects" className="">
+          <Projects />
+        </Element>
 
-          <Element name="contact" className="">
-            <Contact />
-          </Element>
-        </BgWrapper>
+        <Element name="contact" className="">
+          <Contact />
+        </Element>
+        {/* </BgWrapper> */}
       </MuiThemeProvider>
     );
   }

@@ -32,7 +32,7 @@ class Contact extends Component {
             </div>
           </div>
 
-          <div classNmae="contact-images">
+          <div className="contact-images">
             <img
               src={mural}
               className="contact-img"

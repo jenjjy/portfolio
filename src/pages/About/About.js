@@ -9,9 +9,9 @@ class About extends Component {
   render() {
     return (
       <div className="container about" id="about">
-        <TitleWrapper>
-          <h1 className="title">About Me</h1>
-        </TitleWrapper>
+        {/* <TitleWrapper> */}
+        <h1 className="title">About Me</h1>
+        {/* </TitleWrapper> */}
         <section className="about-content-wrapper">
           <img
             src={profile}

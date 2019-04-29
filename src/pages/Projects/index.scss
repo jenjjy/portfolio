@@ -2,6 +2,37 @@
 @import '../../sass/_mixins';
 @import '../../sass/_container';
 
-.msb {
-  width: auto;
+.project-container {
+  .btn-container {
+    display: flex;
+    @include flex();
+    margin: 2rem;
+    width: 100%;
+  }
+  .icon {
+    display: flex;
+    @include flex(row, space-evenly, center);
+    // background: $color-brand;
+    // border-radius: 3px;
+    // color: $color-black;
+    font-size: $sm;
+    // font-weight: 500;
+    // padding: 5px $xs;
+    // width: 200px;
+
+    @include tablet {
+      font-size: inherit;
+      // padding: 0 $sm;
+      // width: 250px;
+    }
+
+    .github-icon {
+      width: 35px;
+      padding-right: 1rem;
+
+      @include tablet {
+        width: 40px;
+      }
+    }
+  }
 }

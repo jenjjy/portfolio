@@ -4,7 +4,7 @@ import { Button, withStyles } from '@material-ui/core';
 import styles from './index.scss';
 import { Slide } from 'react-reveal';
 
-class Home extends Component {
+class HomeNuData extends Component {
   render() {
     return (
       <div className="home-container" id="home">
@@ -33,18 +33,9 @@ class Home extends Component {
               </div>
             </Link>
           </Slide>
-          <h2 className="subheading">
-            {/* Dynamic / Talented / Passionate */}
-            Resourceful / Problem Solver / Creative
-          </h2>
+          <h2 className="subheading">Dynamic / Talented / Passionate</h2>
 
           <div className="btn-wrapper">
-            {/* <Button
-              className="contact-btn"
-              color="primary"
-              variant="outlined"
-              href="#projects"
-            > */}
             <Link
               to="projects"
               className="contact-btn"
@@ -55,7 +46,6 @@ class Home extends Component {
             >
               View my work
             </Link>
-            {/* </Button> */}
           </div>
         </section>
       </div>
@@ -63,6 +53,6 @@ class Home extends Component {
   }
 }
 
-Home.propTypes = {};
+HomeNuData.propTypes = {};
 
-export default withStyles(styles)(Home);
+export default withStyles(styles)(HomeNuData);

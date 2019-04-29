@@ -8,14 +8,13 @@ class Skills extends Component {
   render() {
     return (
       <section className="container skills" id="skills">
-        <TitleWrapper>
-          <h1 className="title">Technical Skills</h1>
-        </TitleWrapper>
-        <article className="content-wrapper">
-          <div className="PieGraph">
-            <PieGraph />`
-          </div>
-        </article>
+        {/* <TitleWrapper> */}
+        <h1 className="title">Technical Skills</h1>
+        {/* </TitleWrapper> */}
+
+        <div className="PieGraph">
+          <PieGraph />`
+        </div>
       </section>
     );
   }

@@ -51,7 +51,7 @@ class Menubar extends Component {
         >
           <img
             alt=""
-            clasName="navicons"
+            className="navicons"
             src="https://img.icons8.com/color/96/000000/finn.png"
           />
           Home
@@ -66,8 +66,8 @@ class Menubar extends Component {
         >
           <img
             alt=""
-            clasName="navicons"
-            src="https://img.icons8.com/color/96/000000/marceline.png"
+            className="navicons"
+            src="https://img.icons8.com/color/96/000000/jake.png"
             height="60"
           />
           About
@@ -82,7 +82,7 @@ class Menubar extends Component {
         >
           <img
             alt=""
-            clasName="navicons"
+            className="navicons"
             src="https://img.icons8.com/color/96/000000/princess-bubblegum.png"
           />
           skills
@@ -98,7 +98,7 @@ class Menubar extends Component {
           {/* <Extension /> */}
           <img
             alt=""
-            clasName="navicons"
+            className="navicons"
             src="https://img.icons8.com/color/96/000000/lumpy-space-princess.png"
           />
           projects
@@ -113,7 +113,7 @@ class Menubar extends Component {
         >
           <img
             alt=""
-            clasName="navicons"
+            className="navicons"
             src="https://img.icons8.com/color/96/000000/ice-king.png"
           />
           contact
@@ -133,7 +133,7 @@ class Menubar extends Component {
                 <img
                   alt=""
                   className="menu-icon"
-                  src="https://img.icons8.com/color/96/000000/jake.png"
+                  src="https://img.icons8.com/color/96/000000/bmo.png"
                 />
                 <p className="menu-text">Menu</p>
               </div>

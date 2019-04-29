@@ -5,6 +5,7 @@
 .about-content-wrapper {
   display: flex;
   @include flex(column-reverse);
+  margin: 0 1.5rem;
 
   @include tablet {
     @include flex();
@@ -12,6 +13,7 @@
 
   @include desktop {
     @include flex(row, center, center);
+    margin: 0 2rem;
   }
 }
 
