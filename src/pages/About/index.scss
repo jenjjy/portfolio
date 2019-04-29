@@ -41,7 +41,8 @@
 
 .text-wrapper {
   @include tablet {
-    padding: 5%;
+    width: 60%;
+    margin: auto;
   }
 }
 

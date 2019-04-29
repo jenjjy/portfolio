@@ -12,9 +12,9 @@ class Contact extends Component {
   render() {
     return (
       <section className="container contact" id="contact">
-        <TitleWrapper>
-          <h1 className="title">Contact Me</h1>
-        </TitleWrapper>
+        {/* <TitleWrapper> */}
+        <h1 className="title">Contact Me</h1>
+        {/* </TitleWrapper> */}
         <div className="info-wrapper">
           <div className="text-wrapper">
             <p className="text">
@@ -32,7 +32,7 @@ class Contact extends Component {
             </div>
           </div>
 
-          <div className="contact-images">
+          {/* <div className="contact-images">
             <img
               src={mural}
               className="contact-img"
@@ -50,7 +50,8 @@ class Contact extends Component {
               className="contact-img"
               alt="Jennifer on her motorbike trip around Northern Vietnam"
             />
-          </div>
+          </div> */}
+
           {/* <p className="text">
             Alternatively, feel free to e-mail me in the contact form below:
           </p> */}
