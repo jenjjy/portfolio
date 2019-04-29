@@ -1,6 +1,6 @@
 import React from 'react';
 import { withStyles } from '@material-ui/core/styles';
-import { TextField } from '@material-ui/core';
+import { Button, TextField } from '@material-ui/core';
 // import classNames from 'classnames';
 
 const styles = theme => ({
@@ -41,7 +41,13 @@ const styles = theme => ({
 });
 
 class ContactForm extends React.Component {
-  state = {};
+  Mailto({ email, subject, body, ...props }) {
+    return (
+      <a href={`mailto:${email}?subject=${subject || ''}&body=${body || ''}`}>
+        {props.children}
+      </a>
+    );
+  }
 
   handleChange = name => event => {
     this.setState({
@@ -51,6 +57,8 @@ class ContactForm extends React.Component {
 
   render() {
     const { classes } = this.props;
+
+    console.log(this.props);
 
     return (
       <form className={classes.container} noValidate autoComplete="off">
@@ -158,6 +166,23 @@ class ContactForm extends React.Component {
             inputMode: 'numeric'
           }}
         />
+
+        <p className="text">
+          Alternatively, feel free to e-mail me in the contact form below:
+        </p>
+
+        <div className="btn">
+          {/* <Button
+            className="send-btn"
+            color="primary"
+            href="/contact"
+            variant="outlined"
+          > */}
+          {/* <Mailto email="jen.yiu.90@gmail.com" subject="Hello" body=""> */}
+          Send
+          {/* </Mailto> */}
+          {/* </Button> */}
+        </div>
       </form>
     );
   }

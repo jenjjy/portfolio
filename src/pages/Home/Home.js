@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-scroll';
-import { Button, withStyles } from '@material-ui/core';
+import { withStyles } from '@material-ui/core';
 import styles from './index.scss';
 import { Slide } from 'react-reveal';
 
@@ -39,12 +39,6 @@ class Home extends Component {
           </h2>
 
           <div className="btn-wrapper">
-            {/* <Button
-              className="contact-btn"
-              color="primary"
-              variant="outlined"
-              href="#projects"
-            > */}
             <Link
               to="projects"
               className="contact-btn"
@@ -55,7 +49,6 @@ class Home extends Component {
             >
               View my work
             </Link>
-            {/* </Button> */}
           </div>
         </section>
       </div>

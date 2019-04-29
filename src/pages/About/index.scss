@@ -4,11 +4,11 @@
 
 .about-content-wrapper {
   display: flex;
-  @include flex(column-reverse);
+  @include flex();
 
   @include tablet {
-    @include flex();
-    margin-top: 1.5rem;
+    // @include flex();
+    margin-top: 1rem;
   }
 
   @include desktop {
@@ -51,13 +51,13 @@
   }
 }
 .profile-mobile {
-  padding: 2rem 0;
+  padding: 1.5rem 0 1rem;
 
   @include tablet {
-    padding: 0;
   }
 
   @include desktop {
     display: none;
+    padding: 0;
   }
 }

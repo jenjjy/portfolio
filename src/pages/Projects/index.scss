@@ -28,19 +28,20 @@
   .icon {
     display: flex;
     @include flex(row, space-evenly, center);
-    // background: $color-brand;
-    // border-radius: 3px;
     color: $color-tags;
-    font-size: $sm;
-    // font-weight: 500;
+    font-size: $xs;
+
     padding: 0 10px;
-    // width: 200px;
 
     &:hover {
       color: $color-white;
     }
 
     @include tablet {
+      font-weight: 550;
+    }
+
+    @include desktop {
       font-size: inherit;
       // padding: 0 $sm;
       // width: 250px;

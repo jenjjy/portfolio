@@ -55,7 +55,7 @@ class PieGraph extends PureComponent {
   render() {
     return (
       <div>
-        {this.state.width > 500 ? (
+        {this.state.width > 600 ? (
           <PieChart width={600} height={600}>
             <Pie
               data={skills}
@@ -76,11 +76,11 @@ class PieGraph extends PureComponent {
             </Pie>
           </PieChart>
         ) : (
-          <PieChart width={360} height={360} className="pichart">
+          <PieChart width={370} height={450} className="pichart">
             <Pie
               data={skills}
-              cx={170}
-              cy={200}
+              cx={175}
+              cy={150}
               labelLine={true}
               label={renderCustomizedLabel}
               outerRadius={125}

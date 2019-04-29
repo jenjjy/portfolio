@@ -35,7 +35,7 @@
 .contact-btn {
   border: $btn-border;
   border-radius: 3px;
-  color: $color-brand;
+  color: $color-brand-dark;
   font-family: $font-main;
   font-size: $xs;
   font-weight: 550;
@@ -51,6 +51,5 @@
 
   @include tablet {
     font-size: $sm;
-    font-weight: 600;
   }
 }

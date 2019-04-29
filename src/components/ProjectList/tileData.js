@@ -1,7 +1,6 @@
 import BoomHome from '../../images/projects/BoomHome.png';
 import BoomItems from '../../images/projects/BoomItems.png';
 import BoomShare from '../../images/projects/BoomShare.png';
-import calm from '../../images/projects/calm.png';
 import msb from '../../images/projects/mainstbrewing.gif';
 import fbOnboard from '../../images/projects/FBOnboardGiphy.gif';
 import R10 from '../../images/projects/R10.png';

@@ -1,6 +1,7 @@
 .contact {
   display: flex;
-  @include flex(column, center, flex-start);
+  @include flex();
+  margin-top: 10rem;
 
   .info-wrapper {
     @include flex();
@@ -13,7 +14,6 @@
   .text-wrapper {
     color: $color-white;
     padding: 0;
-    padding-bottom: 5%;
     max-width: 85%;
   }
 }
@@ -37,20 +37,29 @@
 }
 .icon-container {
   display: flex;
-  @include flex(column, center, flex-start);
+  @include flex();
   padding: 1rem 0;
 
   @include tablet {
-    @include flex(row, space-evenly, center);
+    @include flex(row, space-around, center);
   }
 
   .icon {
-    display: flex;
-    @include flex(row, space-evenly, center);
     color: $color-white;
-    letter-spacing: 1px;
+    height: 20px;
     padding-right: 1rem;
-    text-decoration: none;
+  }
+}
+.icon-wrapper {
+  display: flex;
+  @include flex(row, center, center);
+  color: $color-white;
+  letter-spacing: 1px;
+  line-height: 2.5;
+  text-decoration: none;
+
+  &:hover {
+    color: $color-brand;
   }
 }
 
@@ -87,11 +96,45 @@
 
 .contact-images {
   display: flex;
-  @include flex(row, space-between, center);
-  margin-top: 2rem;
-  width: 100%;
+  @include flex(row, center, center);
+  flex: 1;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+  width: 100vw;
+
+  @include desktop {
+    width: 80vw;
+  }
+}
+.contact-img {
+  // flex: 1;
+  // margin: auto;
+  max-height: 200px;
+  max-width: auto;
+
+  @include tablet {
+    max-height: 200px;
+  }
+
+  @include desktop {
+    padding: 0 0.5rem;
+  }
 }
 
-.contact-img {
-  max-height: 200px;
+/* Credit */
+.credit {
+  color: $color-grey;
+  font-size: $xs;
+  display: flex;
+  @include flex(row);
+  margin: 1rem 0;
+  width: 100%;
+
+  .author {
+    color: $color-brand-dark;
+
+    &:hover {
+      color: $color-white;
+    }
+  }
 }

@@ -1,17 +1,21 @@
 import React, { Component } from 'react';
 import { withStyles } from '@material-ui/core';
 import styles from './index.scss';
-import TitleWrapper from '../../components/TitleWrapper';
 import profile from '../../images/redbg-small.jpeg';
 import profileMobile from '../../images/redbg-mobile.png';
+import GreyMob from '../../images/bg/GreyMob.png';
+import GreyDesk from '../../images/bg/GreyDesk.png';
 
 class About extends Component {
   render() {
     return (
       <div className="container about" id="about">
-        {/* <TitleWrapper> */}
-        <h1 className="title">About Me</h1>
-        {/* </TitleWrapper> */}
+        <div className="header-wrapper">
+          <h1 className="title">About Me</h1>
+          <img src={GreyMob} className="greybg greybg-mob" alt="" />
+          <img src={GreyDesk} className="greybg greybg-desk" alt="" />
+        </div>
+        
         <section className="about-content-wrapper">
           <img
             src={profile}

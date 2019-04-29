@@ -10,7 +10,7 @@ $nav-bg: #282c34;
 $color-brand: #4aedc4; // #ffc732 Jake-Yellow
 $color-brand-dark: #14a37f;
 $color-sec: #e8583d; // #ff5d6a red-orange
-$color-tert: #ffcd38; //#ffeb3b;
+$color-tert: #ffeb3b; //#ffcd38
 $color-tags: #37393b; //#515152;
 $textfield-bg: #515152;
 
@@ -19,6 +19,7 @@ $color-grey: #8d8d8d;
 $color-white: #fff;
 
 $btn-border: 1px solid $color-brand;
+$border: 2px solid $color-brand-dark;
 
 // Fonts
 $font-main: 'OpenSans-Light', Helvetica, sans-serif;
@@ -39,6 +40,6 @@ $xl: 20px;
 $text-mob: 15px;
 $text-tab: 17px;
 
-$title-mobile: 38px;
+$title-mobile: 42px;
 $title-tablet: 48px;
 $title-desktop: 55px;

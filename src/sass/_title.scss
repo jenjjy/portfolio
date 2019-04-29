@@ -1,7 +1,7 @@
 .home-title {
   color: $color-white;
   font-family: $font-heading;
-  font-size: 40px;
+  font-size: $title-mobile;
   font-weight: 600;
   letter-spacing: 1px;
   line-height: 1;
@@ -13,7 +13,6 @@
 
   @include tablet {
     font-size: $title-tablet;
-    // font-weight: 500;
     letter-spacing: 2px;
     line-height: 1;
   }
@@ -27,12 +26,13 @@
   font-family: $font-main;
   font-size: $sm;
   font-weight: 420;
-  letter-spacing: 2px;
+  letter-spacing: 1.5px;
 
   @include tablet {
     font-family: $font-semibold;
     font-size: $md;
     font-weight: 500;
+    letter-spacing: 2px;
   }
 }
 
@@ -44,7 +44,8 @@
   letter-spacing: 1px;
   line-height: 1;
   margin: 0;
-  // padding-left: 1rem;
+  position: absolute;
+  z-index: 1;
 
   @include tablet {
     font-size: $title-tablet;
@@ -58,4 +59,38 @@
 }
 .titlewrapper {
   padding: 1rem 0;
+}
+
+.header-wrapper {
+  display: flex;
+  @include flex();
+  height: 55px;
+
+  @include tablet {
+    height: 60px;
+    width: 95vw;
+  }
+}
+
+.greybg {
+  border-top: $border;
+  border-bottom: $border;
+
+  position: relative;
+  width: 100vw;
+
+  @include tablet {
+    width: 95vw;
+  }
+}
+.greybg-mob {
+  @include desktop {
+    display: none;
+  }
+}
+.greybg-desk {
+  display: none;
+  @include desktop {
+    display: block;
+  }
 }

@@ -30,7 +30,7 @@
     display: flex;
     @include flex();
 
-    padding: 0 1rem;
+    padding: 0 1.5rem;
 
     @include desktop {
       @include flex(column, center, flex-start);
@@ -51,11 +51,12 @@
 .project-title {
   color: $color-brand-dark;
   font-size: 1.7rem;
+  margin-bottom: 0;
 }
 
-// .description {
-//   color: $color-white;
-// }
+.description {
+  margin-bottom: 1.5rem;
+}
 
 /* 
  * Images 

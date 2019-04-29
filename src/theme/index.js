@@ -7,7 +7,7 @@ export default createMuiTheme({
       dark: '#14a37f' //dark teal
     },
     secondary: {
-      main: '#e8583d' //red-orange
+      main: '#ffeb3b' //'#e8583d' //red-orange
     },
     error: {
       main: '#FF9494'

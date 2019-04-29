@@ -2,9 +2,10 @@ import React, { Component } from 'react';
 import styles from './index.scss';
 import ProjectListColumns from '../../components/ProjectList/ProjectListColumns';
 import ProjectListRows from '../../components/ProjectList/ProjectListRows';
-import TitleWrapper from '../../components/TitleWrapper';
-import { Button, IconButton, withStyles } from '@material-ui/core';
+import { Button, withStyles } from '@material-ui/core';
 import gh from '../../images/gh.svg';
+import GreyMob from '../../images/bg/GreyMob.png';
+import GreyDesk from '../../images/bg/GreyDesk.png';
 
 class Projects extends Component {
   constructor(props) {
@@ -26,14 +27,18 @@ class Projects extends Component {
   render() {
     return (
       <section className="project-container" id="projects">
-        <h1 className="title">Projects</h1>
+        <div className="header-wrapper">
+          <h1 className="title">Projects</h1>
+          <img src={GreyMob} className="greybg greybg-mob" alt="" />
+          <img src={GreyDesk} className="greybg greybg-desk" alt="" />
+        </div>
 
         {this.state.width > 950 ? <ProjectListRows /> : <ProjectListColumns />}
         <div className="btn-container">
           <Button
             className="icon"
             href="https://github.com/jenjjy"
-            color="primary"
+            color="secondary"
             variant="contained"
           >
             <img

@@ -3,16 +3,16 @@ import { withStyles } from '@material-ui/core/styles';
 import { Button, Drawer } from '@material-ui/core';
 import styles from './index.scss';
 import { Slide } from 'react-reveal';
-// import {
-//   DonutLarge,
-//   Extension,
-//   Fingerprint,
-//   Home,
-//   Mail,
-//   Menu
-// } from '@material-ui/icons';
+import {
+  DonutLarge,
+  Extension,
+  Fingerprint,
+  Home,
+  Mail,
+  Menu
+} from '@material-ui/icons';
 
-import { Link, Events, animateScroll as scroll, scroller } from 'react-scroll';
+import { Link } from 'react-scroll';
 
 class Menubar extends Component {
   state = {
@@ -49,11 +49,15 @@ class Menubar extends Component {
           smooth={true}
           duration={500}
         >
-          <img
-            alt=""
-            className="navicons"
-            src="https://img.icons8.com/color/96/000000/finn.png"
-          />
+          {'https://img.icons8.com/color/96/000000/finn.png' ? (
+            <img
+              alt=""
+              className="navicons"
+              src="https://img.icons8.com/color/96/000000/finn.png"
+            />
+          ) : (
+            <Home />
+          )}
           Home
         </Link>
         <Link
