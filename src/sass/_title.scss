@@ -65,6 +65,7 @@
   display: flex;
   @include flex();
   height: 55px;
+  margin-top: 3rem;
 
   @include tablet {
     height: 60px;
@@ -84,13 +85,13 @@
   }
 }
 .greybg-mob {
-  @include tablet {
+  @include desktop {
     display: none;
   }
 }
 .greybg-desk {
   display: none;
-  @include tablet {
+  @include desktop {
     display: block;
   }
 }
