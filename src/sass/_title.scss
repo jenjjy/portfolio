@@ -39,7 +39,7 @@
 .title {
   color: $color-brand;
   font-family: $font-heading;
-  font-size: 42px;
+  font-size: 40px;
   font-weight: 600;
   letter-spacing: 1px;
   line-height: 1;
@@ -84,13 +84,13 @@
   }
 }
 .greybg-mob {
-  @include desktop {
+  @include tablet {
     display: none;
   }
 }
 .greybg-desk {
   display: none;
-  @include desktop {
+  @include tablet {
     display: block;
   }
 }

@@ -1,40 +1,30 @@
 .contact {
   display: flex;
   @include flex();
-  margin-top: 10rem;
+  // height: 80vh;
 
   .info-wrapper {
-    @include flex();
-    margin: 1.5rem 0;
+    margin: 2rem 0;
 
     @include desktop {
       margin: 2rem 0;
     }
   }
   .text-wrapper {
+    display: flex;
+    @include flex(column, space-between, center);
     color: $color-white;
-    padding: 0;
+    height: 80%;
     max-width: 85%;
+    margin: auto;
+    padding-top: 2rem;
+
+    @include desktop {
+      max-width: 75%;
+    }
   }
 }
 
-.form {
-  display: flex;
-  @include flex(column, null, null);
-  max-width: 85%;
-  margin: auto;
-
-  input {
-    background: $textfield-bg;
-    border-radius: 5px;
-    color: $color-grey;
-  }
-
-  .btn {
-    align-self: flex-end;
-    margin-top: 2rem;
-  }
-}
 .icon-container {
   display: flex;
   @include flex();
@@ -57,6 +47,7 @@
   letter-spacing: 1px;
   line-height: 2.5;
   text-decoration: none;
+  padding: 0 1.5rem;
 
   &:hover {
     color: $color-brand;
@@ -104,20 +95,21 @@
 
   @include desktop {
     width: 80vw;
+    margin: auto;
   }
 }
 .contact-img {
-  // flex: 1;
-  // margin: auto;
-  max-height: 200px;
-  max-width: auto;
+  max-height: 165px;
+  // max-width: auto;
 
   @include tablet {
     max-height: 200px;
+    padding: 0 5px;
   }
 
   @include desktop {
-    padding: 0 0.5rem;
+    max-height: 250px;
+    padding: 0 8px;
   }
 }
 
@@ -136,5 +128,24 @@
     &:hover {
       color: $color-white;
     }
+  }
+}
+
+/* Form */
+.form {
+  display: flex;
+  @include flex(column, null, null);
+  max-width: 85%;
+  margin: auto;
+
+  input {
+    background: $textfield-bg;
+    border-radius: 5px;
+    color: $color-grey;
+  }
+
+  .btn {
+    align-self: flex-end;
+    margin-top: 2rem;
   }
 }

@@ -5,15 +5,15 @@ import styles from './index.scss';
 import linkedin from '../../images/icons/white-linkedin.png';
 import vietnam from '../../images/vietnam-motorbike.jpg';
 import mural from '../../images/bangkok-mural.jpg';
-import fluff from '../../images/nicomos-lick.jpg';
+import headshot from '../../images/RedAcademyYVR_Headshots_Jennifer_20181207_040.jpg';
 import GreyMob from '../../images/bg/GreyMob.png';
 import GreyDesk from '../../images/bg/GreyDesk.png';
 
 class Contact extends Component {
   render() {
     return (
-      <section className="">
-        <div className="container contact" id="contact">
+      <section className="container">
+        <div className="contact" id="contact">
           <div className="header-wrapper">
             <h1 className="title">Contact Me</h1>
             <img src={GreyMob} className="greybg greybg-mob" alt="" />
@@ -50,12 +50,12 @@ class Contact extends Component {
         </div>
 
         <div className="contact-images">
+          <img src={headshot} className="contact-img" alt="" />
           <img
             src={mural}
             className="contact-img"
             alt="Jennifer painting a mural in Bangkok"
           />
-          <img src={fluff} className="contact-img" alt="Jennifer loves dogs" />
           <img
             src={vietnam}
             className="contact-img"

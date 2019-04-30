@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import { Button, Drawer } from '@material-ui/core';
 import styles from './index.scss';
-import { Slide } from 'react-reveal';
+import { Slide, Tada } from 'react-reveal';
 import {
   DonutLarge,
   Extension,
