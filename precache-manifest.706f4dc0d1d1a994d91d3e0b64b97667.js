@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "1afa982cb5fc12d4586f",
-    "url": "/portfolio/static/css/main.2ef9a932.chunk.css"
+    "revision": "fc5be787b2f47cc6c96b",
+    "url": "/portfolio/static/css/main.81ea9d7a.chunk.css"
   },
   {
-    "revision": "1afa982cb5fc12d4586f",
-    "url": "/portfolio/static/js/main.b9de8c7c.chunk.js"
+    "revision": "fc5be787b2f47cc6c96b",
+    "url": "/portfolio/static/js/main.63472684.chunk.js"
   },
   {
     "revision": "53ebc025fca807d4dbea",
@@ -76,7 +76,7 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/RedAcademyYVR_Headshots_Jennifer_20181207_040.16bb41e1.jpg"
   },
   {
-    "revision": "72e9be24fe4eaf05103e5d214c9ac7b8",
+    "revision": "5089516da79e3b8364d4fd710facfad4",
     "url": "/portfolio/index.html"
   }
 ];
