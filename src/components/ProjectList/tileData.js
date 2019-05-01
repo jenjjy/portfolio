@@ -12,7 +12,7 @@ export const tileData = [
     img: [msb],
     title: 'Main Street Brewing Co.',
     description:
-      'Collaborated in a team with designers to develop a beautiful app to make Main Street Brewing Co rewards system digital and easily accessible for customers.',
+      'Worked in a team of 4 developers to build a mobile app from scratch. I helped the client convert their current, stamp card system into a digital format in order to create an enhanced and efficient customer experience.',
     tech: 'React-Native, GraphCool, Apollo Client, Apollo Server',
     featured: true
   },
@@ -21,7 +21,7 @@ export const tileData = [
     img: [R10],
     title: 'R10',
     description:
-      'Developed a cross-platform (iOS/Android) mobile application using React Native for a hypothetical developer conference called "R10".',
+      'R10 is a cross-platform (iOS/Android) mobile application. It is a scheduling app for the upcoming R10 developer conference.',
     tech: 'React-Native, GraphQL, AsyncStorage'
   },
   {
@@ -45,7 +45,7 @@ export const tileData = [
     img: [calmversation],
     title: 'calmversation',
     description:
-      'calmversation is a model for learning that bridges the gap for understanding. It was built by a team of 4 members and created with a responsive design in mind while making it easy to navigate through.',
+      'calmversation is a model for learning that bridges the gap for understanding. It was built by a team of 4 members and created with a responsive design in mind while customizing the backend that caters to the client’s needs.',
     tech: 'JavaScript, jQuery, PHP, WordPress',
     link: 'https://calmversation.org/'
   }

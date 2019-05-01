@@ -5,21 +5,17 @@
 .about-content-wrapper {
   display: flex;
   @include flex();
-
-  @include tablet {
-    // @include flex();
-    margin-top: 1rem;
-  }
+  margin-top: 2rem;
 
   @include desktop {
-    @include flex(row, center, center);
+    @include flex(row, space-evenly, center);
     margin-top: 0;
+    width: 100%;
   }
 
   .text-wrapper {
     @include desktop {
       width: 60%;
-      margin: auto;
     }
   }
 
@@ -27,7 +23,7 @@
     color: $color-white;
     font-family: $font-main;
     font-size: $text-mob;
-    line-height: 1.5;
+    // line-height: 1.8;
 
     @include tablet {
       font-size: $text-tab;

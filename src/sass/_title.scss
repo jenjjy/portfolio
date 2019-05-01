@@ -61,6 +61,9 @@
   padding: 1rem 0;
 }
 
+/* 
+ * Header 
+ */
 .header-wrapper {
   display: flex;
   @include flex();
@@ -69,19 +72,18 @@
 
   @include tablet {
     height: 60px;
-    width: 95vw;
+    width: 94vw;
   }
 }
 
 .greybg {
   border-top: $border;
   border-bottom: $border;
-
   position: relative;
   width: 100vw;
 
   @include tablet {
-    width: 95vw;
+    width: 94vw;
   }
 }
 .greybg-mob {

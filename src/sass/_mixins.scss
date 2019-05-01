@@ -8,11 +8,6 @@
     @content;
   }
 }
-@mixin super {
-  @media (min-width: $super-width) {
-    @content;
-  }
-}
 
 // Structure
 @mixin flex($direction: column, $justify: center, $align: center) {
