@@ -64,7 +64,6 @@ class Contact extends Component {
         </div>
 
         <p className="credit">
-          This site is built and designed by
           <a
             className="author"
             href="https://www.linkedin.com/in/jennifer-yiu/"
@@ -72,7 +71,7 @@ class Contact extends Component {
             {' '}
             Jennifer Yiu{' '}
           </a>
-          &copy; 2019.
+          &copy; 2019. Built with React, SCSS, and Material-UI.
         </p>
       </section>
     );

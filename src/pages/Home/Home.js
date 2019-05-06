@@ -35,7 +35,7 @@ class Home extends Component {
           </Slide>
           <h2 className="subheading">
             {/* Dynamic / Talented / Passionate */}
-            Resourceful / Problem Solver / Creative
+            Problem Solver / Resourceful / Passionate
           </h2>
 
           <div className="btn-wrapper">

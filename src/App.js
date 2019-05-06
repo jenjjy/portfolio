@@ -40,12 +40,12 @@ class App extends Component {
           <About />
         </Element>
 
-        <Element name="skills" className="">
-          <Skills />
-        </Element>
-
         <Element name="projects" className="">
           <Projects />
+        </Element>
+
+        <Element name="skills" className="">
+          <Skills />
         </Element>
 
         <Element name="contact" className="">

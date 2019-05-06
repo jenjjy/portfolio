@@ -43,7 +43,7 @@
 
   .info-rev {
     @include desktop {
-      padding: 0;
+      // padding: 0;
     }
   }
 }
@@ -51,11 +51,14 @@
 .project-title {
   color: $color-brand-dark;
   font-size: 1.7rem;
-  margin-bottom: 0;
+  margin: 0;
 }
 
 .description {
   margin-bottom: 1.5rem;
+  @include desktop {
+    margin-bottom: 0;
+  }
 }
 
 /* 
@@ -79,8 +82,9 @@
   }
 
   @include desktop {
-    margin: 1.5rem 0 1rem;
-    width: 400px;
+    flex: 1;
+    max-height: 300px;
+    width: auto;
   }
 }
 .r10-img {
@@ -100,9 +104,49 @@
   @include desktop {
     display: flex;
     @include flex(row-reverse, flex-start, center);
+    width: 100%;
   }
 }
 
 .tech {
   color: $color-grey;
+}
+
+/* 
+ * Button 
+ */
+
+.icon {
+  display: flex;
+  @include flex(row, space-evenly, center);
+  color: $color-tags;
+  font-size: $xxs;
+
+  padding: 0;
+
+  &:hover {
+    color: $color-white;
+  }
+
+  @include tablet {
+    font-weight: 600;
+  }
+
+  @include desktop {
+    font-size: $xxs;
+    padding: 0;
+  }
+
+  .github-icon {
+    width: 20px;
+    padding-right: $xxs;
+
+    @include tablet {
+      width: 30px;
+    }
+  }
+
+  .text {
+    margin: 0;
+  }
 }

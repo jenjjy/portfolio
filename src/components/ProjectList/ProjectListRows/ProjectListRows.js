@@ -1,32 +1,64 @@
 import React from 'react';
-import { withStyles } from '@material-ui/core/styles';
+import { Button, withStyles } from '@material-ui/core';
 import styles from '../index.scss';
 import tileData from '../tileData';
-
-/* Images */
-import BoomHome from '../../../images/projects/BoomHome.png';
-import BoomItems from '../../../images/projects/BoomItems.png';
-import BoomShare from '../../../images/projects/BoomShare.png';
-import msb from '../../../images/projects/mainstbrewing.gif';
-import fbOnboard from '../../../images/projects/FBOnboardGiphy.gif';
-import R10 from '../../../images/projects/R10.png';
-import calmversation from '../../../images/projects/calmversation.png';
+import gh from '../../../images/gh.svg';
 
 function TitlebarGridList() {
   return (
     <div className="list-container">
       {tileData.map(tile => (
         <div key={tile.id} className="item-container">
+          {tile.title === 'Hackathon - Life of Litter' ? (
+            <div key={tile.id} className="direction-rev">
+              <div className="info-wrapper info-rev">
+                <h2 className="project-title">{tile.title}</h2>
+                <p className="description">{tile.description}</p>
+                <p className="tech">{tile.tech}</p>
+                <Button
+                  className="icon"
+                  href={tile.github}
+                  color="secondary"
+                  variant="contained"
+                >
+                  <img
+                    className="github-icon"
+                    src={gh}
+                    alt="See the code on Github"
+                  />
+                  <p className="text">View More</p>
+                </Button>
+              </div>
+
+              <div className="img-wrapper">
+                <img src={tile.img} alt={tile.title} className="project-img" />
+              </div>
+            </div>
+          ) : null}
+
           {tile.title === 'Main Street Brewing Co.' ? (
             <div className="direction">
               <div className="info-wrapper">
                 <h2 className="project-title">{tile.title}</h2>
                 <p className="description">{tile.description}</p>
                 <p className="tech">{tile.tech}</p>
+                <Button
+                  className="icon"
+                  href={tile.github}
+                  color="secondary"
+                  variant="contained"
+                >
+                  <img
+                    className="github-icon"
+                    src={gh}
+                    alt="See the code on Github"
+                  />
+                  <p className="text">View More</p>
+                </Button>
               </div>
 
               <div className="img-wrapper">
-                <img src={msb} alt={tile.title} className="project-img" />
+                <img src={tile.img} alt={tile.title} className="project-img" />
               </div>
             </div>
           ) : null}
@@ -37,14 +69,23 @@ function TitlebarGridList() {
                 <h2 className="project-title">{tile.title}</h2>
                 <p className="description">{tile.description}</p>
                 <p className="tech">{tile.tech}</p>
+                <Button
+                  className="icon"
+                  href={tile.github}
+                  color="secondary"
+                  variant="contained"
+                >
+                  <img
+                    className="github-icon"
+                    src={gh}
+                    alt="See the code on Github"
+                  />
+                  <p className="text">View More</p>
+                </Button>
               </div>
 
               <div className="img-wrapper">
-                <img
-                  src={R10}
-                  alt="R10 conference schedule app"
-                  className="r10-img"
-                />
+                <img src={tile.img} alt={tile.title} className="r10-img" />
               </div>
             </div>
           ) : null}
@@ -55,14 +96,23 @@ function TitlebarGridList() {
                 <h2 className="project-title">{tile.title}</h2>
                 <p className="description">{tile.description}</p>
                 <p className="tech">{tile.tech}</p>
+                <Button
+                  className="icon"
+                  href={tile.github}
+                  color="secondary"
+                  variant="contained"
+                >
+                  <img
+                    className="github-icon"
+                    src={gh}
+                    alt="See the code on Github"
+                  />
+                  <p className="text">View More</p>
+                </Button>
               </div>
 
               <div className="img-wrapper">
-                <img
-                  src={fbOnboard}
-                  alt="Food Buddy App"
-                  className="project-img"
-                />
+                <img src={tile.img} alt={tile.title} className="project-img" />
               </div>
             </div>
           ) : null}
@@ -73,10 +123,27 @@ function TitlebarGridList() {
                 <h2 className="project-title">{tile.title}</h2>
                 <p className="description">{tile.description}</p>
                 <p className="tech">{tile.tech}</p>
+                <Button
+                  className="icon"
+                  href={tile.github}
+                  color="secondary"
+                  variant="contained"
+                >
+                  <img
+                    className="github-icon"
+                    src={gh}
+                    alt="See the code on Github"
+                  />
+                  <p className="text">View More</p>
+                </Button>
               </div>
 
               <div className="img-wrapper">
-                <img src={BoomItems} alt={tile.title} className="project-img" />
+                <img
+                  src={tile.img[1]}
+                  alt={tile.title}
+                  className="project-img"
+                />
               </div>
             </div>
           ) : null}
@@ -87,14 +154,23 @@ function TitlebarGridList() {
                 <h2 className="project-title">{tile.title}</h2>
                 <p className="description">{tile.description}</p>
                 <p className="tech">{tile.tech}</p>
+                <Button
+                  className="icon"
+                  href={tile.github}
+                  color="secondary"
+                  variant="contained"
+                >
+                  <img
+                    className="github-icon"
+                    src={gh}
+                    alt="See the code on Github"
+                  />
+                  <p className="text">View More</p>
+                </Button>
               </div>
 
               <div className="img-wrapper">
-                <img
-                  src={calmversation}
-                  alt={tile.title}
-                  className="project-img"
-                />
+                <img src={tile.img} alt={tile.title} className="project-img" />
               </div>
             </div>
           ) : null}

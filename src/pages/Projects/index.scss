@@ -4,7 +4,8 @@
 
 .project-container {
   @include desktop {
-    padding: 0 2rem;
+    width: 90%;
+    margin: auto;
   }
 
   .title {
@@ -16,44 +17,6 @@
 
     @include desktop {
       padding: 0;
-    }
-  }
-
-  .btn-container {
-    display: flex;
-    @include flex();
-    margin: 2rem 0;
-    width: 100%;
-  }
-  .icon {
-    display: flex;
-    @include flex(row, space-evenly, center);
-    color: $color-tags;
-    font-size: $xs;
-
-    padding: 0 10px;
-
-    &:hover {
-      color: $color-white;
-    }
-
-    @include tablet {
-      font-weight: 550;
-    }
-
-    @include desktop {
-      font-size: inherit;
-      // padding: 0 $sm;
-      // width: 250px;
-    }
-
-    .github-icon {
-      width: 35px;
-      padding-right: $xxs;
-
-      @include tablet {
-        width: 40px;
-      }
     }
   }
 }

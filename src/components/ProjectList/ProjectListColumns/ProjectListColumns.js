@@ -1,7 +1,8 @@
 import React from 'react';
-import { withStyles } from '@material-ui/core/styles';
+import { Button, withStyles } from '@material-ui/core';
 import styles from '../index.scss';
 import tileData from '../tileData';
+import gh from '../../../images/gh.svg';
 
 function ProjectListColumns() {
   return (
@@ -18,12 +19,19 @@ function ProjectListColumns() {
           </div>
 
           <p className="tech">{tile.tech}</p>
+          <Button
+            className="icon"
+            href={tile.github}
+            color="primary"
+            variant="contained"
+          >
+            <img className="github-icon" src={gh} alt="See code on Github" />
+            <p className="text">View More</p>
+          </Button>
         </div>
       ))}
     </div>
   );
 }
-
-ProjectListColumns.propTypes = {};
 
 export default withStyles(styles)(ProjectListColumns);
