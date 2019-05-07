@@ -8,14 +8,24 @@
   margin-top: 2rem;
 
   @include desktop {
-    @include flex(row, space-evenly, center);
-    margin-top: 0;
-    width: 100%;
+    @include flex();
+    margin: auto;
+    width: 90%;
+
+    .sectionOne {
+      display: flex;
+      @include flex(row, space-evenly, center);
+    }
+    .sectionTwo {
+      display: flex;
+      @include flex(row, space-evenly, center);
+    }
   }
 
   .text-wrapper {
     @include desktop {
-      width: 60%;
+      max-width: 60%;
+      margin: auto;
     }
   }
 
@@ -34,12 +44,17 @@
       // line-height: 1.8;
     }
   }
+
+  .techs {
+    font-weight: 700;
+  }
 }
 
 .profile {
   display: none;
   @include tablet {
-    padding-right: 1rem;
+    // padding-right: 3rem;
+    height: 100%;
   }
   @include desktop {
     display: block;

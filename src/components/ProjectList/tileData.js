@@ -23,7 +23,7 @@ export const tileData = [
     title: 'Main Street Brewing Co.',
     description:
       'Worked in a team of 4 developers to build a mobile app from scratch. I helped the client convert their current, stamp card system into a digital format in order to create an enhanced and efficient customer experience.',
-    tech: 'React-Native, GraphCool, Apollo Client, Apollo Server',
+    tech: 'React-Native, GraphQL, Apollo',
     github: 'https://github.com/jenjjy/Main-Street-Brewing'
   },
   {

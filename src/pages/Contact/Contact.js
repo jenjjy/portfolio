@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ReactPlayer from 'react-player';
 import { withStyles } from '@material-ui/core';
 import { Mail, Phone } from '@material-ui/icons';
 import styles from './index.scss';
@@ -62,6 +63,14 @@ class Contact extends Component {
             alt="Jennifer on her motorbike trip around Northern Vietnam"
           />
         </div>
+        <ReactPlayer
+          url="https://youtu.be/_dE-DZQ7IMM"
+          playing
+          muted="true"
+          height="250px"
+          width="400px"
+          loop="true"
+        />
 
         <p className="credit">
           <a

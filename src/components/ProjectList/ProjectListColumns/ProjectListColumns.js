@@ -24,6 +24,7 @@ function ProjectListColumns() {
             href={tile.github}
             color="primary"
             variant="contained"
+            size="small"
           >
             <img className="github-icon" src={gh} alt="See code on Github" />
             <p className="text">View More</p>

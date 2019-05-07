@@ -44,9 +44,9 @@ class App extends Component {
           <Projects />
         </Element>
 
-        <Element name="skills" className="">
+        {/* <Element name="skills" className="">
           <Skills />
-        </Element>
+        </Element> */}
 
         <Element name="contact" className="">
           <Contact />

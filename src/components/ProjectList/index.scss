@@ -16,7 +16,8 @@
 }
 
 .item-container {
-  padding: 5% 0;
+  padding-top: 5%;
+  padding-bottom: 3%;
   display: flex;
   @include flex();
 
@@ -138,8 +139,8 @@
   }
 
   .github-icon {
-    width: 20px;
-    padding-right: $xxs;
+    width: 25px;
+    padding-right: $xxxs;
 
     @include tablet {
       width: 30px;

@@ -76,7 +76,7 @@ class Menubar extends Component {
           />
           About
         </Link>
-        <Link
+        {/* <Link
           to="skills"
           className="links"
           activeClass="active"
@@ -90,7 +90,7 @@ class Menubar extends Component {
             src="https://img.icons8.com/color/96/000000/princess-bubblegum.png"
           />
           skills
-        </Link>
+        </Link> */}
         <Link
           to="projects"
           className="links"
@@ -118,7 +118,7 @@ class Menubar extends Component {
           <img
             alt=""
             className="navicons"
-            src="https://img.icons8.com/color/96/000000/ice-king.png"
+            src="https://img.icons8.com/color/96/000000/princess-bubblegum.png"
           />
           contact
         </Link>

@@ -20,6 +20,7 @@ function TitlebarGridList() {
                   href={tile.github}
                   color="secondary"
                   variant="contained"
+                  size="small"
                 >
                   <img
                     className="github-icon"
@@ -47,6 +48,7 @@ function TitlebarGridList() {
                   href={tile.github}
                   color="secondary"
                   variant="contained"
+                  size="small"
                 >
                   <img
                     className="github-icon"
@@ -74,6 +76,7 @@ function TitlebarGridList() {
                   href={tile.github}
                   color="secondary"
                   variant="contained"
+                  size="small"
                 >
                   <img
                     className="github-icon"
@@ -101,6 +104,7 @@ function TitlebarGridList() {
                   href={tile.github}
                   color="secondary"
                   variant="contained"
+                  size="small"
                 >
                   <img
                     className="github-icon"
@@ -128,6 +132,7 @@ function TitlebarGridList() {
                   href={tile.github}
                   color="secondary"
                   variant="contained"
+                  size="small"
                 >
                   <img
                     className="github-icon"
@@ -159,6 +164,7 @@ function TitlebarGridList() {
                   href={tile.github}
                   color="secondary"
                   variant="contained"
+                  size="small"
                 >
                   <img
                     className="github-icon"
