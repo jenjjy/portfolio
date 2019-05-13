@@ -1,19 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "5ef9def9fa6ac8bcf42f",
-    "url": "/portfolio/static/css/main.c7e629af.chunk.css"
+    "revision": "f6ac9d0eef0eef9e51ea",
+    "url": "/portfolio/static/css/main.5a3d30d8.chunk.css"
   },
   {
-    "revision": "5ef9def9fa6ac8bcf42f",
-    "url": "/portfolio/static/js/main.f1b07ea5.chunk.js"
+    "revision": "f6ac9d0eef0eef9e51ea",
+    "url": "/portfolio/static/js/main.5ab44e77.chunk.js"
   },
   {
     "revision": "53ebc025fca807d4dbea",
     "url": "/portfolio/static/js/runtime~main.f308c8e6.js"
   },
   {
-    "revision": "3023dfdf1892eb4bc6dc",
-    "url": "/portfolio/static/js/2.f840fa94.chunk.js"
+    "revision": "490cace0e12ca0642ea6",
+    "url": "/portfolio/static/js/2.96a97925.chunk.js"
   },
   {
     "revision": "87da8261339cebdeefca037452f9c052",
@@ -80,7 +80,11 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/RedAcademyYVR_Headshots_Jennifer_20181207_040.16bb41e1.jpg"
   },
   {
-    "revision": "f4d09d156f3670757b44ff2ecb63f391",
+    "revision": "e095bdb707b386cc36165fba50c6b8b1",
+    "url": "/portfolio/static/media/scubadive.e095bdb7.png"
+  },
+  {
+    "revision": "1d50c1c4638b6146cffbcac8f0004e16",
     "url": "/portfolio/index.html"
   }
 ];
