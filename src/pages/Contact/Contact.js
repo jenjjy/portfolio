@@ -9,6 +9,7 @@ import mural from '../../images/bangkok-mural.jpg';
 import headshot from '../../images/RedAcademyYVR_Headshots_Jennifer_20181207_040.jpg';
 import GreyMob from '../../images/bg/GreyMob.png';
 import GreyDesk from '../../images/bg/GreyDesk.png';
+import roctopus from '../../images/scubadive.png';
 
 class Contact extends Component {
   render() {
@@ -51,11 +52,20 @@ class Contact extends Component {
         </div>
 
         <div className="contact-images">
-          <img src={headshot} className="contact-img" alt="" />
+          <img
+            src={headshot}
+            className="contact-img"
+            alt="Jennifer Yiu's headshot"
+          />
           <img
             src={mural}
             className="contact-img"
             alt="Jennifer painting a mural in Bangkok"
+          />
+          <img
+            src={roctopus}
+            className="contact-img"
+            alt="Jennifer scuba diving in Koh Tao, Thailand"
           />
           <img
             src={vietnam}

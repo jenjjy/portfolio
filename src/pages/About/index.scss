@@ -14,7 +14,7 @@
 
     .sectionOne {
       display: flex;
-      @include flex(row, space-evenly, center);
+      @include flex(row, space-around, center);
     }
     .sectionTwo {
       display: flex;
@@ -25,7 +25,6 @@
   .text-wrapper {
     @include desktop {
       max-width: 60%;
-      margin: auto;
     }
   }
 

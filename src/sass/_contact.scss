@@ -32,6 +32,7 @@
   display: flex;
   @include flex();
   padding: 1rem 0;
+  width: 100%;
 
   @include tablet {
     @include flex(row, space-around, center);
@@ -47,7 +48,7 @@
   display: flex;
   @include flex(row, center, center);
   color: $color-white;
-  letter-spacing: 1px;
+
   line-height: 2.5;
   text-decoration: none;
   padding: 0 1.5rem;
@@ -89,30 +90,32 @@
 }
 
 .contact-images {
-  display: flex;
-  @include flex(row, center, center);
-  flex: 1;
-  flex-wrap: wrap;
-  margin-bottom: 3rem;
-  width: 100vw;
+  display: none;
+
+  @include tablet {
+    display: flex;
+    @include flex(row, center, center);
+    flex: 1;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+    width: 100vw;
+  }
 
   @include desktop {
-    width: 80vw;
-    margin: auto;
+    // width: 80vw;
+    // margin: auto;
   }
 }
 .contact-img {
-  max-height: 165px;
-  // max-width: auto;
+  max-height: 180px;
 
   @include tablet {
-    max-height: 200px;
     padding: 0 5px;
   }
 
   @include desktop {
     max-height: 250px;
-    padding: 0 8px;
+    // padding: 0 8px;
   }
 }
 
