@@ -30,7 +30,9 @@
 }
 .text {
   line-height: 1.8;
-  font-size: $sm;
+  font-size: inherit;
+  @include desktop {
+  }
 }
 
 .icon-container {

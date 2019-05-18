@@ -56,6 +56,15 @@ class About extends Component {
           </div>
 
           <div className="sectionTwo">
+            <ReactPlayer
+              url="https://youtu.be/E7lBtEz4eX4"
+              playing
+              muted={true}
+              height={250}
+              width={380}
+              loop={true}
+              className="video"
+            />
             <div className="text-wrapper">
               <p className="text">
                 My focus is mostly front-end technologies including
@@ -75,15 +84,6 @@ class About extends Component {
                 expertise and how we might work together!
               </p>
             </div>
-            <ReactPlayer
-              url="https://youtu.be/E7lBtEz4eX4"
-              playing
-              muted={true}
-              height={250}
-              width={350}
-              loop={true}
-              className="video"
-            />
           </div>
         </section>
       </div>

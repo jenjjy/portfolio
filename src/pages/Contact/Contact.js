@@ -78,7 +78,7 @@ class Contact extends Component {
           playing
           muted={true}
           height={250}
-          width="100vw"
+          width={400}
           loop={true}
         />
 
@@ -87,8 +87,7 @@ class Contact extends Component {
             className="author"
             href="https://www.linkedin.com/in/jennifer-yiu/"
           >
-            {' '}
-            Jennifer Yiu{' '}
+            Jennifer Yiu
           </a>
           &copy; 2019. Built with React, SCSS, and Material-UI.
         </p>

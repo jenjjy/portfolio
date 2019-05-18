@@ -1,18 +1,14 @@
 import React, { Component } from 'react';
+import { Link } from 'react-scroll';
 import { withStyles } from '@material-ui/core/styles';
 import { Button, Drawer } from '@material-ui/core';
 import styles from './index.scss';
 import { Slide, Tada } from 'react-reveal';
-import {
-  DonutLarge,
-  Extension,
-  Fingerprint,
-  Home,
-  Mail,
-  Menu
-} from '@material-ui/icons';
-
-import { Link } from 'react-scroll';
+import finn from '../../images/icons/finn.png';
+import jake from '../../images/icons/jake.png';
+import bmo from '../../images/icons/bmo.png';
+import lps from '../../images/icons/lumpy-space-princess.png';
+import pb from '../../images/icons/princess-bubblegum.png';
 
 class Menubar extends Component {
   state = {
@@ -49,15 +45,7 @@ class Menubar extends Component {
           smooth={true}
           duration={500}
         >
-          {'https://img.icons8.com/color/96/000000/finn.png' ? (
-            <img
-              alt=""
-              className="navicons"
-              src="https://img.icons8.com/color/96/000000/finn.png"
-            />
-          ) : (
-            <Home />
-          )}
+          <img alt="" className="navicons" src={finn} />
           Home
         </Link>
         <Link
@@ -68,29 +56,10 @@ class Menubar extends Component {
           smooth={true}
           duration={500}
         >
-          <img
-            alt=""
-            className="navicons"
-            src="https://img.icons8.com/color/96/000000/jake.png"
-            height="60"
-          />
+          <img alt="" className="navicons" src={jake} height="60" />
           About
         </Link>
-        {/* <Link
-          to="skills"
-          className="links"
-          activeClass="active"
-          spy={true}
-          smooth={true}
-          duration={500}
-        >
-          <img
-            alt=""
-            className="navicons"
-            src="https://img.icons8.com/color/96/000000/princess-bubblegum.png"
-          />
-          skills
-        </Link> */}
+
         <Link
           to="projects"
           className="links"
@@ -99,12 +68,7 @@ class Menubar extends Component {
           smooth={true}
           duration={500}
         >
-          {/* <Extension /> */}
-          <img
-            alt=""
-            className="navicons"
-            src="https://img.icons8.com/color/96/000000/lumpy-space-princess.png"
-          />
+          <img alt="" className="navicons" src={lps} />
           projects
         </Link>
         <Link
@@ -115,11 +79,7 @@ class Menubar extends Component {
           smooth={true}
           duration={500}
         >
-          <img
-            alt=""
-            className="navicons"
-            src="https://img.icons8.com/color/96/000000/princess-bubblegum.png"
-          />
+          <img alt="" className="navicons" src={pb} />
           contact
         </Link>
       </div>
@@ -134,11 +94,7 @@ class Menubar extends Component {
           >
             <Slide left>
               <div className="menu-btn">
-                <img
-                  alt=""
-                  className="menu-icon"
-                  src="https://img.icons8.com/color/96/000000/bmo.png"
-                />
+                <img alt="" className="menu-icon" src={bmo} />
                 <p className="menu-text">Menu</p>
               </div>
             </Slide>

@@ -29,7 +29,7 @@
     }
     .sectionTwo {
       display: flex;
-      @include flex(row, space-evenly, center);
+      @include flex(row-reverse, space-evenly, center);
       .text-wrapper {
         // max-width: 50%;
       }
