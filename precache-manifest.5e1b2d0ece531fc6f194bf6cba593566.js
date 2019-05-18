@@ -1,19 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "f6ac9d0eef0eef9e51ea",
-    "url": "/portfolio/static/css/main.5a3d30d8.chunk.css"
+    "revision": "fb02d13917f12c989132",
+    "url": "/portfolio/static/css/main.aa96b8f0.chunk.css"
   },
   {
-    "revision": "f6ac9d0eef0eef9e51ea",
-    "url": "/portfolio/static/js/main.5ab44e77.chunk.js"
+    "revision": "fb02d13917f12c989132",
+    "url": "/portfolio/static/js/main.16769499.chunk.js"
   },
   {
     "revision": "53ebc025fca807d4dbea",
     "url": "/portfolio/static/js/runtime~main.f308c8e6.js"
   },
   {
-    "revision": "490cace0e12ca0642ea6",
-    "url": "/portfolio/static/js/2.96a97925.chunk.js"
+    "revision": "3b61a25d10213398c78e",
+    "url": "/portfolio/static/js/2.72ab537c.chunk.js"
   },
   {
     "revision": "87da8261339cebdeefca037452f9c052",
@@ -26,10 +26,6 @@ self.__precacheManifest = [
   {
     "revision": "68411dab2f38cbab430874d00309240f",
     "url": "/portfolio/static/media/GreyDesk.68411dab.png"
-  },
-  {
-    "revision": "1c4e1e493edb73b44ce79b6d3eec3a23",
-    "url": "/portfolio/static/media/redbg-small.1c4e1e49.jpeg"
   },
   {
     "revision": "4baebcea8da4490d74d9423b0a77d9d7",
@@ -84,7 +80,11 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/scubadive.e095bdb7.png"
   },
   {
-    "revision": "1d50c1c4638b6146cffbcac8f0004e16",
+    "revision": "1c4e1e493edb73b44ce79b6d3eec3a23",
+    "url": "/portfolio/static/media/redbg-small.1c4e1e49.jpeg"
+  },
+  {
+    "revision": "f67c838aefb1d2d44297bf5738e85246",
     "url": "/portfolio/index.html"
   }
 ];
