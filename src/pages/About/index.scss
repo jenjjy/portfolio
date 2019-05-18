@@ -3,9 +3,19 @@
 @import '../../sass/container';
 
 .about-content-wrapper {
+  margin-top: 2rem;
   display: flex;
   @include flex();
-  margin-top: 2rem;
+  width: 100%;
+  margin: auto;
+
+  .sectionOne,
+  .sectionTwo {
+    display: flex;
+    @include flex();
+    width: 100%;
+    margin: auto;
+  }
 
   @include desktop {
     @include flex();
@@ -15,10 +25,14 @@
     .sectionOne {
       display: flex;
       @include flex(row, space-around, center);
+      margin-top: 2rem;
     }
     .sectionTwo {
       display: flex;
       @include flex(row, space-evenly, center);
+      .text-wrapper {
+        // max-width: 50%;
+      }
     }
   }
 
@@ -49,17 +63,17 @@
   }
 }
 
-.profile {
-  display: none;
-  @include tablet {
-    // padding-right: 3rem;
-    height: 100%;
-  }
-  @include desktop {
-    display: block;
-    max-width: 35%;
-  }
-}
+// .profile {
+//   display: none;
+//   @include tablet {
+//     // padding-right: 3rem;
+//     height: 100%;
+//   }
+//   @include desktop {
+//     // display: block;
+//     max-width: 35%;
+//   }
+// }
 .profile-mobile {
   padding: 1.5rem 0 1rem;
 
@@ -67,7 +81,6 @@
   }
 
   @include desktop {
-    display: none;
     padding: 0;
   }
 }

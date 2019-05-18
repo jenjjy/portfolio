@@ -18,19 +18,19 @@ class About extends Component {
         </div>
 
         <section className="about-content-wrapper">
-          <img
-            src={profileMobile}
-            className="profile-mobile"
-            width="300"
-            alt="Jennifer Yiu"
-          />
           <div className="sectionOne">
             <img
+              src={profileMobile}
+              className="profile-mobile"
+              width="300"
+              alt="Jennifer Yiu"
+            />
+            {/* <img
               src={profile}
               className="profile"
               width="300"
               alt="Jennifer Yiu"
-            />
+            /> */}
             <div className="text-wrapper">
               <p className="text">
                 I love learning about how something works and functions. My
@@ -44,9 +44,7 @@ class About extends Component {
                 me how to write scripts to play a simple song on the computer. I
                 was enthralled by how a combination of characters and symbols
                 can turn the computer into a piano. In sixth grade, I built my
-                first website using HTML. I’ve decided to pursue this passion by
-                completing a Diploma in FullStack Development where I helped
-                build industry quality websites and applications.
+                first website using HTML.
               </p>
               <p className="text">
                 As I dive deeper into the world of development and technology,
@@ -60,11 +58,11 @@ class About extends Component {
           <div className="sectionTwo">
             <div className="text-wrapper">
               <p className="text">
-                My focus is mostly front-end technologies including{' '}
+                My focus is mostly front-end technologies including
                 <span className="techs">
                   {' '}
-                  CSS, SCSS, React, React-Native, JavaScript, jQuery, and PHP.
-                </span>{' '}
+                  CSS, SCSS, React, React-Native, JavaScript, jQuery, and PHP.{' '}
+                </span>
                 I want to continue to learn and grow as I develop my skills and
                 improve on writing code. I have great energy, a "can-do"
                 attitude, and I'm always working towards improving myself
@@ -80,10 +78,11 @@ class About extends Component {
             <ReactPlayer
               url="https://youtu.be/E7lBtEz4eX4"
               playing
-              muted="true"
-              height="250px"
-              width="420px"
-              loop="true"
+              muted={true}
+              height={250}
+              width={350}
+              loop={true}
+              className="video"
             />
           </div>
         </section>

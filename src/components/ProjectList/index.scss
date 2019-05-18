@@ -17,7 +17,7 @@
 
 .item-container {
   padding-top: 5%;
-  padding-bottom: 3%;
+  padding-bottom: 5%;
   display: flex;
   @include flex();
 
@@ -30,7 +30,6 @@
     color: $color-white;
     display: flex;
     @include flex();
-
     padding: 0 1.5rem;
 
     @include desktop {
@@ -111,6 +110,11 @@
 
 .tech {
   color: $color-grey;
+  padding: 0 1.5rem;
+
+  @include tablet {
+    padding: 0;
+  }
 }
 
 /* 

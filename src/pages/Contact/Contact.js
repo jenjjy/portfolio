@@ -76,10 +76,10 @@ class Contact extends Component {
         <ReactPlayer
           url="https://youtu.be/_dE-DZQ7IMM"
           playing
-          muted="true"
-          height="250px"
-          width="400px"
-          loop="true"
+          muted={true}
+          height={250}
+          width="100vw"
+          loop={true}
         />
 
         <p className="credit">

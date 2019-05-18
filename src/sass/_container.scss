@@ -26,7 +26,13 @@
 
 .about {
   display: flex;
-  padding: 0 2rem;
+  padding: 0 1.5rem;
+  // width: 100vw;
+  // height: auto;
+
+  @include tablet {
+    padding: 0 2rem;
+  }
 
   @include desktop {
     @include flex(column, space-evenly, flex-start);
@@ -40,7 +46,7 @@
 .project-container {
   display: flex;
   @include flex();
-  padding-bottom: 8rem;
+  padding-bottom: 5rem;
 }
 
 .form-container {

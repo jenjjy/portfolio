@@ -17,7 +17,11 @@
     height: 80%;
     max-width: 85%;
     margin: auto;
-    padding-top: 2rem;
+    // padding-top: 2rem;
+
+    @include tablet {
+      padding-top: 2rem;
+    }
 
     @include desktop {
       max-width: 75%;
@@ -26,6 +30,7 @@
 }
 .text {
   line-height: 1.8;
+  font-size: $sm;
 }
 
 .icon-container {
@@ -122,11 +127,15 @@
 /* Credit */
 .credit {
   color: $color-grey;
-  font-size: $xs;
+  font-size: $xxs;
   display: flex;
   @include flex(row);
   margin: 1rem 0;
   width: 100%;
+
+  @include tablet {
+    font-size: $xs;
+  }
 
   .author {
     color: $color-brand-dark;
@@ -154,4 +163,9 @@
     align-self: flex-end;
     margin-top: 2rem;
   }
+}
+
+.video {
+  width: 100vw;
+  height: auto;
 }
