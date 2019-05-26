@@ -49,9 +49,13 @@
 }
 
 .project-title {
-  color: $color-brand-dark;
-  font-size: 1.7rem;
+  color: $color-sec;
+  font-size: 1.5rem;
   margin: 0;
+
+  @include tablet {
+    font-size: 1.7rem;
+  }
 }
 
 .description {
@@ -109,7 +113,7 @@
 }
 
 .tech {
-  color: $color-grey;
+  color: $color-brand-dark;
   padding: 0 1.5rem;
 
   @include tablet {

@@ -29,7 +29,7 @@ class Home extends Component {
                   </h1>
                 </div>
 
-                <h1 className="home-title">front-end developer.</h1>
+                <h1 className="home-title third-line">front-end developer.</h1>
               </div>
             </Link>
           </Slide>

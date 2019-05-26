@@ -22,7 +22,7 @@ function ProjectListColumns() {
           <Button
             className="icon"
             href={tile.github}
-            color="primary"
+            color="default"
             variant="contained"
             size="small"
           >

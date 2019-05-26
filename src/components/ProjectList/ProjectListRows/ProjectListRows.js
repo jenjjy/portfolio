@@ -18,7 +18,7 @@ function TitlebarGridList() {
                 <Button
                   className="icon"
                   href={tile.github}
-                  color="secondary"
+                  color="default"
                   variant="contained"
                   size="small"
                 >
@@ -46,7 +46,7 @@ function TitlebarGridList() {
                 <Button
                   className="icon"
                   href={tile.github}
-                  color="secondary"
+                  color="default"
                   variant="contained"
                   size="small"
                 >
@@ -74,7 +74,7 @@ function TitlebarGridList() {
                 <Button
                   className="icon"
                   href={tile.github}
-                  color="secondary"
+                  color="default"
                   variant="contained"
                   size="small"
                 >
@@ -102,7 +102,7 @@ function TitlebarGridList() {
                 <Button
                   className="icon"
                   href={tile.github}
-                  color="secondary"
+                  color="default"
                   variant="contained"
                   size="small"
                 >
@@ -130,7 +130,7 @@ function TitlebarGridList() {
                 <Button
                   className="icon"
                   href={tile.github}
-                  color="secondary"
+                  color="default"
                   variant="contained"
                   size="small"
                 >
@@ -162,7 +162,7 @@ function TitlebarGridList() {
                 <Button
                   className="icon"
                   href={tile.github}
-                  color="secondary"
+                  color="default"
                   variant="contained"
                   size="small"
                 >
