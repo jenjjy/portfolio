@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import ReactPlayer from 'react-player';
 import { withStyles } from '@material-ui/core';
 import { Mail, Phone } from '@material-ui/icons';
 import styles from './index.scss';
@@ -10,6 +9,7 @@ import headshot from '../../images/RedAcademyYVR_Headshots_Jennifer_20181207_040
 import GreyMob from '../../images/bg/GreyMob.png';
 import GreyDesk from '../../images/bg/GreyDesk.png';
 import roctopus from '../../images/scubadive.png';
+import VideoPlayer from '../../components/VideoPlayer';
 
 class Contact extends Component {
   render() {
@@ -73,14 +73,9 @@ class Contact extends Component {
             alt="Jennifer on her motorbike trip around Northern Vietnam"
           />
         </div>
-        <ReactPlayer
-          url="https://youtu.be/_dE-DZQ7IMM"
-          playing
-          muted={true}
-          height={250}
-          width={400}
-          loop={true}
-        />
+        <div className="player-wrapper">
+          <VideoPlayer link="http://youtu.be/_dE-DZQ7IMM" />
+        </div>
 
         <p className="credit">
           <a

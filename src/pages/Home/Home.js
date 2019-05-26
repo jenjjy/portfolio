@@ -29,13 +29,13 @@ class Home extends Component {
                   </h1>
                 </div>
 
-                <h1 className="home-title">unicorn developer.</h1>
+                <h1 className="home-title">front-end developer.</h1>
               </div>
             </Link>
           </Slide>
           <h2 className="subheading">
             {/* Dynamic / Talented / Passionate */}
-            Problem Solver / Resourceful / Passionate
+            Problem Solver / Resourceful / Creative
           </h2>
 
           <div className="btn-wrapper">

@@ -3,7 +3,7 @@ import { Link } from 'react-scroll';
 import { withStyles } from '@material-ui/core/styles';
 import { Button, Drawer } from '@material-ui/core';
 import styles from './index.scss';
-import { Slide, Tada } from 'react-reveal';
+import { Slide } from 'react-reveal';
 import finn from '../../images/icons/finn.png';
 import jake from '../../images/icons/jake.png';
 import bmo from '../../images/icons/bmo.png';

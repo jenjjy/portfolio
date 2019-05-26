@@ -1,14 +1,18 @@
 import React, { Component } from 'react';
-import ReactPlayer from 'react-player';
 import { withStyles } from '@material-ui/core';
 import styles from './index.scss';
-import profile from '../../images/redbg-small.jpeg';
 import profileMobile from '../../images/redbg-mobile.png';
 import GreyMob from '../../images/bg/GreyMob.png';
 import GreyDesk from '../../images/bg/GreyDesk.png';
+import VideoPlayer from '../../components/VideoPlayer';
 
 class About extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
   render() {
+    const urllink = 'https://youtu.be/E7lBtEz4eX4';
     return (
       <div className="container about" id="about">
         <div className="header-wrapper">
@@ -25,12 +29,7 @@ class About extends Component {
               width="300"
               alt="Jennifer Yiu"
             />
-            {/* <img
-              src={profile}
-              className="profile"
-              width="300"
-              alt="Jennifer Yiu"
-            /> */}
+
             <div className="text-wrapper">
               <p className="text">
                 I love learning about how something works and functions. My
@@ -56,15 +55,7 @@ class About extends Component {
           </div>
 
           <div className="sectionTwo">
-            <ReactPlayer
-              url="https://youtu.be/E7lBtEz4eX4"
-              playing
-              muted={true}
-              height={250}
-              width={380}
-              loop={true}
-              className="video"
-            />
+            <VideoPlayer link={urllink} />
             <div className="text-wrapper">
               <p className="text">
                 My focus is mostly front-end technologies including
