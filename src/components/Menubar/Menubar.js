@@ -20,7 +20,6 @@ class Menubar extends Component {
     this.updateWindowDimensions();
     window.addEventListener('resize', this.updateWindowDimensions);
   }
-
   componentWillUnmount() {
     window.removeEventListener('resize', this.updateWindowDimensions);
   }

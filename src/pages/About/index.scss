@@ -63,22 +63,8 @@
   }
 }
 
-// .profile {
-//   display: none;
-//   @include tablet {
-//     // padding-right: 3rem;
-//     height: 100%;
-//   }
-//   @include desktop {
-//     // display: block;
-//     max-width: 35%;
-//   }
-// }
 .profile-mobile {
   padding: 1.5rem 0 1rem;
-
-  @include tablet {
-  }
 
   @include desktop {
     padding: 0;

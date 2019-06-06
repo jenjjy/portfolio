@@ -1,8 +1,8 @@
 import React from 'react';
-import { Button, withStyles } from '@material-ui/core';
-import styles from '../index.scss';
+import PropTypes from 'prop-types';
+import '../index.scss';
 import tileData from '../tileData';
-import gh from '../../../images/gh.svg';
+import GitHub from '../../GithubBtn';
 
 function ProjectListColumns() {
   return (
@@ -19,20 +19,15 @@ function ProjectListColumns() {
           </div>
 
           <p className="tech">{tile.tech}</p>
-          <Button
-            className="icon"
-            href={tile.github}
-            color="default"
-            variant="contained"
-            size="small"
-          >
-            <img className="github-icon" src={gh} alt="See code on Github" />
-            <p className="text">View More</p>
-          </Button>
+          <GitHub link={tile.github} />
         </div>
       ))}
     </div>
   );
 }
 
-export default withStyles(styles)(ProjectListColumns);
+ProjectListColumns.propTypes = {
+  classes: PropTypes.object.isRequired
+};
+
+export default ProjectListColumns;

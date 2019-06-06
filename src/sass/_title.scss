@@ -25,6 +25,7 @@
 .title-wrapper {
   .third-line {
     font-size: $title-mobile * 0.81;
+    line-height: 1.5;
 
     @include tablet {
       font-size: $title-tablet * 0.9;

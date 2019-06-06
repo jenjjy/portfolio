@@ -1,0 +1,33 @@
+@import '../../sass/_variables';
+@import '../../sass/mixins';
+
+.icon {
+  display: flex;
+  @include flex(row, space-evenly, center);
+  // font-size: $xs;
+  @include tablet {
+    font-weight: 600;
+  }
+
+  @include desktop {
+    font-size: $xxs;
+  }
+}
+
+.github-icon {
+  width: 28px;
+  height: auto;
+  padding-right: $xxxs;
+
+  @include tablet {
+    width: 32px;
+  }
+}
+
+.gh-text {
+  font-size: $xs;
+
+  @include tablet {
+    font-size: $sm;
+  }
+}
