@@ -1,27 +1,33 @@
 .menubar {
   display: flex;
   @include flex(row, space-between, center);
-  // height: 60px;
   width: 100%;
 }
 .navlinks {
   display: flex;
-  @include flex(row, space-around, center);
+  @include flex(row, space-evenly, center);
   height: 80px;
+  padding: 0 15px;
 
   @include tablet {
     // background: #171717;
+    height: 80px;
     margin: auto;
+    width: 65%;
+    padding: 0;
+  }
+  @include desktop {
+    height: 90px;
     width: 50%;
   }
 }
 .bar-wrapper {
-  background: $nav-bg; //$textfield-bg;
+  background: $nav-bg;
 }
 
 .links {
-  color: $color-white;
-  font-size: $xxs;
+  color: $light;
+  font-size: $xxxs;
   font-weight: 700;
   text-decoration: none;
   text-transform: uppercase;
@@ -29,7 +35,6 @@
   @include flex(column, space-between, center);
   letter-spacing: 1px;
   opacity: 0.8;
-  height: 50px;
 
   &:hover {
     color: $color-brand;
@@ -41,78 +46,110 @@
   }
 
   @include tablet {
+    font-size: $xxs;
     letter-spacing: 1.5px;
-    // height: 40px;
+    // height: 40px;/
+  }
+  @include desktop {
+    font-size: 11px;
   }
 
   img {
     height: 45px;
     width: auto;
 
-    .navicons {
-      width: 50px;
+    @include tablet {
+      height: 50px;
+    }
+    @include desktop {
+      // height: 54px;
     }
   }
 }
-.about-link {
-  height: 55px;
-}
-
 .active {
-  // color: $color-brand;
   text-decoration: none;
 }
 
-.menu-wrapper {
+/*   
+ *    BMO    
+ */
+
+.bmo-wrapper {
   position: fixed;
-  top: 1rem;
+  top: 1.1rem;
   right: 7%;
   display: flex;
   @include flex();
   z-index: 100;
 
-  .menu-btn {
-    color: $color-white;
-    position: relative;
+  @include tablet {
+    top: 5%;
+  }
+  @include desktop {
+    top: 7%;
+    right: 5%;
+  }
 
-    background: rgba(255, 255, 255, 0.3);
-    border-radius: 40px;
+  .bmo-btn {
+    // background: rgba(255, 255, 255, 0.9);
+    background: $color-sec;
+    opacity: 0.85;
+    color: $light;
+    position: relative;
     padding: 4px 7px;
+    text-shadow: 0px -1px 5px darkblue;
+    // width: 52px;
+    // height: 50px;
     z-index: 100;
 
     &:hover {
-      background: rgba(255, 255, 255, 0.9);
+      background: $color-brand;
+      color: $light;
       opacity: 1;
     }
 
     @include tablet {
-      padding: 5px 7px;
+      width: 62px;
+      height: 60px;
+      &:hover {
+        background: $color-brand;
+        color: $light;
+        opacity: 1;
+      }
+    }
+    @include desktop {
+      width: 67px;
+      height: 65px;
     }
 
-    .menu-icon {
+    .bmo-icon {
       align-self: center;
-      color: $color-white;
-      width: 45px;
+      color: $light;
+      width: 48px;
+      height: auto;
       z-index: 99;
 
       @include tablet {
-        top: 2rem;
+        padding: 3px;
         width: 50px;
+      }
+      @include desktop {
+        width: 54px;
       }
     }
 
-    .menu-text {
-      font-size: $xxs;
+    .bmo-text {
+      // color: $light;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: $sm;
       font-weight: 600;
-      text-transform: uppercase;
-
+      text-transform: capitalize;
       margin: 0;
-      margin-top: -19px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
       z-index: 8;
-
-      &:hover {
-        color: $color-black;
-      }
     }
   }
 }

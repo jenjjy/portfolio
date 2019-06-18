@@ -26,8 +26,4 @@ function ProjectListColumns() {
   );
 }
 
-ProjectListColumns.propTypes = {
-  classes: PropTypes.object.isRequired
-};
-
 export default ProjectListColumns;

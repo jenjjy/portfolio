@@ -34,7 +34,8 @@ const Home = () => {
         </Slide>
         <h2 className="subheading">
           {/* Dynamic / Talented / Passionate */}
-          Problem Solver / Resourceful / Creative
+          {/* Problem Solver / Resourceful / Creative */}
+          Adaptable / Quick Learner / Positive
         </h2>
 
         <div className="btn-wrapper">

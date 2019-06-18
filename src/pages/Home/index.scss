@@ -9,7 +9,7 @@
   color: $color-brand;
 
   &:hover {
-    color: $color-white;
+    color: $light;
   }
 }
 .J {
@@ -45,7 +45,7 @@
 
   &:hover {
     background: $color-brand;
-    color: $color-tags;
+    color: $tags;
     // font-weight: 600;
   }
 

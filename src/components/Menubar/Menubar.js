@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-scroll';
 import { withStyles } from '@material-ui/core/styles';
-import { Button, Drawer } from '@material-ui/core';
+import { Button, Drawer, Fab } from '@material-ui/core';
 import styles from './index.scss';
 import { Slide } from 'react-reveal';
 import finn from '../../images/icons/finn.png';
@@ -9,6 +9,7 @@ import jake from '../../images/icons/jake.png';
 import bmo from '../../images/icons/bmo.png';
 import lps from '../../images/icons/lumpy-space-princess.png';
 import pb from '../../images/icons/princess-bubblegum.png';
+import marceline from '../../images/icons/marceline.png';
 
 class Menubar extends Component {
   state = {
@@ -44,7 +45,7 @@ class Menubar extends Component {
           smooth={true}
           duration={500}
         >
-          <img alt="" className="navicons" src={finn} />
+          <img alt="" className="nav-img" src={finn} />
           Home
         </Link>
         <Link
@@ -55,7 +56,7 @@ class Menubar extends Component {
           smooth={true}
           duration={500}
         >
-          <img alt="" className="navicons" src={jake} height="60" />
+          <img alt="" className="nav-img" src={jake} height="60" />
           About
         </Link>
 
@@ -67,7 +68,7 @@ class Menubar extends Component {
           smooth={true}
           duration={500}
         >
-          <img alt="" className="navicons" src={lps} />
+          <img alt="" className="nav-img" src={lps} />
           projects
         </Link>
         <Link
@@ -78,7 +79,7 @@ class Menubar extends Component {
           smooth={true}
           duration={500}
         >
-          <img alt="" className="navicons" src={pb} />
+          <img alt="" className="nav-img" src={pb} />
           contact
         </Link>
       </div>
@@ -86,19 +87,20 @@ class Menubar extends Component {
 
     return (
       <div className="menubar">
-        <div className="menu-wrapper">
-          <Button
-            className="button-menu"
-            onClick={this.toggleDrawer('top', true)}
-          >
-            <Slide left>
-              <div className="menu-btn">
-                <img alt="" className="menu-icon" src={bmo} />
-                <p className="menu-text">Menu</p>
+        <Slide left>
+          <div className="bmo-wrapper">
+            <Fab
+              color="secondary"
+              className="bmo-btn"
+              onClick={this.toggleDrawer('top', true)}
+            >
+              <div>
+                <img alt="" className="bmo-icon" src={bmo} />
+                {/* <p className="bmo-text">Menu</p> */}
               </div>
-            </Slide>
-          </Button>
-        </div>
+            </Fab>
+          </div>
+        </Slide>
 
         <Drawer
           anchor="top"

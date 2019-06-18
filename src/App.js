@@ -1,51 +1,20 @@
+/** External Imports */
 import React, { Component } from 'react';
+import { BrowserRouter } from 'react-router-dom';
 import { MuiThemeProvider } from '@material-ui/core/styles';
+
+/** Internal Imports */
 import theme from './theme';
 import './App.scss';
-import { Element, Events } from 'react-scroll';
-
-/** Pages */
-import Menubar from './components/Menubar';
-import About from './pages/About';
-import Home from './pages/Home';
-import Projects from './pages/Projects';
-import Contact from './pages/Contact';
+import Layout from './routes/Layout';
 
 class App extends Component {
-  componentDidMount() {
-    Events.scrollEvent.register('begin', function() {
-      console.log('begin', arguments);
-    });
-    Events.scrollEvent.register('end', function() {
-      console.log('end', arguments);
-    });
-  }
-
-  componentWillUnmount() {
-    Events.scrollEvent.remove('begin');
-    Events.scrollEvent.remove('end');
-  }
-
   render() {
     return (
       <MuiThemeProvider theme={theme}>
-        <Menubar />
-
-        <Element name="home" className="">
-          <Home />
-        </Element>
-
-        <Element name="about" className="">
-          <About />
-        </Element>
-
-        <Element name="projects" className="">
-          <Projects />
-        </Element>
-
-        <Element name="contact" className="">
-          <Contact />
-        </Element>
+        <BrowserRouter>
+          <Layout />
+        </BrowserRouter>
       </MuiThemeProvider>
     );
   }

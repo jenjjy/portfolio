@@ -3,7 +3,7 @@ $tablet-width: 600px;
 $desktop-width: 950px;
 $tv-width: 1250px;
 
-// colors
+/* colors */
 $bg-color: #252627; //#181b1c; //#252627; // #282c34;
 $nav-bg: #282c34;
 
@@ -11,12 +11,12 @@ $color-brand: #4aedc4; // #ffc732 Jake-Yellow
 $color-brand-dark: #14a37f;
 $color-sec: #ffeb3b; //#ffcd38
 $color-tert: #e8583d; // #ff5d6a red-orange
-$color-tags: #37393b; //#515152;
+$tags: #37393b; //#515152;
 $textfield-bg: #515152;
 
-$color-black: #000;
-$color-grey: #8d8d8d;
-$color-white: #fff;
+$dark: #000;
+$grey: #8d8d8d;
+$light: #fff;
 
 $btn-border: 1px solid $color-brand;
 $border: 2px solid $color-brand-dark;

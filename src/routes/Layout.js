@@ -5,29 +5,14 @@ import {
   Switch,
   Redirect
 } from 'react-router-dom';
-import Navbar from '../components/Navbar';
 // import Loading from '../components/Loading';
-import Home from '../pages/Home';
-import About from '../pages/About';
-import Skills from '../pages/Skills';
-import Projects from '../pages/Projects';
-import Contact from '../pages/Contact';
+import Main from '../pages';
 
 export default () => (
   <React.Fragment>
-    <Router>
-      <div className="background">
-        <Navbar />
-
-        <Switch>
-          <Route path="/home" component={Home} />
-          <Route exact path="/about" component={About} />
-          <Route exact path="/skills" component={Skills} />
-          <Route exact path="/projects" component={Projects} />
-          <Route exact path="/contact" component={Contact} />
-          <Redirect from="*" to="/home" />;
-        </Switch>
-      </div>
-    </Router>
+    <Switch>
+      <Route path="/portfolio" component={Main} />
+      <Redirect from="*" to="/portfolio" />
+    </Switch>
   </React.Fragment>
 );

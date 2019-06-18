@@ -17,6 +17,12 @@
     margin: auto;
   }
 
+  @include tablet {
+    .sectionOne {
+      margin-top: 2rem;
+    }
+  }
+
   @include desktop {
     @include flex();
     margin: auto;
@@ -25,7 +31,7 @@
     .sectionOne {
       display: flex;
       @include flex(row, space-around, center);
-      margin-top: 2rem;
+      margin-top: 0;
     }
     .sectionTwo {
       display: flex;
@@ -43,7 +49,7 @@
   }
 
   .text {
-    color: $color-white;
+    color: $light;
     font-family: $font-main;
     font-size: $text-mob;
     // line-height: 1.8;

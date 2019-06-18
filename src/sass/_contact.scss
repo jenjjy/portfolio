@@ -13,7 +13,7 @@
   .text-wrapper {
     display: flex;
     @include flex(column, space-between, center);
-    color: $color-white;
+    color: $light;
     height: 80%;
     max-width: 85%;
     margin: auto;
@@ -48,7 +48,7 @@
   }
 
   .icon {
-    color: $color-white;
+    color: $light;
     height: 20px;
     padding-right: 1rem;
   }
@@ -56,7 +56,7 @@
 .icon-wrapper {
   display: flex;
   @include flex(row, center, center);
-  color: $color-white;
+  color: $light;
 
   line-height: 2.5;
   text-decoration: none;
@@ -131,7 +131,7 @@
  * Credit 
  */
 .credit {
-  color: $color-grey;
+  color: $grey;
   font-size: $xxs;
   display: flex;
   @include flex(row);
@@ -146,7 +146,7 @@
     color: $color-brand-dark;
 
     &:hover {
-      color: $color-white;
+      color: $light;
     }
   }
 }
@@ -163,7 +163,7 @@
   input {
     background: $textfield-bg;
     border-radius: 5px;
-    color: $color-grey;
+    color: $grey;
   }
 
   .btn {
