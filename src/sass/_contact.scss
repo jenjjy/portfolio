@@ -38,11 +38,13 @@
 .icon-container {
   display: flex;
   @include flex();
-  padding: 1rem 0;
+  padding: 2rem 0;
   width: 100%;
 
   @include tablet {
     @include flex(row, space-around, center);
+    padding: 4rem 0;
+    max-width: 650px;
   }
 
   .icon {
@@ -104,13 +106,12 @@
     @include flex(row, center, center);
     flex: 1;
     flex-wrap: wrap;
-    margin-bottom: 3rem;
+    margin: 1rem 0 3rem;
     width: 100vw;
   }
 
   @include desktop {
-    // width: 80vw;
-    // margin: auto;
+    // @include flex(row, space-evenly, center);
   }
 }
 .contact-img {
@@ -121,12 +122,14 @@
   }
 
   @include desktop {
-    max-height: 250px;
-    // padding: 0 8px;
+    // max-height: 200px;
+    padding: 0 0.8rem;
   }
 }
 
-/* Credit */
+/* 
+ * Credit 
+ */
 .credit {
   color: $color-grey;
   font-size: $xxs;
@@ -148,7 +151,9 @@
   }
 }
 
-/* Form */
+/* 
+ * Form 
+ */
 .form {
   display: flex;
   @include flex(column, null, null);

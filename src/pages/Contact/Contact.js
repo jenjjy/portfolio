@@ -28,27 +28,30 @@ const Contact = () => {
               attitude? Then I'm the right candidate for you! Don't see it? Why
               don't we meet in person?
             </p>
-            <div className="icon-container">
-              <div className="icon-wrapper">
-                <Phone className="icon" /> 604-780-6231
-              </div>
-              <a className="icon-wrapper" href={`mailto: jen.yiu.90@gmail.com`}>
-                <Mail className="icon" /> jen.yiu.90@gmail.com
-              </a>
-              <a
-                className="icon-wrapper"
-                href="https://www.linkedin.com/in/jennifer-yiu/"
-              >
-                <img src={linkedin} className="icon" alt="LinkedIn" />
-                LinkedIn
-              </a>
-            </div>
           </div>
         </div>
+
+        <div className="player-wrapper">
+          <VideoPlayer link="http://youtu.be/_dE-DZQ7IMM" />
+        </div>
+
+        <div className="icon-container">
+          <div className="icon-wrapper">
+            <Phone className="icon" /> 604-780-6231
+          </div>
+          <a className="icon-wrapper" href={`mailto: jen.yiu.90@gmail.com`}>
+            <Mail className="icon" /> jen.yiu.90@gmail.com
+          </a>
+          <a
+            className="icon-wrapper"
+            href="https://www.linkedin.com/in/jennifer-yiu/"
+          >
+            <img src={linkedin} className="icon" alt="LinkedIn" />
+            LinkedIn
+          </a>
+        </div>
       </div>
-      <div className="player-wrapper">
-        <VideoPlayer link="http://youtu.be/_dE-DZQ7IMM" />
-      </div>
+
       <div className="contact-images">
         <img
           src={headshot}
