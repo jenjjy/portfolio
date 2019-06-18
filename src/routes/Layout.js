@@ -11,8 +11,8 @@ import Main from '../pages';
 export default () => (
   <React.Fragment>
     <Switch>
-      <Route path="/portfolio" component={Main} />
-      <Redirect from="*" to="/portfolio" />
+      <Route path="/" component={Main} />
+      <Redirect from="*" to="/portfolio" component={Main} />
     </Switch>
   </React.Fragment>
 );
