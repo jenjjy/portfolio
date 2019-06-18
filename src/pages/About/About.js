@@ -44,8 +44,8 @@ const About = () => {
             <p className="text">
               As I dive deeper into the world of development and technology, my
               passion for it grows stronger. It’s challenging, evolving, and
-              it’s the future. The tech world ever-changing and I want to work
-              in a team to create something amazing together.
+              it’s the future. The tech world is ever-changing and I want to
+              work in a team to create something amazing together.
             </p>
           </div>
         </div>

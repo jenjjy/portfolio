@@ -28,7 +28,7 @@ const Home = () => {
                 </h1>
               </div>
 
-              <h1 className="home-title third-line">Full Stack Developer.</h1>
+              <h1 className="home-title third-line">Frontend Developer.</h1>
             </div>
           </Link>
         </Slide>
