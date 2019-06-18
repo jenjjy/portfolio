@@ -42,7 +42,7 @@
   width: 100%;
 
   @include tablet {
-    @include flex(row, space-around, center);
+    // @include flex(row, space-around, center);
     padding: 4rem 0;
     max-width: 650px;
   }
@@ -101,18 +101,14 @@
 .contact-images {
   display: none;
 
-  @include tablet {
-    display: flex;
-    @include flex(row, center, center);
-    // flex: 1;
-    flex-wrap: wrap;
-    margin: 1rem 0 3rem;
-    width: 100vw;
-  }
-
-  @include desktop {
-    // @include flex(row, space-evenly, center);
-  }
+  // @include tablet {
+  //   display: flex;
+  //   @include flex(row, center, center);
+  //   // flex: 1;
+  //   flex-wrap: wrap;
+  //   margin: 1rem 0 3rem;
+  //   width: 100vw;
+  // }
 }
 .contact-img {
   max-height: 180px;
