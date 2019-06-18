@@ -8,16 +8,14 @@ import theme from './theme';
 import './App.scss';
 import Layout from './routes/Layout';
 
-class App extends Component {
-  render() {
-    return (
-      <MuiThemeProvider theme={theme}>
-        <BrowserRouter>
-          <Layout />
-        </BrowserRouter>
-      </MuiThemeProvider>
-    );
-  }
-}
+const App = () => {
+  return (
+    <MuiThemeProvider theme={theme}>
+      <BrowserRouter>
+        <Layout />
+      </BrowserRouter>
+    </MuiThemeProvider>
+  );
+};
 
 export default App;

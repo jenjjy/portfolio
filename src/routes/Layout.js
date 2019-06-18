@@ -12,7 +12,7 @@ export default () => (
   <React.Fragment>
     <Switch>
       <Route path="/" component={Main} />
-      <Redirect from="*" to="/portfolio" component={Main} />
+      <Redirect from="*" to="/portfolio" />
     </Switch>
   </React.Fragment>
 );
