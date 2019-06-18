@@ -1,19 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "77c4a633b81cf3cce6e7",
-    "url": "/portfolio/static/css/main.701de1bc.chunk.css"
+    "revision": "f422f5b1f6c90b66cf41",
+    "url": "/portfolio/static/css/main.b2006cba.chunk.css"
   },
   {
-    "revision": "77c4a633b81cf3cce6e7",
-    "url": "/portfolio/static/js/main.51b1ab82.chunk.js"
+    "revision": "f422f5b1f6c90b66cf41",
+    "url": "/portfolio/static/js/main.f1c7a482.chunk.js"
   },
   {
     "revision": "53ebc025fca807d4dbea",
     "url": "/portfolio/static/js/runtime~main.f308c8e6.js"
   },
   {
-    "revision": "3463c0c86ff87624025b",
-    "url": "/portfolio/static/js/2.5652455e.chunk.js"
+    "revision": "33a699ba20962dc6c94f",
+    "url": "/portfolio/static/js/2.c0538c44.chunk.js"
   },
   {
     "revision": "995ac617df7dee3baed546715d7e446a",
@@ -80,7 +80,7 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/scubadive.e095bdb7.png"
   },
   {
-    "revision": "d1e3c6bcf2b2a4214ed92141770eb20e",
+    "revision": "3d53b4ccfcd79e77dee1db1a5dc2d439",
     "url": "/portfolio/index.html"
   }
 ];
