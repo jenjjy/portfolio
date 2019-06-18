@@ -8,7 +8,6 @@ import { Element, Events } from 'react-scroll';
 import Menubar from './components/Menubar';
 import About from './pages/About';
 import Home from './pages/Home';
-import Skills from './pages/Skills';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 
@@ -43,10 +42,6 @@ class App extends Component {
         <Element name="projects" className="">
           <Projects />
         </Element>
-
-        {/* <Element name="skills" className="">
-          <Skills />
-        </Element> */}
 
         <Element name="contact" className="">
           <Contact />

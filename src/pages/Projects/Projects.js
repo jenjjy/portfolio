@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
-import styles from './index.scss';
+import './index.scss';
 import ProjectListColumns from '../../components/ProjectList/ProjectListColumns';
 import ProjectListRows from '../../components/ProjectList/ProjectListRows';
-import { Button, withStyles } from '@material-ui/core';
-import gh from '../../images/gh.svg';
 import GreyMob from '../../images/bg/GreyMob.png';
 import GreyDesk from '../../images/bg/GreyDesk.png';
 
@@ -39,4 +37,4 @@ class Projects extends Component {
   }
 }
 
-export default withStyles(styles)(Projects);
+export default Projects;

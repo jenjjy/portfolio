@@ -32,10 +32,7 @@ const Contact = () => {
               <div className="icon-wrapper">
                 <Phone className="icon" /> 604-780-6231
               </div>
-              <a
-                className="icon-wrapper"
-                href={'mailto:' + 'jen.yiu.90@gmail.com'}
-              >
+              <a className="icon-wrapper" href={`mailto: jen.yiu.90@gmail.com`}>
                 <Mail className="icon" /> jen.yiu.90@gmail.com
               </a>
               <a
@@ -49,7 +46,9 @@ const Contact = () => {
           </div>
         </div>
       </div>
-
+      <div className="player-wrapper">
+        <VideoPlayer link="http://youtu.be/_dE-DZQ7IMM" />
+      </div>
       <div className="contact-images">
         <img
           src={headshot}
@@ -71,9 +70,6 @@ const Contact = () => {
           className="contact-img"
           alt="Jennifer on her motorbike trip around Northern Vietnam"
         />
-      </div>
-      <div className="player-wrapper">
-        <VideoPlayer link="http://youtu.be/_dE-DZQ7IMM" />
       </div>
 
       <p className="credit">
