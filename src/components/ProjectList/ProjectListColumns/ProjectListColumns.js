@@ -15,7 +15,13 @@ function ProjectListColumns() {
           </div>
 
           <div className="img-wrapper">
-            <img src={tile.img[0]} alt={tile.title} className="project-img" />
+            <img
+              src={tile.img[0]}
+              alt={tile.title}
+              className={
+                tile.title != 'Main Street Brewing Co.' ? 'project-img' : 'msb'
+              }
+            />
           </div>
 
           <p className="tech">{tile.tech}</p>

@@ -127,6 +127,7 @@
       color: $light;
       width: 48px;
       height: auto;
+      opacity: 1;
       z-index: 99;
 
       @include tablet {

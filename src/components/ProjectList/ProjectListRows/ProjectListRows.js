@@ -23,7 +23,7 @@ const ProjectRow = props => {
 const ProjectReverse = props => {
   return (
     <div key={props.id} className="direction-rev row">
-      <div className="info-wrapper info-rev">
+      <div className="info-wrapper">
         <h2 className="project-title">{props.title}</h2>
         <p className="description">{props.info}</p>
         <p className="tech">{props.tech}</p>
@@ -62,7 +62,7 @@ function TitlebarGridList() {
               tech={tile.tech}
               link={tile.github}
               img={tile.img}
-              class="project-img"
+              class="msb"
             />
           ) : null}
 
