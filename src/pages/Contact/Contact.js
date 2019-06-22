@@ -3,6 +3,9 @@ import { withStyles } from '@material-ui/core';
 import { Mail, Phone } from '@material-ui/icons';
 import styles from './index.scss';
 import linkedin from '../../images/icons/white-linkedin.png';
+import angellist from '../../images/icons/angellist.png';
+import github from '../../images/icons/github.png';
+
 import vietnam from '../../images/vietnam-motorbike.jpg';
 import mural from '../../images/bangkok-mural.jpg';
 import headshot from '../../images/RedAcademyYVR_Headshots_Jennifer_20181207_040.jpg';
@@ -36,13 +39,23 @@ const Contact = () => {
         </div>
 
         <div className="icon-container">
-          <div className="icon-wrapper">
+          {/* <div className="icon-wrapper">
             <Phone className="icon" /> 604-780-6231
-          </div>
+          </div> */}
           <a className="icon-wrapper" href={`mailto: jen.yiu.90@gmail.com`}>
             <Mail className="icon" /> jen.yiu.90@gmail.com
           </a>
+
           <a
+            target="_blank"
+            className="icon-wrapper"
+            href="https://angel.co/jenjjy"
+          >
+            <img src={angellist} className="icon" alt="AngelList" />
+            AngelList
+          </a>
+          <a
+            target="_blank"
             className="icon-wrapper"
             href="https://www.linkedin.com/in/jennifer-yiu/"
           >

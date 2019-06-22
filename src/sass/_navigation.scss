@@ -7,7 +7,8 @@
   display: flex;
   @include flex(row, space-evenly, center);
   height: 80px;
-  padding: 0 15px;
+  padding: 0 20px;
+  width: 75%;
 
   @include tablet {
     // background: #171717;
@@ -23,6 +24,7 @@
 }
 .bar-wrapper {
   background: $nav-bg;
+  position: relative;
 }
 
 .links {
@@ -66,6 +68,48 @@
     }
   }
 }
+
+/*    Github Icon    */
+.github-nav {
+  position: absolute;
+  right: 10px;
+
+  @include tablet {
+    right: 5%;
+  }
+
+  .github {
+    background: transparent;
+    display: block;
+    position: relative;
+    width: 45px;
+    height: 45px;
+    z-index: 10;
+
+    @include tablet {
+      width: 50px;
+      height: 50px;
+    }
+  }
+  .githubBG {
+    background: $light;
+    border-radius: 55%;
+    width: 30px;
+    height: 40px;
+    position: absolute;
+    &:hover {
+      background: $color-brand;
+    }
+  }
+  // .github-hover {
+  //   display: none;
+  //   &:hover {
+  //     display: block;
+  //     height: 50px;
+  //     width: 50px;
+  //   }
+  // }
+}
 .active {
   text-decoration: none;
 }
@@ -73,7 +117,6 @@
 /*   
  *    BMO    
  */
-
 .bmo-wrapper {
   position: fixed;
   top: 1.1rem;
@@ -103,19 +146,14 @@
     z-index: 100;
 
     &:hover {
-      background: $color-brand;
+      background: $light;
       color: $light;
-      opacity: 1;
+      opacity: 0.97;
     }
 
     @include tablet {
       width: 62px;
       height: 60px;
-      &:hover {
-        background: $color-brand;
-        color: $light;
-        opacity: 1;
-      }
     }
     @include desktop {
       width: 67px;
@@ -153,7 +191,51 @@
       z-index: 8;
     }
   }
+
+  .pulse:hover,
+  .pulse:focus {
+    animation: pulse 1s;
+    box-shadow: 0 0 0 2em rgba(#fff, 0);
+  }
+
+  @keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 0 var(--hover);
+    }
+  }
+} // end of BMO
+
+//=== Set button colors
+// If you wonder why use Sass vars or CSS custom properties...
+// Make a map with the class names and matching colors
+$colors: (
+  fill: #a972cb,
+  pulse: $color-brand,
+  //#ef6eae
+    close: #ff7f82,
+  raise: #ffa260,
+  up: #e4cb58,
+  slide: #8fc866,
+  offset: #19bc8b
+);
+
+// Sass variables compile to a static string; CSS variables are dynamic and inherited
+// Loop through the map and set CSS custom properties using Sass variables
+@each $button, $color in $colors {
+  .#{$button} {
+    --color: #{$color};
+    --hover: #{adjust-hue($color, 45deg)};
+  }
 }
-.button-menu {
-  border-radius: 40px;
+
+// Now every button will have different colors as set above. We get to use the same structure, only changing the custom properties.
+button {
+  color: var(--color);
+  transition: 0.25s;
+
+  &:hover,
+  &:focus {
+    border-color: var(--hover);
+    color: #fff;
+  }
 }

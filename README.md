@@ -1,6 +1,6 @@
-# Jennifer Yiu
+# Portfolio
 
-Built with React and SCSS!
+Built with React, Material-UI, and SCSS!
 
 ## Start developing
 
@@ -13,4 +13,4 @@ yarn start
 
 Open the source code and start editing!
 
-Your site is now running at http://localhost:3000!
+The site is now running at http://localhost:3000!

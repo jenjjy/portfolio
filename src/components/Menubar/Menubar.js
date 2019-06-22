@@ -4,12 +4,17 @@ import { withStyles } from '@material-ui/core/styles';
 import { Button, Drawer, Fab } from '@material-ui/core';
 import styles from './index.scss';
 import { Slide } from 'react-reveal';
+/**
+ * Internal Imports
+ */
 import finn from '../../images/icons/finn.png';
 import jake from '../../images/icons/jake.png';
 import bmo from '../../images/icons/bmo.png';
 import lps from '../../images/icons/lumpy-space-princess.png';
 import pb from '../../images/icons/princess-bubblegum.png';
 import marceline from '../../images/icons/marceline.png';
+import github1 from '../../images/icons/github-logo-icon-24.png';
+import github2 from '../../images/icons/github.png';
 
 class Menubar extends Component {
   state = {
@@ -82,6 +87,17 @@ class Menubar extends Component {
           <img alt="" className="nav-img" src={pb} />
           contact
         </Link>
+
+        <a
+          target="_blank"
+          href="https://github.com/jenjjy"
+          className="links github-nav"
+        >
+          <img alt="" className="github" src={github1} />
+          <div className="githubBG" />
+          {/* <img alt="" className="github-hover" src={marceline} /> */}
+          github
+        </a>
       </div>
     );
 
@@ -91,7 +107,7 @@ class Menubar extends Component {
           <div className="bmo-wrapper">
             <Fab
               color="secondary"
-              className="bmo-btn"
+              className="bmo-btn pulse"
               onClick={this.toggleDrawer('top', true)}
             >
               <div>
