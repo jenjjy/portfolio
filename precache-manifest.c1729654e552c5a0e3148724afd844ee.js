@@ -1,19 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "2d7a8796834b36f74f4b",
-    "url": "/portfolio/static/css/main.8e4f719f.chunk.css"
+    "revision": "c4c8a1ab2fa85993a349",
+    "url": "/portfolio/static/css/main.73052045.chunk.css"
   },
   {
-    "revision": "2d7a8796834b36f74f4b",
-    "url": "/portfolio/static/js/main.c2defa98.chunk.js"
+    "revision": "c4c8a1ab2fa85993a349",
+    "url": "/portfolio/static/js/main.af748c2c.chunk.js"
   },
   {
     "revision": "53ebc025fca807d4dbea",
     "url": "/portfolio/static/js/runtime~main.f308c8e6.js"
   },
   {
-    "revision": "77cac93a975bb84feb22",
-    "url": "/portfolio/static/js/2.608b0a3e.chunk.js"
+    "revision": "ed826a9b30d086248972",
+    "url": "/portfolio/static/js/2.2a874ff2.chunk.js"
   },
   {
     "revision": "995ac617df7dee3baed546715d7e446a",
@@ -64,6 +64,10 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/gh.87da8261.svg"
   },
   {
+    "revision": "07bdf4875065a92011d45b1d48565d3e",
+    "url": "/portfolio/static/media/angellist.07bdf487.png"
+  },
+  {
     "revision": "39a796eca1456d7b471e8c500da661c4",
     "url": "/portfolio/static/media/vietnam-motorbike.39a796ec.jpg"
   },
@@ -80,7 +84,7 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/scubadive.e095bdb7.png"
   },
   {
-    "revision": "5d146a5513050c93c95619d206f0bf76",
+    "revision": "347c3dacdbfe12f8e4588e9e7c802ebb",
     "url": "/portfolio/index.html"
   }
 ];
