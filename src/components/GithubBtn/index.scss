@@ -1,6 +1,36 @@
 @import '../../sass/_variables';
 @import '../../sass/mixins';
 
+.gh-link-wrapper {
+  a {
+    background: none;
+    border-radius: 20px;
+    line-height: 1;
+    padding: 0.3rem;
+    padding-left: 0.4rem;
+    text-decoration: none;
+
+    border: 2px solid $color-main-dark;
+    color: $color-main-dark;
+    transition: 0.25s;
+
+    &:hover,
+    &:focus {
+      border-color: $purple;
+      color: #fff;
+    }
+  }
+  .github-link-ani {
+    display: flex;
+    @include flex(row);
+
+    &:hover,
+    &:focus {
+      box-shadow: inset 10.5em 0 0 0 $purple;
+    }
+  }
+}
+
 .icon {
   display: flex;
   @include flex(row, space-evenly, center);
@@ -23,9 +53,10 @@
     width: 32px;
   }
 }
-
 .gh-text {
   font-size: $xs;
+  margin: 0;
+  padding-left: 0.5rem;
 
   @include tablet {
     font-size: $sm;

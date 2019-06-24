@@ -23,9 +23,10 @@ function ProjectListColumns() {
               }
             />
           </div>
-
-          <p className="tech">{tile.tech}</p>
-          <GitHub link={tile.github} />
+          <div className="tech-wrapper">
+            <p className="tech">{tile.tech}</p>
+            <GitHub link={tile.github} />
+          </div>
         </div>
       ))}
     </div>
