@@ -41,13 +41,12 @@ const Home = () => {
         <div className="btn-wrapper">
           <Link
             to="projects"
-            className="contact-btn"
             activeClass="active"
             spy={true}
             smooth={true}
-            duration={500}
+            // duration={500}
           >
-            View my work
+            <button className="slide home-btn">View my work</button>
           </Link>
         </div>
       </section>
