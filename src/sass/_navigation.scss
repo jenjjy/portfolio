@@ -39,11 +39,11 @@
   opacity: 0.8;
 
   &:hover {
-    color: $color-brand;
+    color: $color-main;
     opacity: 1;
   }
   a:active {
-    color: $color-brand;
+    color: $color-main;
     opacity: 1;
   }
 
@@ -91,14 +91,16 @@
       height: 50px;
     }
   }
+
   .githubBG {
-    background: $light;
+    background-color: $light;
     border-radius: 55%;
     width: 30px;
     height: 40px;
     position: absolute;
+
     &:hover {
-      background: $color-brand;
+      background-color: $color-main;
     }
   }
   // .github-hover {
@@ -210,7 +212,7 @@
 // Make a map with the class names and matching colors
 $colors: (
   fill: #a972cb,
-  pulse: $color-brand,
+  pulse: $color-main,
   //#ef6eae
     close: #ff7f82,
   raise: #ffa260,

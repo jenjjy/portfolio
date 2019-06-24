@@ -7,8 +7,8 @@ $tv-width: 1440px;
 $bg-color: #252627; //#181b1c; //#252627; // #282c34;
 $nav-bg: #282c34;
 
-$color-brand: #4aedc4; // #ffc732 Jake-Yellow
-$color-brand-dark: #14a37f;
+$color-main: #4aedc4; // #ffc732 Jake-Yellow
+$color-main-dark: #14a37f;
 $color-sec: #ffeb3b; //#ffcd38
 $color-tert: #e8583d; // #ff5d6a red-orange
 $tags: #37393b; //#515152;
@@ -18,8 +18,8 @@ $dark: #000;
 $grey: #8d8d8d;
 $light: #fff;
 
-$btn-border: 1px solid $color-brand;
-$border: 2px solid $color-brand-dark;
+$btn-border: 1px solid $color-main;
+$border: 2px solid $color-main-dark;
 
 // Fonts
 $font-main: 'OpenSans-Light', Helvetica, sans-serif;

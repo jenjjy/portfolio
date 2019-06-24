@@ -20,6 +20,7 @@ const GithubBtn = props => {
 
   return (
     <Fab
+      target="_blank"
       className="icon"
       href={props.link}
       color="primary"

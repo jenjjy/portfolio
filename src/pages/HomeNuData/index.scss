@@ -6,7 +6,7 @@
 /* Title */
 
 .reverse {
-  color: $color-brand;
+  color: $color-main;
 
   &:hover {
     color: $light;
@@ -35,7 +35,7 @@
 .contact-btn {
   border: $btn-border;
   border-radius: 3px;
-  color: $color-brand;
+  color: $color-main;
   font-family: $font-main;
   font-size: $xs;
   font-weight: 550;
@@ -44,7 +44,7 @@
   text-transform: uppercase;
 
   &:hover {
-    background: $color-brand;
+    background: $color-main;
     color: $tags;
     // font-weight: 600;
   }
