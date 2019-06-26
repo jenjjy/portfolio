@@ -49,7 +49,7 @@ const Contact = () => {
           <a
             target="_blank"
             className="icon-wrapper"
-            href="https://angel.co/jenjjy"
+            href="https://angel.co/jenbitz"
           >
             <img src={angellist} className="icon" alt="AngelList" />
             AngelList
