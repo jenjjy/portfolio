@@ -90,6 +90,7 @@ class Menubar extends Component {
 
         <a
           target="_blank"
+          rel="noopener norefferer"
           href="https://github.com/jenjjy"
           className="links github-nav"
         >

@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import '../index.scss';
 import tileData from '../tileData';
 import GitHub from '../../GithubBtn';
@@ -19,7 +18,7 @@ function ProjectListColumns() {
               src={tile.img[0]}
               alt={tile.title}
               className={
-                tile.title != 'Main Street Brewing Co.' ? 'project-img' : 'msb'
+                tile.title !== 'Main Street Brewing Co.' ? 'project-img' : 'msb'
               }
             />
           </div>

@@ -48,6 +48,7 @@ const Contact = () => {
 
           <a
             target="_blank"
+            rel="noopener norefferer"
             className="icon-wrapper"
             href="https://angel.co/jenbitz"
           >
@@ -56,6 +57,7 @@ const Contact = () => {
           </a>
           <a
             target="_blank"
+            rel="noopener norefferer"
             className="icon-wrapper"
             href="https://www.linkedin.com/in/jennifer-yiu/"
           >
@@ -92,6 +94,7 @@ const Contact = () => {
         <a
           className="author"
           target="_blank"
+          rel="noopener norefferer"
           href="https://www.linkedin.com/in/jennifer-yiu/"
         >
           Jennifer Yiu

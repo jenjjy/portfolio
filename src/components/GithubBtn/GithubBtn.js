@@ -4,11 +4,14 @@ import { KeyboardArrowRight } from '@material-ui/icons';
 import './index.scss';
 
 const GithubBtn = props => {
-  const { classes } = props;
-
   return (
     <div className="gh-link-wrapper">
-      <a href={props.link} target="_blank" className="github-link-ani">
+      <a
+        href={props.link}
+        target="_blank"
+        rel="noopener norefferer"
+        className="github-link-ani"
+      >
         <p className="gh-text">View More</p>
         <KeyboardArrowRight />
       </a>
