@@ -3,6 +3,7 @@ import { Link } from 'react-scroll';
 import { withStyles } from '@material-ui/core';
 import styles from './index.scss';
 import { Slide } from 'react-reveal';
+import { KeyboardArrowDown } from '@material-ui/icons';
 
 const Home = () => {
   return (
@@ -11,11 +12,10 @@ const Home = () => {
         <Slide right cascade>
           <Link
             to="about"
-            // className="links"
             activeClass="active"
             spy={true}
             smooth={true}
-            duration={500}
+            // duration={500}
           >
             <div className="title-wrapper">
               <h1 className="home-title">
@@ -28,7 +28,7 @@ const Home = () => {
                 </h1>
               </div>
 
-              <h1 className="home-title third-line">Frontend Developer.</h1>
+              <h1 className="home-title third-line">Front End Developer.</h1>
             </div>
           </Link>
         </Slide>
@@ -50,6 +50,19 @@ const Home = () => {
           </Link>
         </div>
       </section>
+
+      <Link
+        to="about"
+        className="scroll-btn"
+        activeClass="active"
+        spy={true}
+        smooth={true}
+      >
+        <span className="scroll-ani">
+          <KeyboardArrowDown fontSize="large" />
+        </span>
+        <p>Scroll</p>
+      </Link>
     </div>
   );
 };

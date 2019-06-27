@@ -54,7 +54,8 @@ const About = () => {
           <VideoPlayer link={urllink} />
           <div className="text-wrapper">
             <p className="text">
-              My focus is mostly front-end technologies including
+              I'm a full-stack developer with a focus in front-end technologies
+              including
               <span className="techs">
                 {' '}
                 CSS, SCSS, React, React-Native, JavaScript, jQuery, and PHP.{' '}
