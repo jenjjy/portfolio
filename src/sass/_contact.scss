@@ -144,7 +144,8 @@
 
   .author {
     color: $color-main-dark;
-
+    margin-right: 5px;
+    text-decoration: none;
     &:hover {
       color: $light;
     }

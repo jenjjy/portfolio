@@ -89,7 +89,11 @@ const Contact = () => {
       </div>
 
       <p className="credit">
-        <a className="author" href="https://www.linkedin.com/in/jennifer-yiu/">
+        <a
+          className="author"
+          target="_blank"
+          href="https://www.linkedin.com/in/jennifer-yiu/"
+        >
           Jennifer Yiu
         </a>
         &copy; 2019. Built with React, SCSS, and Material-UI.
