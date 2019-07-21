@@ -52,6 +52,7 @@ const About = () => {
 
         <div className="sectionTwo">
           <VideoPlayer link={urllink} />
+          {/* <video src="../../videos/Solving3x3.mp4" type="video/mp4" /> */}
           <div className="text-wrapper">
             <p className="text">
               I'm a full-stack developer with a focus in front-end technologies
