@@ -28,8 +28,9 @@ const About = () => {
 
           <div className="text-wrapper">
             <p className="text">
-              I love to problem solve and figure out how something works and
-              functions. My curiosity drives me to learn and grow - whether it’s
+              I am a fullstack developer passionate about sustainability,
+              community-building, and the future of tech. My curiosity about the
+              world around me drives me to learn and grow - whether it’s
               learning how to drive a manual car, solve a Rubik’s cube, became a
               certified scuba diver, understand blockchain, or backpack in
               Europe and Southeast Asia.
@@ -55,13 +56,13 @@ const About = () => {
           {/* <video src="../../videos/Solving3x3.mp4" type="video/mp4" /> */}
           <div className="text-wrapper">
             <p className="text">
-              I'm a full-stack developer with a focus in front-end technologies
+              I'm a fullstack developer with a focus in frontend technologies
               including
               <span className="techs">
                 {' '}
                 CSS, SCSS, React, React-Native, JavaScript, jQuery, and PHP.{' '}
               </span>
-              I've also been working a lot with back-end technologies like{' '}
+              I've also been working a lot with backend technologies like{' '}
               <span className="techs">Python, SQL and Django</span> and am
               interested to learn more! I want to continue develop my skills and
               improve on writing code. I have great energy, a "can-do" attitude,
