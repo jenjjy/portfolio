@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './index.scss';
 import ProjectListColumns from '../../components/ProjectList/ProjectListColumns';
 import ProjectListRows from '../../components/ProjectList/ProjectListRows';
 import GreyMob from '../../images/bg/GreyMob.png';

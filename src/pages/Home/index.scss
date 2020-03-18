@@ -27,11 +27,11 @@
  * Button 
  */
 .btn-wrapper {
-  margin-top: 4rem;
+  margin-top: 3rem;
   font-family: $font-main;
 
   @include tablet {
-    margin-top: 5rem;
+    margin-top: 4rem;
   }
   button {
     border: $btn-border;

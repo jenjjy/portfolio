@@ -1,7 +1,5 @@
 import React from 'react';
-import { withStyles } from '@material-ui/core';
 import { Mail, Phone } from '@material-ui/icons';
-import styles from './index.scss';
 import linkedin from '../../images/icons/white-linkedin.png';
 import angellist from '../../images/icons/angellist.png';
 import github from '../../images/icons/github.png';
@@ -12,11 +10,10 @@ import headshot from '../../images/RedAcademyYVR_Headshots_Jennifer_20181207_040
 import GreyMob from '../../images/bg/GreyMob.png';
 import GreyDesk from '../../images/bg/GreyDesk.png';
 import roctopus from '../../images/scubadive.png';
-import VideoPlayer from '../../components/VideoPlayer';
 
 const Contact = () => {
   return (
-    <section className="container">
+    <section className="contact-container">
       <div className="contact" id="contact">
         <div className="header-wrapper">
           <h1 className="title">Contact Me</h1>
@@ -31,10 +28,6 @@ const Contact = () => {
               attitude? Then I'm the right candidate for you!
             </p>
           </div>
-        </div>
-
-        <div className="player-wrapper">
-          <VideoPlayer link="http://youtu.be/_dE-DZQ7IMM" />
         </div>
 
         <div className="icon-container">
@@ -104,4 +97,4 @@ const Contact = () => {
   );
 };
 
-export default withStyles(styles)(Contact);
+export default Contact;

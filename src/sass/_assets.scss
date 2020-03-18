@@ -1,0 +1,16 @@
+// IMAGES
+
+// VIDEO
+.player-wrapper-row {
+  display: none;
+  @include desktop {
+    display: block;
+  }
+}
+
+.player-wrapper-column {
+  display: block;
+  @include desktop {
+    display: none;
+  }
+}

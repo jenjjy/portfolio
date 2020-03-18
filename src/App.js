@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import { MuiThemeProvider } from '@material-ui/core/styles';
 import theme from './theme';
+import './sass/index.scss';
 import './App.scss';
 import Layout from './routes/Layout';
 

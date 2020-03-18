@@ -1,4 +1,9 @@
-// @import 'variables';
-// @import 'mixins';
-// @import 'home';
-// @import 'tags';
+@import '/_variables';
+@import '/_mixins';
+@import '/_tags';
+@import '/_navigation';
+
+@import '/_title';
+@import '/_container';
+@import '/_assets';
+@import '/_contact';
