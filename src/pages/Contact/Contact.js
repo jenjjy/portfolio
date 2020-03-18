@@ -28,8 +28,7 @@ const Contact = () => {
           <div className="text-wrapper">
             <p className="text">
               Looking for someone with enthusiasm, positive energy, and a can-do
-              attitude? Then I'm the right candidate for you! Don't see it? Why
-              don't we meet in person?
+              attitude? Then I'm the right candidate for you!
             </p>
           </div>
         </div>
@@ -48,7 +47,7 @@ const Contact = () => {
 
           <a
             target="_blank"
-            rel="noopener norefferer"
+            rel="noopener noreferrer"
             className="icon-wrapper"
             href="https://angel.co/jenbitz"
           >
@@ -57,7 +56,7 @@ const Contact = () => {
           </a>
           <a
             target="_blank"
-            rel="noopener norefferer"
+            rel="noopener noreferrer"
             className="icon-wrapper"
             href="https://www.linkedin.com/in/jennifer-yiu/"
           >
@@ -94,7 +93,7 @@ const Contact = () => {
         <a
           className="author"
           target="_blank"
-          rel="noopener norefferer"
+          rel="noopener noreferrer"
           href="https://www.linkedin.com/in/jennifer-yiu/"
         >
           Jennifer Yiu

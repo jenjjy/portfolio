@@ -28,8 +28,8 @@ const About = () => {
 
           <div className="text-wrapper">
             <p className="text">
-              I love learning about how something works and functions. My
-              curiosity drives me to continuously learn and grow - whether it’s
+              I love to problem solve and figure out how something works and
+              functions. My curiosity drives me to learn and grow - whether it’s
               learning how to drive a manual car, solve a Rubik’s cube, became a
               certified scuba diver, understand blockchain, or backpack in
               Europe and Southeast Asia.
@@ -41,12 +41,12 @@ const About = () => {
               the computer into a piano. In sixth grade, I built my first
               website using HTML.
             </p>
-            <p className="text">
+            {/* <p className="text">
               As I dive deeper into the world of development and technology, my
               passion for it grows stronger. It’s challenging, evolving, and
               it’s the future. The tech world is ever-changing and I want to
               work in a team to create something amazing together.
-            </p>
+            </p> */}
           </div>
         </div>
 
@@ -61,7 +61,9 @@ const About = () => {
                 {' '}
                 CSS, SCSS, React, React-Native, JavaScript, jQuery, and PHP.{' '}
               </span>
-              I want to continue to learn and grow as I develop my skills and
+              I've also been working a lot with back-end technologies like{' '}
+              <span className="techs">Python, SQL and Django</span> and am
+              interested to learn more! I want to continue develop my skills and
               improve on writing code. I have great energy, a "can-do" attitude,
               and I'm always working towards improving myself everyday.
             </p>

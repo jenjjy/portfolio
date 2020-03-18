@@ -3,7 +3,7 @@
 @import '../../sass/container';
 
 .about-content-wrapper {
-  margin-top: 2rem;
+  // margin-top: 2rem;
   display: flex;
   @include flex();
   width: 100%;
@@ -11,7 +11,6 @@
 
   .sectionOne,
   .sectionTwo {
-    display: flex;
     @include flex();
     width: 100%;
     margin: auto;
@@ -29,24 +28,21 @@
     width: 90%;
 
     .sectionOne {
-      display: flex;
-      @include flex(row, space-around, center);
-      margin-top: 0;
+      // display: flex;
+      // @include flex(row, space-around, center);
+      // margin-top: 0;
     }
     .sectionTwo {
-      display: flex;
-      @include flex(row-reverse, space-evenly, center);
-      .text-wrapper {
-        // max-width: 50%;
-      }
+      // display: flex;
+      // @include flex(row-reverse, space-evenly, flex-start);
     }
   }
 
-  .text-wrapper {
-    @include desktop {
-      max-width: 60%;
-    }
-  }
+  // .text-wrapper {
+  //   @include desktop {
+  //     max-width: 65%;
+  //   }
+  // }
 
   .text {
     color: $light;
@@ -59,9 +55,6 @@
       font-weight: 500;
       line-height: 1.6;
     }
-    @include desktop {
-      // line-height: 1.8;
-    }
   }
 
   .techs {
@@ -70,6 +63,9 @@
 }
 
 .profile-mobile {
+  border-radius: 50%;
+  object-fit: cover;
+  height: 330px;
   padding: 1.5rem 0 1rem;
 
   @include desktop {

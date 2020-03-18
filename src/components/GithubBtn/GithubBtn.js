@@ -9,7 +9,7 @@ const GithubBtn = props => {
       <a
         href={props.link}
         target="_blank"
-        rel="noopener norefferer"
+        rel="noopener noreferrer"
         className="github-link-ani"
       >
         <p className="gh-text">View More</p>
