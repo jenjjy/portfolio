@@ -4,7 +4,6 @@ import { withStyles } from '@material-ui/core';
 import styles from './index.scss';
 import { Slide } from 'react-reveal';
 import { KeyboardArrowDown } from '@material-ui/icons';
-import VideoPlayer from '../../components/VideoPlayer';
 
 const Home = () => {
   return (
@@ -40,10 +39,6 @@ const Home = () => {
             Adaptable / Resourceful / Problem Solver
           </h2>
 
-          <div className="player-wrapper-column">
-            <VideoPlayer link="http://youtu.be/_dE-DZQ7IMM" />
-          </div>
-
           <div className="btn-wrapper">
             <Link
               to="projects"
@@ -56,10 +51,6 @@ const Home = () => {
             </Link>
           </div>
         </section>
-
-        <div className="player-wrapper-row">
-          <VideoPlayer link="http://youtu.be/_dE-DZQ7IMM" />
-        </div>
       </div>
       <Link
         to="about"

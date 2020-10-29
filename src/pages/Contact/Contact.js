@@ -1,5 +1,6 @@
 import React from 'react';
 import { Mail, Phone } from '@material-ui/icons';
+import VideoPlayer from '../../components/VideoPlayer';
 import linkedin from '../../images/icons/white-linkedin.png';
 import angellist from '../../images/icons/angellist.png';
 import github from '../../images/icons/github.png';
@@ -28,6 +29,10 @@ const Contact = () => {
               attitude? Then I'm the right candidate for you!
             </p>
           </div>
+        </div>
+
+        <div className="">
+          <VideoPlayer link="http://youtu.be/_dE-DZQ7IMM" />
         </div>
 
         <div className="icon-container">
